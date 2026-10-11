@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="theme-color" content="#F5F7FA">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mind the Grammar: IELTS grammar & vocab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F5F7FA; --card:#FFFFFF; --ink:#1E2B3C; --muted:#5A6878; --line:#DDE3EA;
+  --pri:#2563C9; --pri-soft:#E6EEFB;
+  --red:#D64545; --red-soft:#FCE9E9; --green:#1F8A5B; --green-soft:#E1F4EA; --gold:#C77A0A; --gold-soft:#FDF1DC; --blue:#127C86; --blue-soft:#E0F2F3;
+  --grad:linear-gradient(150deg,#2563C9,#127C86); --ring:#BFD3F5;
+  --sans:"Poppins", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --serif:"Poppins", "Segoe UI", system-ui, sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#121A26; --card:#1B2533; --ink:#E6ECF3; --muted:#9AA8B8; --line:#2C3A4C;
+    --pri:#7FA8F5; --pri-soft:#1F2F4D; --grad:linear-gradient(150deg,#2D5FB8,#14707A); --ring:#34507E;
+    --red:#F07A7A; --red-soft:#3A2024; --green:#5CCB97; --green-soft:#173527; --gold:#F2B85C; --gold-soft:#3A2C14; --blue:#5CC5CC; --blue-soft:#16363A;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#121A26; --card:#1B2533; --ink:#E6ECF3; --muted:#9AA8B8; --line:#2C3A4C;
+    --pri:#7FA8F5; --pri-soft:#1F2F4D; --grad:linear-gradient(150deg,#2D5FB8,#14707A); --ring:#34507E;
+    --red:#F07A7A; --red-soft:#3A2024; --green:#5CCB97; --green-soft:#173527; --gold:#F2B85C; --gold-soft:#3A2C14; --blue:#5CC5CC; --blue-soft:#16363A;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;min-height:100%;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit;cursor:pointer}
+input,textarea,select{font:inherit;color:var(--ink)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px;border-radius:6px}
+img{max-width:100%}
+
+.app{display:grid;grid-template-columns:232px 1fr;min-height:100vh}
+.side{position:sticky;top:env(safe-area-inset-top,0px);height:100vh;padding:28px 18px;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:6px}
+.brand{font-weight:700;font-size:1.35rem;line-height:1.05;letter-spacing:-.02em;margin:0 8px 22px}
+.brand .gap{display:block;height:6px;margin-top:8px;background:linear-gradient(90deg,var(--pri) 0 42%,transparent 42% 58%,var(--pri) 58%)}
+.brand small{display:block;font-weight:400;font-size:.8rem;color:var(--muted);margin-top:8px;letter-spacing:0}
+.navbtn{display:flex;align-items:center;gap:12px;width:100%;padding:10px 12px;border:0;background:none;border-radius:10px;text-align:left;font-weight:600;color:var(--muted)}
+.navbtn svg{width:20px;height:20px;flex:none}
+.navbtn:hover{background:var(--card);color:var(--ink)}
+.navbtn[aria-current="page"]{background:var(--pri);color:#fff}
+.side .foot{margin-top:auto;font-size:.8rem;color:var(--muted);padding:0 8px}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--gold);margin-right:6px;vertical-align:middle}
+.dot.on{background:var(--green)}
+
+main{padding:36px clamp(16px,4vw,56px) 80px;max-width:980px;width:100%}
+h1,h2,h3{line-height:1.2;letter-spacing:-.025em;margin:0}
+h1{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:700}
+h2{font-size:1.4rem;font-weight:700}
+h3{font-size:1.1rem;font-weight:600}
+.lede{color:var(--muted);margin:8px 0 28px;max-width:60ch}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 20px;border-radius:999px;border:2px solid var(--ink);background:var(--ink);color:var(--paper);font-weight:600;line-height:1.2}
+.btn:hover{filter:brightness(1.15)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.red{background:var(--pri);border-color:var(--pri);color:#fff}
+.btn.sm{padding:7px 14px;font-size:.88rem;border-radius:999px}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+
+.panel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+
+/* home */
+.hero{display:grid;grid-template-columns:1.3fr 1fr;gap:18px;margin-bottom:18px;align-items:start}
+.hello h1{font-size:clamp(2rem,4.6vw,3.1rem)}
+.stats{display:flex;gap:26px;margin:22px 0 24px;flex-wrap:wrap}
+.stat b{display:block;font-size:2rem;font-weight:700;line-height:1}
+.stat span{font-size:.85rem;color:var(--muted)}
+.goal{height:10px;background:var(--line);border-radius:6px;overflow:hidden;margin:8px 0 4px}
+.goal i{display:block;height:100%;background:var(--green);border-radius:6px;transition:width .4s}
+.wotd{background:var(--grad);color:#fff;border:0}
+.band{margin:0}
+.band .num{font-size:2.8rem;font-weight:700;line-height:1;color:var(--pri)}
+.band ul{margin:10px 0 0;padding-left:18px;color:var(--muted);font-size:.92rem}
+.band li{margin:3px 0}
+.wotd .w{font-family:var(--serif);font-size:2.1rem;line-height:1.1;margin:6px 0 8px}
+.wotd p{margin:0 0 6px}
+.wotd .ex{font-family:var(--serif);font-style:italic;opacity:.85}
+.wotd .k{font-size:.85rem;opacity:.7}
+.speak{border:0;background:none;padding:4px;border-radius:8px;vertical-align:middle;color:inherit;opacity:.8}
+.speak:hover{opacity:1}
+.speak svg{width:20px;height:20px}
+.tile{text-align:left;border:1px solid var(--line);background:var(--card);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:6px}
+.tile:hover{border-color:var(--ink)}
+.tile p{margin:0;color:var(--muted);font-size:.92rem}
+.tile .ic{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;margin-bottom:6px}
+.tile .ic svg{width:22px;height:22px}
+
+/* lessons */
+.lessons{display:grid;gap:10px}
+.lrow{display:grid;grid-template-columns:44px 1fr auto;gap:14px;align-items:center;text-align:left;padding:14px 18px;border:1px solid var(--line);background:var(--card);border-radius:14px}
+.lrow:hover{border-color:var(--ink)}
+.lrow .n{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-weight:700;background:var(--blue-soft);color:var(--blue)}
+.lrow.done .n{background:var(--green-soft);color:var(--green)}
+.lrow small{color:var(--muted)}
+.read{font-family:var(--serif);font-size:1rem;line-height:1.75;max-width:66ch}
+.read p{margin:0 0 14px}
+.read .ex{border-left:4px solid var(--blue);padding:4px 0 4px 18px;margin:18px 0}
+.read .ex p{margin:6px 0}
+.read .ex span{font-family:var(--sans);font-size:.82rem;color:var(--muted);margin-left:8px}
+.read u{text-decoration:none;background:var(--blue-soft);padding:0 3px;border-radius:4px}
+.read s{color:var(--red);text-decoration-thickness:2px;margin-right:6px}
+.read .uk,.read .tip,.read .mis{border-radius:12px;padding:14px 18px;margin:16px 0}
+.read .uk{background:var(--pri-soft)}
+.read .tip{background:var(--gold-soft)}
+.read .mis{background:var(--paper);border:1px dashed var(--line)}
+.read .uk b,.read .tip b,.read .mis b{font-family:var(--sans);display:block;margin-bottom:4px}
+.read .uk p,.read .tip p,.read .mis p{margin:0}
+.back{border:0;background:none;padding:0;color:var(--muted);font-weight:600;margin-bottom:16px}
+.back:hover{color:var(--ink)}
+
+/* question engine */
+.qbox{max-width:680px}
+.qhead{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px;color:var(--muted);font-size:.9rem}
+.bar{height:6px;background:var(--line);border-radius:4px;overflow:hidden;margin-bottom:22px}
+.bar i{display:block;height:100%;background:var(--pri);transition:width .3s}
+.timer{font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums}
+.timer.low{color:var(--red)}
+.qtext{font-family:var(--serif);font-size:1.3rem;line-height:1.45;margin:0 0 20px}
+.opts{display:grid;gap:10px}
+.opt{text-align:left;padding:14px 16px;border:2px solid var(--line);border-radius:12px;background:var(--card);font-weight:600}
+.opt:hover:not(:disabled){border-color:var(--ink)}
+.opt.ok{border-color:var(--green);background:var(--green-soft)}
+.opt.no{border-color:var(--red);background:var(--red-soft)}
+.opt:disabled{cursor:default}
+.gapin{width:100%;padding:13px 14px;border:2px solid var(--line);border-radius:12px;background:var(--card);font-size:1.05rem}
+.gapin:focus{border-color:var(--ink);outline:none}
+.gapin.ok{border-color:var(--green);background:var(--green-soft)}
+.gapin.no{border-color:var(--red);background:var(--red-soft)}
+.toks{display:flex;flex-wrap:wrap;gap:8px;font-family:var(--serif);font-size:1.25rem}
+.tok{padding:6px 10px;border:2px solid var(--line);border-radius:10px;background:var(--card)}
+.tok:hover:not(:disabled){border-color:var(--ink)}
+.tok.ok{border-color:var(--green);background:var(--green-soft)}
+.tok.no{border-color:var(--red);background:var(--red-soft)}
+.fb{margin-top:18px;padding:14px 16px;border-radius:12px;display:none}
+.fb.show{display:block}
+.fb.ok{background:var(--green-soft)}
+.fb.no{background:var(--red-soft)}
+.fb b{display:block}
+.fb p{margin:4px 0 0}
+.result{text-align:center;padding:30px 20px}
+.result .big{font-size:4rem;font-weight:700;line-height:1}
+.chip{display:inline-block;padding:3px 10px;border-radius:20px;font-size:.8rem;font-weight:600;background:var(--blue-soft);color:var(--blue)}
+.chip.g{background:var(--green-soft);color:var(--green)}
+.chip.r{background:var(--red-soft);color:var(--red)}
+.chip.y{background:var(--gold-soft);color:var(--gold)}
+
+/* games */
+.duel{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px}
+.duel button{padding:30px 14px;font-family:var(--serif);font-size:1.4rem;border:2px solid var(--line);background:var(--card);border-radius:16px}
+.duel button:hover{border-color:var(--ink)}
+.duel button.ok{border-color:var(--green);background:var(--green-soft)}
+.duel button.no{border-color:var(--red);background:var(--red-soft)}
+.build{min-height:64px;padding:12px;border:2px dashed var(--line);border-radius:14px;display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;font-family:var(--serif);font-size:1.15rem}
+.build.ok{border-style:solid;border-color:var(--green);background:var(--green-soft)}
+.build.no{border-style:solid;border-color:var(--red)}
+.pool{display:flex;flex-wrap:wrap;gap:8px;font-family:var(--serif);font-size:1.15rem;margin-bottom:16px}
+.match{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.match .col{display:grid;gap:8px;align-content:start}
+.mc{padding:12px;border:2px solid var(--line);background:var(--card);border-radius:12px;text-align:left;font-size:.95rem}
+.mc.sel{border-color:var(--blue);background:var(--blue-soft)}
+.mc.gone{visibility:hidden}
+.mc.no{border-color:var(--red)}
+.mc.w{font-family:var(--serif);font-size:1.05rem;font-weight:600}
+
+/* vocab */
+.tabs{display:flex;gap:6px;border-bottom:1px solid var(--line);margin-bottom:20px;overflow-x:auto}
+.tab{border:0;background:none;padding:10px 14px;font-weight:600;color:var(--muted);border-bottom:3px solid transparent;white-space:nowrap}
+.tab[aria-selected="true"]{color:var(--pri);border-bottom-color:var(--pri)}
+.form{display:grid;gap:10px;grid-template-columns:1fr 1fr}
+.form .full{grid-column:1/-1}
+.form label{display:grid;gap:4px;font-size:.85rem;font-weight:600;color:var(--muted)}
+.form input,.form textarea,.form select,.search{padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;background:var(--paper);width:100%}
+.form textarea{min-height:64px;resize:vertical}
+.vlist{display:grid;gap:8px;margin-top:14px}
+.vitem{display:grid;grid-template-columns:1fr auto;gap:10px;padding:14px 16px;background:var(--card);border:1px solid var(--line);border-radius:12px;align-items:start}
+.vitem .w{font-family:var(--serif);font-weight:600;font-size:1.15rem}
+.vitem .m{color:var(--ink)}
+.vitem .x{font-family:var(--serif);font-style:italic;color:var(--muted);font-size:.95rem}
+.lvl{display:inline-flex;gap:3px;vertical-align:middle;margin-left:8px}
+.lvl i{width:7px;height:7px;border-radius:2px;background:var(--line)}
+.lvl i.f{background:var(--green)}
+.icon{border:0;background:none;padding:6px;border-radius:8px;color:var(--muted)}
+.icon:hover{color:var(--red);background:var(--paper)}
+.icon svg{width:18px;height:18px}
+.card3d{perspective:1200px;max-width:520px;margin:0 auto}
+.flip{position:relative;height:300px;transition:transform .5s;transform-style:preserve-3d;cursor:pointer}
+.flip.on{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;border-radius:20px;padding:26px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;border:1px solid var(--line);background:var(--card)}
+.face.b{transform:rotateY(180deg);background:var(--grad);color:#fff;border:0}
+.face .w{font-family:var(--serif);font-size:2.3rem;line-height:1.15}
+.face .m{font-size:1.25rem;font-weight:600;margin-bottom:10px}
+.face .x{font-family:var(--serif);font-style:italic;opacity:.85}
+.face small{position:absolute;bottom:16px;color:var(--muted);font-size:.8rem}
+.rate{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;max-width:520px;margin:16px auto 0}
+.rate button{padding:12px 6px;border-radius:12px;border:2px solid var(--line);background:var(--card);font-weight:600;line-height:1.2}
+.rate button small{display:block;font-weight:400;font-size:.75rem;color:var(--muted)}
+.rate .r1{border-color:var(--red)}.rate .r4{border-color:var(--green)}
+.deck{display:flex;flex-direction:column;gap:10px}
+.deck ul{margin:0;padding:0;list-style:none;display:grid;gap:4px}
+.deck li{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:.92rem;padding:4px 0;border-bottom:1px solid var(--line)}
+.deck li span{font-family:var(--serif)}
+.ipa{font-family:"Segoe UI","Lucida Sans Unicode","Arial Unicode MS","Noto Sans",Roboto,"Helvetica Neue",sans-serif;font-style:normal;letter-spacing:.01em}
+.read .ipa{font-family:"Segoe UI","Lucida Sans Unicode","Noto Sans",Roboto,sans-serif;background:var(--blue-soft);padding:0 4px;border-radius:4px;white-space:nowrap}
+.read .ex span.ipa{font-size:inherit;color:inherit;margin-left:0}
+.camb{font-size:.82rem;font-weight:600;color:var(--blue);text-decoration:underline;text-underline-offset:2px}
+.plancard{flex-direction:row!important;align-items:center;gap:18px;flex-wrap:wrap;margin-bottom:14px;width:100%}
+.plancard .cd{font-size:2.6rem;font-weight:700;line-height:1;color:var(--pri);min-width:64px}
+.tasks{display:grid;gap:8px;margin-top:14px}
+.task{display:flex;gap:10px;align-items:flex-start;justify-content:space-between;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--paper)}
+.task label{display:flex;gap:12px;align-items:flex-start;cursor:pointer;flex:1}
+.task input{width:20px;height:20px;margin-top:2px;accent-color:var(--green);flex:none}
+.task b{display:block;font-weight:600}
+.task b small{font-weight:400;color:var(--muted);margin-left:6px}
+.task label>span>span{display:block;font-size:.9rem;color:var(--muted)}
+.task.done{background:var(--green-soft);border-color:transparent}
+.task.done b{text-decoration:line-through;text-decoration-color:var(--green)}
+.tgt{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.tgt li{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid var(--line);font-size:.92rem}
+.tgt li span{color:var(--pri);font-weight:600;text-align:right}
+.scores{display:flex;flex-wrap:wrap;gap:6px}
+.sc{display:grid;place-items:center;min-width:52px;padding:6px 8px;border-radius:10px;background:var(--paper);border:1px solid var(--line);font-size:.85rem}
+.sc b{font-size:.7rem;color:var(--muted);font-weight:600}
+.sc.g{background:var(--green-soft);border-color:transparent}.sc.y{background:var(--gold-soft);border-color:transparent}
+.phases{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.phase{padding:16px;border-radius:14px;border:1px solid var(--line);background:var(--card)}
+.phase.on{border:2px solid var(--pri);background:var(--pri-soft)}
+.phase b{display:block}.phase small{color:var(--muted)}.phase p{margin:8px 0 0;font-size:.9rem;color:var(--muted)}
+.weeks{display:grid;gap:8px}
+.wk{border:1px solid var(--line);border-radius:14px;background:var(--card)}
+.wk.on{border-color:var(--pri)}
+.wk summary{display:grid;grid-template-columns:40px 1fr auto;gap:12px;align-items:center;padding:12px 16px;cursor:pointer;list-style:none}
+.wk summary::-webkit-details-marker{display:none}
+.wk summary .n{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-weight:700;background:var(--pri-soft);color:var(--pri)}
+.wk summary b{display:block}.wk summary small{color:var(--muted)}
+.wkb{padding:0 16px 14px 68px;font-size:.92rem}.wkb p{margin:4px 0}
+.aiout{margin-top:14px;line-height:1.7;font-size:.95rem}
+.aiout:not(:empty){padding:14px 16px;border-radius:12px;background:var(--pri-soft)}
+@media (max-width:820px){.wkb{padding-left:16px}}
+.memo-box{background:var(--gold-soft);border-radius:12px;padding:14px 18px;margin:18px 0;font-family:var(--sans)}
+.memo-box b{display:block;margin-bottom:4px}.memo-box p{margin:0}
+.read [data-say] svg{width:16px;height:16px}
+.en-e{margin-top:6px!important;font-style:italic;opacity:.85}
+.memo{margin-top:10px!important;padding-top:10px;border-top:1px dashed rgba(0,0,0,.15);font-size:.92rem}
+.empty{text-align:center;padding:40px 20px;color:var(--muted)}
+.empty h3{color:var(--ink);margin-bottom:8px}
+.toast{position:fixed;left:50%;bottom:calc(90px + env(safe-area-inset-bottom,0px));transform:translateX(-50%) translateY(20px);background:var(--ink);color:var(--paper);padding:10px 18px;border-radius:12px;font-weight:600;opacity:0;pointer-events:none;transition:.25s;z-index:50;max-width:90vw}
+.toast.show{opacity:1;transform:translateX(-50%)}
+.pill-xp{position:fixed;top:calc(14px + env(safe-area-inset-top,0px));right:16px;background:var(--gold);color:#fff;font-weight:700;padding:6px 12px;border-radius:20px;opacity:0;transition:.3s;z-index:40}
+.pill-xp.show{opacity:1}
+
+.me{display:flex;align-items:center;gap:12px;margin:-6px 8px 22px}
+.me b{display:block;font-weight:600;line-height:1.2}
+.me small{display:block;font-size:.78rem;color:var(--muted)}
+.av{position:relative;flex:none;width:50px;height:50px;border-radius:50%;display:grid;place-items:center;background:var(--grad);box-shadow:0 0 0 3px var(--card),0 0 0 5px var(--ring)}
+.av span{color:#fff;font-weight:700;font-size:1.45rem;line-height:1;letter-spacing:-.02em}
+.av i{position:absolute;right:-4px;bottom:-3px;width:22px;height:22px;border-radius:50%;background:var(--card);display:grid;place-items:center;font-style:normal;font-size:.72rem;box-shadow:0 0 0 1.5px var(--ring)}
+.av.sm{width:34px;height:34px;box-shadow:0 0 0 2px var(--card),0 0 0 3.5px var(--ring)}
+.av.sm span{font-size:1rem}
+.av.sm i{width:16px;height:16px;font-size:.55rem;right:-4px;bottom:-3px}
+.credit{margin-top:8px;font-weight:600;color:var(--pri)}
+.mcredit{display:none;text-align:center;color:var(--pri);font-weight:600;font-size:.9rem;margin:40px 0 0}
+.mtop{display:none}
+@media (max-width:820px){
+  .app{grid-template-columns:1fr}
+  .side{position:fixed;top:auto;bottom:0;left:0;right:0;height:auto;flex-direction:row;padding:6px 6px calc(6px + env(safe-area-inset-bottom,0px));border-right:0;border-top:1px solid var(--line);background:var(--card);z-index:30;justify-content:space-around;gap:0}
+  .brand,.side .foot{display:none}
+  .navbtn{flex-direction:column;gap:2px;font-size:.68rem;padding:6px 4px;justify-content:center;text-align:center}
+  .navbtn[aria-current="page"]{background:var(--pri-soft);color:var(--pri)}
+  main{padding:20px 16px 110px}
+  .mtop{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+  .side .me{display:none}
+  .mcredit{display:block}
+  .mtop .brand{display:block;margin:0;font-size:1.1rem}
+  .mtop .brand .gap{height:4px;margin-top:5px}
+  .hero{grid-template-columns:1fr}
+  .stats{gap:14px 22px}
+  .stat b{font-size:1.6rem}
+  .pill-xp{top:calc(60px + env(safe-area-inset-top,0px))}
+  .form{grid-template-columns:1fr}
+  .flip{height:280px}
+  .rate{grid-template-columns:repeat(2,1fr)}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="app">
+  <nav class="side" aria-label="Menu utama">
+    <div class="brand">Mind the Grammar<span class="gap"></span><small>Target band 8.5, gaya British</small></div>
+    <div class="me"><div class="av" aria-hidden="true"><span>S</span><i>💕</i></div><div><b>Salsabila</b><small>Menuju band 8.5</small></div></div>
+    <button class="navbtn" data-go="home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Beranda</button>
+    <button class="navbtn" data-go="plan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4M8 14l2.5 2.5L16 12"/></svg>Rencana</button>
+    <button class="navbtn" data-go="lessons"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5"/></svg>Materi</button>
+    <button class="navbtn" data-go="practice"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="11" rx="4"/><path d="M7 11v3M5.5 12.5h3M15 12h.01M18 13.5h.01"/></svg>Latihan</button>
+    <button class="navbtn" data-go="vocab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="14" height="16" rx="2"/><path d="M21 7v13a1 1 0 0 1-1 1H8M7 9h6M7 13h4"/></svg>Vocab</button>
+    <div class="foot"><div id="syncNote"><span class="dot"></span>Memuat penyimpanan…</div><div class="credit">Made with 💕 by Salsabila</div></div>
+  </nav>
+  <main id="view"></main>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="pill-xp" id="xpPill"></div>
+<script>
+const LESSONS = [
+{id:'pp', title:'Present perfect vs past simple', use:'Speaking & Writing Task 1', mins:6,
+body:`<p>Bedanya sederhana. <b>Past simple</b> dipakai untuk kejadian yang sudah selesai di waktu yang jelas (yesterday, in 2019, last week). <b>Present perfect</b> (have/has + V3) dipakai untuk pengalaman, atau hasil yang masih nyambung ke sekarang, tanpa menyebut waktu spesifik.</p>
+<div class="ex"><p>I <u>visited</u> London in 2022. <span>waktu jelas, past simple</span></p><p>I <u>have visited</u> London twice. <span>pengalaman, tanpa waktu</span></p><p>The population <u>has grown</u> steadily since 2000. <span>since/for, present perfect</span></p></div>
+<div class="uk"><b>Catatan British</b><p>British English memakai present perfect dengan <i>just, already, yet</i>: “I’ve just finished.” “Have you eaten yet?” American English sering memakai past simple (“I just finished”). Untuk gaya UK, tetap pakai present perfect.</p></div>
+<div class="tip"><b>Tips IELTS</b><p>Speaking Part 1 sering bertanya “How long have you lived in your hometown?” Jawab: “I’ve lived there since I was born” atau “for about twenty years.” Di Writing Task 1, data tahun lampau pakai past simple: “In 1990, car ownership stood at 40%.”</p></div>
+<div class="mis"><b>Kesalahan umum</b><p><s>I have seen him yesterday.</s> I saw him yesterday.</p></div>`,
+qs:[
+{t:'mcq',q:'I ___ to Bali three times, but I’ve never been to Lombok.',o:['went','have been','was going','had gone'],a:1,e:'Pengalaman tanpa waktu spesifik → present perfect.'},
+{t:'mcq',q:'She ___ her degree in 2021.',o:['has finished','finished','has been finishing','finishes'],a:1,e:'“in 2021” adalah waktu yang jelas → past simple.'},
+{t:'gap',q:'We ___ (just / finish) the project, so we can relax now.',a:['have just finished',"we've just finished","'ve just finished"],e:'British English: just + present perfect.'},
+{t:'err',q:['I','have met','my','best','friend','when','I','was','ten.'],a:1,fix:'met',e:'“when I was ten” = waktu lampau yang jelas, jadi pakai past simple “met”.'},
+{t:'mcq',q:'Which sounds more natural in British English?',o:['Did you finish your essay yet?','Have you finished your essay yet?'],a:1,e:'“yet” di British English berpasangan dengan present perfect.'},
+{t:'gap',q:'Unemployment ___ (rise) significantly since 2015.',a:['has risen','has been rising'],e:'“since” + present perfect. Rise → rose → risen.'},
+{t:'mcq',q:'In 1990, car ownership ___ at 40%.',o:['has stood','stood','has been standing','stands'],a:1,e:'Data tahun lampau di Task 1 → past simple.'}
+]},
+{id:'art', title:'Articles: a, an, the, atau tanpa artikel', use:'Semua bagian', mins:7,
+body:`<p>Bahasa Indonesia tidak punya artikel, jadi ini sumber error nomor satu. Pegang satu aturan dulu: <b>kata benda tunggal yang bisa dihitung tidak boleh berdiri sendiri</b>. Harus ada a/an, the, my, this, dan sejenisnya.</p>
+<div class="ex"><p><u>A/an</u>: pertama kali disebut, atau pekerjaan. She is <u>a</u> doctor.</p><p><u>The</u>: sudah jelas yang mana, satu-satunya, superlatif. <u>The</u> government, <u>the</u> internet, <u>the</u> most important factor.</p><p><u>The + adjective</u> untuk kelompok orang: <u>the</u> elderly, <u>the</u> unemployed.</p><p><u>Tanpa artikel</u>: makna umum, jamak atau uncountable. Pollution is a serious problem. Children need education.</p></div>
+<div class="uk"><b>Catatan British</b><p>Orang Inggris bilang “in hospital”, “at university”, “go to university” tanpa “the”. American: “in the hospital”.</p></div>
+<div class="tip"><b>Tips IELTS</b><p>Sebelum submit Writing, cek setiap kata benda tunggal. Kalau berdiri sendiri, kemungkinan besar perlu artikel.</p></div>`,
+qs:[
+{t:'mcq',q:'___ unemployment is a major issue in many developing countries.',o:['The','A','(no article)','An'],a:2,e:'Makna umum + uncountable → tanpa artikel.'},
+{t:'mcq',q:'My grandmother has been ___ hospital since Monday.',o:['in the','in','at the','on'],a:1,e:'British: “in hospital”.'},
+{t:'gap',q:'___ elderly often feel isolated in big cities.',a:['the'],e:'The + adjective = kelompok orang.'},
+{t:'err',q:['Government','should','invest','more','in','public','transport.'],a:0,fix:'The government',e:'“government” tunggal countable dan spesifik → the government.'},
+{t:'mcq',q:'This is ___ most effective solution to the problem.',o:['a','the','an','(no article)'],a:1,e:'Superlatif selalu pakai “the”.'},
+{t:'mcq',q:'She wants to study ___ medicine at ___ university in Edinburgh.',o:['the / a','(no article) / a','a / the','the / the'],a:1,e:'Nama bidang studi tanpa artikel; universitas yang belum spesifik → a.'}
+]},
+{id:'sva', title:'Subject–verb agreement & countable nouns', use:'Writing Task 1 & 2', mins:6,
+body:`<p>Subjek tunggal pakai kata kerja tunggal. Masalahnya, subjek di IELTS sering panjang, jadi cari <b>inti</b> subjeknya.</p>
+<div class="ex"><p><u>The number</u> of students <u>has</u> increased. <span>inti: the number</span></p><p><u>A number</u> of students <u>have</u> complained. <span>a number of = many</span></p><p><u>Each</u> / <u>every</u> / <u>everyone</u> + kata kerja tunggal.</p></div>
+<p>Kata yang <b>uncountable</b> (tidak pakai -s, tidak pakai a/an): information, advice, research, equipment, furniture, evidence, knowledge, traffic, news, homework. Pakai <i>much, little, a lot of, a piece of</i>.</p>
+<div class="uk"><b>Catatan British</b><p>Collective noun (government, team, family, staff, public) boleh pakai kata kerja jamak di British English: “The team are playing well.” Dua-duanya benar di UK. Di Writing, yang penting konsisten.</p></div>`,
+qs:[
+{t:'mcq',q:'The number of tourists ___ doubled over the decade.',o:['have','has','are','were'],a:1,e:'Inti subjek: “the number” (tunggal).'},
+{t:'mcq',q:'There ___ a lot of evidence to support this view.',o:['are','is','have','were'],a:1,e:'“evidence” uncountable → is.'},
+{t:'err',q:['Teachers','gave','us','some','useful','advices.'],a:5,fix:'advice',e:'“advice” uncountable, tidak pakai -s.'},
+{t:'gap',q:'Every student ___ (need) access to the internet.',a:['needs'],e:'Every + kata kerja tunggal.'},
+{t:'mcq',q:'Which is correct?',o:['The researches show...','Research shows...','A research shows...','Researches shows...'],a:1,e:'“research” uncountable.'},
+{t:'mcq',q:'In British English, which is acceptable?',o:['“The team is” and “The team are” are both fine','Only “The team are”','Only “The team is”','Neither'],a:0,e:'Collective noun di UK bisa tunggal atau jamak.'}
+]},
+{id:'cond', title:'Conditionals', use:'Speaking Part 3 & Task 2', mins:8,
+body:`<div class="ex"><p><u>Zero</u>: If + present, present. If you heat ice, it melts.</p><p><u>First</u>: If + present, will. If prices rise, people will buy less.</p><p><u>Second</u>: If + past, would. If I were the mayor, I would build more parks.</p><p><u>Third</u>: If + had V3, would have V3. If I had studied harder, I would have passed.</p><p><u>Mixed</u>: If I had taken that job (dulu), I would be living in London now (sekarang).</p></div>
+<p>Untuk band 8 ke atas, variasikan: <i>unless, provided that, as long as</i>, dan inversion: “<b>Should</b> the government act now, ...”, “<b>Had</b> I known, ...”, “<b>Were</b> taxes lower, ...”.</p>
+<div class="tip"><b>Tips IELTS</b><p>Speaking Part 3 sering meminta pendapat hipotetis. Second conditional terdengar natural: “If I were in charge, I would invest in public transport.” Pakai “were”, bukan “was”, untuk gaya formal.</p></div>
+<div class="mis"><b>Kesalahan umum</b><p><s>If I will have time, I’ll call you.</s> If I have time, I’ll call you.</p></div>`,
+qs:[
+{t:'mcq',q:'If governments ___ more in renewable energy, pollution would fall.',o:['invest','invested','will invest','had invested'],a:1,e:'Second conditional: if + past, would.'},
+{t:'mcq',q:'If I ___ about the traffic, I would have left earlier.',o:['knew','had known','have known','would know'],a:1,e:'Third conditional: if + had V3.'},
+{t:'gap',q:'If water reaches 100°C, it ___ (boil).',a:['boils'],e:'Zero conditional untuk fakta.'},
+{t:'err',q:['If','I','will','have','time,','I’ll','call','you.'],a:2,fix:'If I have time',e:'Klausa “if” tidak memakai “will”.'},
+{t:'mcq',q:'___ the government act now, the crisis could be avoided.',o:['Should','Would','If','Unless'],a:0,e:'Inversion: Should + subject = If + subject + should.'},
+{t:'mcq',q:'If she had taken the job in London, she ___ there now.',o:['will live','would have lived','would be living','had lived'],a:2,e:'Mixed conditional: masa lalu memengaruhi sekarang.'}
+]},
+{id:'pass', title:'Passive voice untuk diagram proses', use:'Writing Task 1', mins:7,
+body:`<p>Rumusnya <b>be + V3</b>. Dipakai saat pelakunya tidak penting, tidak diketahui, atau untuk nada formal. Diagram proses di Task 1 hampir seluruhnya passive.</p>
+<div class="ex"><p>is made / was made / has been made / is being made / will be made / can be made</p><p>First, the beans <u>are harvested</u>. They <u>are then dried</u> in the sun. Once they <u>have been roasted</u>, they <u>are packaged</u>.</p></div>
+<p>Variasikan urutan: <i>First, Subsequently, After that, Once..., Finally</i>.</p>
+<div class="mis"><b>Kesalahan umum</b><p>Kata kerja intransitif tidak bisa passive. <s>The accident was happened.</s> The accident happened. <s>Prices were risen.</s> Prices rose.</p></div>`,
+qs:[
+{t:'mcq',q:'Once the leaves ___, they are dried in the sun.',o:['pick','are picked','are picking','picked'],a:1,e:'Daunnya dipetik (oleh orang) → passive.'},
+{t:'gap',q:'A new bridge ___ (build) at the moment.',a:['is being built'],e:'Present continuous passive: is being + V3.'},
+{t:'err',q:['The','accident','was happened','at','night.'],a:2,fix:'happened',e:'“happen” intransitif, tidak bisa passive.'},
+{t:'mcq',q:'Thousands of homes ___ by the flood last year.',o:['destroyed','were destroyed','have destroyed','are destroyed'],a:1,e:'Past simple passive.'},
+{t:'mcq',q:'Which verb can’t be used in the passive?',o:['build','produce','arrive','collect'],a:2,e:'“arrive” intransitif.'},
+{t:'gap',q:'The finished product ___ (then / package) and sent to shops.',a:['is then packaged','is then packed'],e:'Present simple passive, adverb “then” setelah “is”.'}
+]},
+{id:'rel', title:'Relative clauses', use:'Grammatical range', mins:6,
+body:`<p><b>who</b> untuk orang, <b>which</b> untuk benda, <b>that</b> untuk defining clause, <b>whose</b> untuk kepemilikan, <b>where</b> untuk tempat, <b>when</b> untuk waktu.</p>
+<div class="ex"><p><u>Defining</u> (tanpa koma, info penting): Students <u>who live on campus</u> save money.</p><p><u>Non-defining</u> (pakai koma, info tambahan, tidak boleh “that”): London, <u>which is the capital</u>, is expensive.</p><p><u>Reduced</u>: Students <u>living</u> on campus... The money <u>spent</u> on defence...</p></div>
+<div class="tip"><b>Tips IELTS</b><p>Untuk band 8.5, examiner mencari variasi struktur yang dipakai secara natural dan hampir tanpa error. Satu atau dua relative clause per paragraf sudah cukup.</p></div>`,
+qs:[
+{t:'mcq',q:'London, ___ is the capital of the UK, attracts millions of tourists.',o:['that','which','who','where'],a:1,e:'Non-defining clause tidak boleh “that”.'},
+{t:'mcq',q:'This is the town ___ I grew up.',o:['which','where','that','whose'],a:1,e:'Tempat → where.'},
+{t:'gap',q:'People ___ cars are electric can save on fuel.',a:['whose'],e:'Kepemilikan → whose.'},
+{t:'err',q:['My','sister,','that','lives','in','Leeds,','is','a','nurse.'],a:2,fix:'who',e:'Non-defining + orang → who.'},
+{t:'mcq',q:'Reduce: “The money which is spent on defence” →',o:['The money spending on defence','The money spent on defence','The money which spent on defence','The money is spent on defence'],a:1,e:'Passive → V3 saja.'},
+{t:'mcq',q:'Which is punctuated correctly?',o:['My father who is 60 still works.','My father, who is 60, still works.','My father, who is 60 still works.','My father who is 60, still works.'],a:1,e:'Ayah cuma satu, jadi infonya tambahan → dua koma.'}
+]},
+{id:'cmp', title:'Membandingkan data', use:'Writing Task 1', mins:7,
+body:`<div class="ex"><p>Comparative: higher, more expensive. Superlative: the highest, the most popular.</p><p>Gradasi: <u>slightly / considerably / significantly / much</u> higher.</p><p>Kelipatan: <u>twice as many</u> people <u>as</u>..., <u>three times higher than</u>...</p><p><u>The number of</u> + countable (cars, people). <u>The amount of</u> + uncountable (water, money).</p><p>Kontras: Japan rose, <u>whereas</u> Korea fell.</p></div>
+<div class="uk"><b>Catatan British</b><p>Tulisan British memakai “per cent” (dua kata). “Percentage” adalah kata benda: “the percentage of students”.</p></div>
+<div class="mis"><b>Kesalahan umum</b><p><s>more higher</s> higher. <s>the number of water</s> the amount of water.</p></div>`,
+qs:[
+{t:'mcq',q:'The ___ of water consumed rose sharply.',o:['number','amount','many','few'],a:1,e:'water uncountable → amount.'},
+{t:'mcq',q:'Sales in 2020 were ___ those in 2010.',o:['twice as high as','twice higher as','two times as higher than','double than'],a:0,e:'Pola: twice as + adj + as.'},
+{t:'err',q:['Japan','had','a','more','higher','rate','than','Korea.'],a:3,fix:'(hapus “more”)',e:'“higher” sudah comparative.'},
+{t:'gap',q:'Spain recorded the ___ (low) figure of all five countries.',a:['lowest'],e:'Superlatif dari low.'},
+{t:'mcq',q:'In British English, “15%” in words is usually:',o:['15 percents','15 per cent','15 percentage','15 per cents'],a:1,e:'“per cent”, tanpa -s.'},
+{t:'mcq',q:'Choose the correct sentence:',o:['The price was very more expensive.','The price was considerably more expensive.','The price was more expensiver.','The price was much expensive.'],a:1,e:'considerably + comparative.'}
+]},
+{id:'link', title:'Linking words & cohesion', use:'Coherence and Cohesion', mins:7,
+body:`<div class="ex"><p><u>Kontras</u>: however (awal kalimat + koma), although / even though + klausa, despite / in spite of + noun atau -ing, whereas / while.</p><p><u>Tambahan</u>: moreover, furthermore, in addition, what is more.</p><p><u>Sebab-akibat</u>: therefore, consequently, as a result, due to + noun.</p><p><u>Contoh</u>: for instance, such as.</p></div>
+<div class="tip"><b>Tips IELTS</b><p>Examiner menurunkan nilai linker yang dipakai mekanis di setiap kalimat. “On the other hand” hanya untuk sisi yang berlawanan, bukan untuk menambah poin.</p></div>
+<div class="mis"><b>Kesalahan umum</b><p><s>Although it was expensive, but many bought it.</s> Pilih salah satu: although atau but. <s>Despite of</s> Despite.</p></div>`,
+qs:[
+{t:'mcq',q:'___ the heavy rain, the match went ahead.',o:['Although','Despite','However','Even though'],a:1,e:'Diikuti noun → despite.'},
+{t:'mcq',q:'Public transport is cheap. ___, it is often unreliable.',o:['Although','Despite','However','Whereas'],a:2,e:'Awal kalimat baru + koma → however.'},
+{t:'err',q:['Although','it','was','expensive,','but','many','people','bought','it.'],a:4,fix:'(hapus “but”)',e:'Although dan but tidak dipakai bersamaan.'},
+{t:'gap',q:'The factory closed. As a ___, hundreds lost their jobs.',a:['result'],e:'As a result = akibatnya.'},
+{t:'mcq',q:'Which is correct?',o:['Despite of the cost, ...','In spite the cost, ...','Despite the cost, ...','Despite the cost is high, ...'],a:2,e:'Despite + noun, tanpa “of”.'},
+{t:'mcq',q:'Cities offer more jobs, ___ rural areas offer a slower pace of life.',o:['whereas','therefore','moreover','for example'],a:0,e:'Membandingkan dua hal yang berlawanan → whereas.'}
+]},
+{id:'mod', title:'Modals & hedging', use:'Task 2 & Speaking', mins:6,
+body:`<p><b>Hedging</b> membuat tulisan terdengar akademis dan tidak terlalu absolut: <i>may, might, could, tend to, it is likely that, arguably, to some extent, it could be argued that</i>.</p>
+<div class="ex"><p><s>Social media destroys friendships.</s> Social media <u>may weaken</u> some friendships.</p><p>Deduksi masa lalu: He <u>must have left</u>. She <u>can’t have seen</u> it. They <u>might have forgotten</u>.</p><p>Rekomendasi Task 2: Governments <u>should</u> ...</p></div>
+<div class="uk"><b>Catatan British</b><p>“Have you got a car?” lebih British daripada “Do you have a car?”. “Shall I open the window?” untuk menawarkan. “You needn’t come” = tidak perlu.</p></div>`,
+qs:[
+{t:'mcq',q:'Which is the best academic hedge?',o:['Social media destroys all friendships.','Social media may weaken some friendships.','Social media totally kills friendship.','Social media is always bad.'],a:1,e:'may + some = tidak absolut.'},
+{t:'gap',q:'He’s not answering. He ___ (must / leave) already.',a:['must have left'],e:'Deduksi masa lalu: must have + V3.'},
+{t:'mcq',q:'The typical British way to ask about possession:',o:['Do you have got a pen?','Have you got a pen?','Have you a got pen?','Got you a pen?'],a:1,e:'“Have you got...?” khas British.'},
+{t:'err',q:['You','should','to','apply','for','the','course','early.'],a:2,fix:'(hapus “to”)',e:'Modal + bare infinitive.'},
+{t:'mcq',q:'You ___ bring food; lunch is provided.',o:['mustn’t','needn’t','can’t','shouldn’t to'],a:1,e:'needn’t = tidak perlu. mustn’t = dilarang.'},
+{t:'mcq',q:'Strongest recommendation for a Task 2 conclusion:',o:['Governments might perhaps consider...','Governments should take immediate action to...','Governments can maybe...','Governments must to...'],a:1,e:'should + action = rekomendasi jelas.'}
+]},
+{id:'cx', title:'Kalimat kompleks band 8+', use:'Grammatical range', mins:8,
+body:`<div class="ex"><p><u>Participle clause</u>: Having finished the report, she went home.</p><p><u>Noun clause</u>: What concerns me most is the cost.</p><p><u>Cleft sentence</u>: It is the cost that worries people.</p><p><u>Inversion</u>: Not only does it save money, but it also reduces waste. Rarely have we seen such growth.</p><p><u>The more..., the more...</u>: The more you read, the better you write.</p></div>
+<div class="tip"><b>Tips IELTS</b><p>Di band 8.5, kalimat kompleks harus akurat dan terdengar alami. Satu struktur yang benar lebih bernilai daripada tiga yang salah.</p></div>
+<div class="mis"><b>Kesalahan umum</b><p>Dangling participle: <s>Walking to work, the rain started.</s> Walking to work, I got caught in the rain.</p></div>`,
+qs:[
+{t:'mcq',q:'Not only ___ pollution, but it also saves money.',o:['it reduces','does it reduce','reduces it','it does reduce'],a:1,e:'Not only + auxiliary + subject.'},
+{t:'mcq',q:'___ the report, she sent it to her manager.',o:['Having finished','Finished','Have finished','To finishing'],a:0,e:'Perfect participle: kejadian pertama selesai dulu.'},
+{t:'gap',q:'The more you practise, the ___ (good) you become.',a:['better'],e:'The + comparative, the + comparative.'},
+{t:'err',q:['Rarely','we have','seen','such','rapid','growth.'],a:1,fix:'Rarely have we seen',e:'Setelah “Rarely” di awal, urutannya dibalik.'},
+{t:'mcq',q:'Which is a correct cleft sentence?',o:['It is the cost what worries people.','It is the cost that worries people.','Is the cost that worries people.','The cost it is worries people.'],a:1,e:'It is + X + that...'},
+{t:'mcq',q:'Walking to work, ___.',o:['the rain started','I got caught in the rain','it was raining','the umbrella broke'],a:1,e:'Yang berjalan harus subjek kalimatnya (I).'}
+]},
+{id:'uk', title:'British English yang perlu kamu tahu', use:'Konsistensi gaya', mins:6,
+body:`<div class="ex"><p>at the weekend <span>US: on the weekend</span></p><p>in hospital, at university</p><p>different from / different to <span>US: different than</span></p><p>fill in a form <span>US: fill out</span></p><p>Monday to Friday <span>US: through</span></p><p>flat, lift, queue, rubbish, holiday, mobile, motorway, petrol, timetable, autumn</p></div>
+<p><b>Ejaan:</b> colour, centre, travelled, programme, defence, grey, tyre, jewellery. <i>Practice</i> (noun) dan <i>practise</i> (verb); <i>licence</i> (noun) dan <i>license</i> (verb).</p>
+<div class="uk"><b>Catatan British</b><p>Akhiran -ise (organise, realise) paling umum di UK. -ize juga dipakai Oxford, tapi pilih satu dan konsisten.</p></div>
+<div class="tip"><b>Tips IELTS</b><p>IELTS menerima ejaan UK maupun US, tapi mencampur keduanya dalam satu tulisan terlihat tidak konsisten.</p></div>`,
+qs:[
+{t:'mcq',q:'What did you do ___ the weekend?',o:['on','at','in','by'],a:1,e:'British: at the weekend.'},
+{t:'mcq',q:'Which pair uses British spelling?',o:['traveled / center','travelled / centre','travelled / center','traveled / centre'],a:1,e:'British: travelled (double l) dan centre (-re).'},
+{t:'gap',q:'I need to ___ my speaking every day. (verb, British spelling)',a:['practise'],e:'British: practise (verb), practice (noun).'},
+{t:'err',q:['Please','fill','out','this','form','before','the','interview.'],a:2,fix:'in',e:'British: fill in a form.'},
+{t:'mcq',q:'This film is very different ___ the book.',o:['than','from','of','with'],a:1,e:'British: different from (atau to).'},
+{t:'mcq',q:'Which word is British English?',o:['apartment','elevator','flat','garbage'],a:2,e:'flat = apartment.'}
+]},
+{id:'id', title:'Error khas pelajar Indonesia', use:'Semua bagian', mins:6,
+body:`<p>Kesalahan berikut muncul karena pola bahasa Indonesia terbawa ke bahasa Inggris. Hafalkan versi benarnya.</p>
+<div class="ex"><p><s>I am agree</s> I agree</p><p><s>discuss about</s> discuss</p><p><s>Many people thinks</s> Many people think</p><p><s>many country</s> many countries</p><p><s>make a research</s> do research</p><p><s>explain me</s> explain to me</p><p><s>I very like</s> I really like</p><p><s>since 3 years</s> for 3 years</p><p><s>more better</s> better</p></div>
+<div class="tip"><b>Tips IELTS</b><p>Buat checklist pribadi dari error yang sering kamu buat, lalu cek di 2 menit terakhir Writing.</p></div>`,
+qs:[
+{t:'err',q:['I','am','agree','with','this','statement.'],a:1,fix:'(hapus “am”)',e:'agree adalah kata kerja, tidak perlu “am”.'},
+{t:'err',q:['We','need','to','discuss','about','this','issue.'],a:4,fix:'(hapus “about”)',e:'discuss langsung diikuti objek.'},
+{t:'mcq',q:'Choose the correct sentence:',o:['Many country face this problem.','Many countries faces this problem.','Many countries face this problem.','Many countries is facing this problem.'],a:2,e:'Plural noun + plural verb.'},
+{t:'gap',q:'I have lived here ___ three years.',a:['for'],e:'for + durasi, since + titik waktu.'},
+{t:'mcq',q:'Which collocation is correct?',o:['make a research','do research','make researches','do a researches'],a:1,e:'do research (uncountable).'},
+{t:'err',q:['Can','you','explain','me','the','rules?'],a:3,fix:'explain the rules to me',e:'explain something to someone.'}
+]}
+,{id:'ph', title:'Phonetics & pengucapan British', use:'Speaking: Pronunciation', mins:9,
+body:`<p>Pronunciation adalah seperempat nilai Speaking. Untuk band 8.5, kamu tidak harus beraksen British sempurna, tapi bunyi, tekanan kata, dan intonasi harus jelas dan konsisten. Kamus Cambridge menulis pengucapan dengan <b>IPA</b> (International Phonetic Alphabet). Begini cara membacanya:</p>
+<div class="ex"><p><span class="ipa">/ˈ/</span> tekanan utama, suku kata setelah tanda ini diucapkan paling keras. <span class="ipa">/ˌ/</span> tekanan kedua.</p><p><span class="ipa">/./</span> titik memisahkan suku kata: comfortable <span class="ipa">/ˈkʌm.fə.tə.bəl/</span></p><p><span class="ipa">/ʳ/</span> r kecil di atas: di British English hanya diucapkan kalau kata berikutnya diawali vokal. healthcare <span class="ipa">/ˈhelθ.keəʳ/</span></p></div>
+<p><b>Vokal yang sering tertukar:</b> <span class="ipa">/iː/</span> sheep vs <span class="ipa">/ɪ/</span> ship, <span class="ipa">/æ/</span> cat vs <span class="ipa">/ʌ/</span> cup, <span class="ipa">/ɒ/</span> hot vs <span class="ipa">/ɔː/</span> horse, <span class="ipa">/ɜː/</span> bird, dan <span class="ipa">/ə/</span> (schwa) yang paling sering muncul di bahasa Inggris, contohnya bunyi “a” di <i>about</i>.</p>
+<p><b>Konsonan yang sulit untuk penutur Indonesia:</b> <span class="ipa">/θ/</span> think (lidah di antara gigi, bukan “t”), <span class="ipa">/ð/</span> this (bukan “d”), <span class="ipa">/v/</span> very (bukan “f”), <span class="ipa">/z/</span> zoo, <span class="ipa">/ʃ/</span> she (bukan “s”), dan konsonan di akhir kata yang sering tidak diucapkan: <i>worked, asked, months</i>.</p>
+<div class="uk"><b>Ciri khas British (Cambridge UK)</b><p>Non-rhotic: “r” setelah vokal tidak diucapkan, car <span class="ipa">/kɑːʳ/</span>. Vokal panjang <span class="ipa">/ɑː/</span> pada bath, can’t, answer. Bunyi <span class="ipa">/ɒ/</span> pada hot, colleague. Diftong <span class="ipa">/əʊ/</span> pada go, hotel. Contoh perbedaan UK dan US: schedule <span class="ipa">/ˈʃedʒ.uːl/</span> vs <span class="ipa">/ˈskedʒ.uːl/</span>.</p></div>
+<div class="tip"><b>Tips IELTS</b><p>Akhiran -ed punya tiga bunyi: <span class="ipa">/t/</span> setelah bunyi tak bersuara (watched), <span class="ipa">/d/</span> setelah bunyi bersuara (played), <span class="ipa">/ɪd/</span> setelah t atau d (decided). Weak form juga membuat bicaramu natural: “a gift for you” diucapkan <span class="ipa">/fə/</span>, bukan <span class="ipa">/fɔː/</span>.</p></div>
+<div class="mis"><b>Kata yang sering salah ucap</b><p>vegetable <span class="ipa">/ˈvedʒ.tə.bəl/</span> (3 suku kata), Wednesday <span class="ipa">/ˈwenz.deɪ/</span>, island <span class="ipa">/ˈaɪ.lənd/</span> (s tidak dibaca), receipt <span class="ipa">/rɪˈsiːt/</span> (p tidak dibaca), obsolete <span class="ipa">/ˌɒb.səlˈiːt/</span> (tekanan di akhir).</p></div>`,
+qs:[
+{t:'mcq',q:'Which word begins with the sound /θ/?',o:['this','think','those','then'],a:1,e:'think /θɪŋk/. this, those, then diawali /ð/.'},
+{t:'mcq',q:'Where is the main stress in “photography”?',o:['PHO-to-gra-phy','pho-TO-gra-phy','pho-to-GRA-phy','pho-to-gra-PHY'],a:1,e:'/fəˈtɒɡ.rə.fi/. Bandingkan photograph /ˈfəʊ.tə.ɡrɑːf/.'},
+{t:'mcq',q:'The -ed in “watched” is pronounced:',o:['/t/','/d/','/ɪd/'],a:0,e:'ch adalah bunyi tak bersuara, jadi -ed dibaca /t/.'},
+{t:'mcq',q:'The -ed in “decided” is pronounced:',o:['/t/','/d/','/ɪd/'],a:2,e:'Setelah t atau d, -ed dibaca /ɪd/.'},
+{t:'mcq',q:'In British English, the “r” in “car” (said alone) is usually:',o:['pronounced clearly','not pronounced','rolled'],a:1,e:'British English non-rhotic: car /kɑːʳ/.'},
+{t:'mcq',q:'Which is the British transcription of “schedule” (Cambridge UK)?',o:['/ˈskedʒ.uːl/','/ˈʃedʒ.uːl/'],a:1,e:'UK /ˈʃedʒ.uːl/, US /ˈskedʒ.uːl/.'},
+{t:'mcq',q:'Which word matches /ˈkɒl.iːɡ/?',o:['college','colleague','collect','collage'],a:1,e:'colleague, menurut Cambridge UK.'},
+{t:'mcq',q:'In “a gift for you”, “for” is normally pronounced:',o:['/fɔː/','/fə/','/fuː/'],a:1,e:'Kata fungsi biasanya memakai weak form dengan schwa /ə/.'},
+{t:'mcq',q:'Which letter is silent in “debt”?',o:['d','e','b','t'],a:2,e:'debt /det/.'},
+{t:'mcq',q:'Where is the main stress in “obsolete” (Cambridge UK)?',o:['OB-so-lete','ob-SO-lete','ob-so-LETE'],a:2,e:'Cambridge UK: /ˌɒb.səlˈiːt/, tekanan utama di suku kata terakhir.'}
+]}
+];
+
+const DECKS = [
+{name:'Environment', words:[
+['deforestation','penggundulan hutan','Deforestation in Borneo threatens orangutan habitats.','/diːˌfɒr.ɪˈsteɪ.ʃən/'],
+['carbon footprint','jejak karbon','Cycling to work reduces your carbon footprint.','/ˌkɑː.bən ˈfʊt.prɪnt/'],
+['renewable','terbarukan (energi)','The UK generates a growing share of its electricity from renewable sources.','/rɪˈnjuː.ə.bəl/'],
+['sustainable','berkelanjutan','We need a more sustainable approach to farming.','/səˈsteɪ.nə.bəl/'],
+['endangered species','spesies terancam punah','The Sumatran tiger is an endangered species.','/ɪnˌdeɪn.dʒəd ˈspiː.ʃiːz/'],
+['biodiversity','keanekaragaman hayati','Coral reefs are rich in biodiversity.','/ˌbaɪ.əʊ.daɪˈvɜː.sə.ti/'],
+['emissions','emisi','Car emissions are a major cause of air pollution.','/iˈmɪʃ.ənz/'],
+['tackle','menangani (masalah)','Governments must tackle climate change together.','/ˈtæk.əl/']]},
+{name:'Education', words:[
+['curriculum','kurikulum','The national curriculum includes compulsory maths.','/kəˈrɪk.jə.ləm/'],
+['tuition fees','biaya kuliah','Tuition fees in England have risen sharply.','/tjuˈɪʃ.ən ˌfiːz/'],
+['compulsory','wajib','In England, education or training is compulsory until the age of eighteen.','/kəmˈpʌl.sər.i/'],
+['extracurricular','ekstrakurikuler','Extracurricular activities help students build confidence.','/ˌek.strə.kəˈrɪk.jə.ləʳ/'],
+['rote learning','belajar hafalan','Rote learning does little to develop critical thinking.','/ˌrəʊt ˈlɜː.nɪŋ/'],
+['vocational','kejuruan','Vocational courses prepare students for specific trades.','/vəʊˈkeɪ.ʃən.əl/'],
+['enrol','mendaftar (sekolah/kursus)','She enrolled on a programme at a college in Leeds.','/ɪnˈrəʊl/'],
+['tertiary education','pendidikan tinggi','Access to tertiary education has widened.','/ˈtɜː.ʃər.i ˌedʒ.uˈkeɪ.ʃən/']]},
+{name:'Technology', words:[
+['cutting-edge','paling mutakhir','The lab uses cutting-edge equipment.','/ˌkʌt.ɪŋ ˈedʒ/'],
+['obsolete','usang, tak terpakai lagi','Many skills become obsolete as technology advances.','/ˌɒb.səlˈiːt/'],
+['automation','otomatisasi','Automation may replace some factory jobs.','/ˌɔː.təˈmeɪ.ʃən/'],
+['breakthrough','terobosan','Scientists have made a breakthrough in battery design.','/ˈbreɪk.θruː/'],
+['data privacy','privasi data','People are increasingly worried about data privacy.','/ˌdeɪ.tə ˈprɪv.ə.si/'],
+['digital literacy','literasi digital','Digital literacy should be taught at primary school.','/ˌdɪdʒ.ɪ.təl ˈlɪt.ər.ə.si/'],
+['user-friendly','mudah digunakan','The new app is far more user-friendly.','/ˌjuː.zəˈfrend.li/'],
+['innovation','inovasi','Innovation drives economic growth.','/ˌɪn.əˈveɪ.ʃən/']]},
+{name:'Health', words:[
+['sedentary lifestyle','gaya hidup kurang gerak','A sedentary lifestyle increases the risk of heart disease.','/ˈsed.ən.tər.i ˈlaɪf.staɪl/'],
+['obesity','obesitas','Childhood obesity has become a public health concern.','/əʊˈbiː.sə.ti/'],
+['well-being','kesejahteraan (fisik & mental)','Regular exercise improves mental well-being.','/ˌwelˈbiː.ɪŋ/'],
+['life expectancy','angka harapan hidup','Life expectancy in the UK has risen over the past century.','/ˈlaɪf ɪkˌspek.tən.si/'],
+['preventive','pencegahan','Preventive care is cheaper than treatment.','/prɪˈven.tɪv/'],
+['nutritious','bergizi','School dinners should be nutritious and affordable.','/njuːˈtrɪʃ.əs/'],
+['GP','dokter umum (istilah UK)','If symptoms continue, make an appointment with your GP.','/ˌdʒiːˈpiː/'],
+['healthcare','layanan kesehatan','Free healthcare is funded through taxation.','/ˈhelθ.keəʳ/']]},
+{name:'Work', words:[
+['made redundant','di-PHK (istilah UK)','Hundreds of workers were made redundant when the factory closed.','/ˌmeɪd rɪˈdʌn.dənt/'],
+['work-life balance','keseimbangan kerja dan hidup','Flexible hours can improve work-life balance.','/ˌwɜːk.laɪf ˈbæl.əns/'],
+['CV','daftar riwayat hidup (UK)','Send your CV and a covering letter.','/ˌsiːˈviː/'],
+['labour market','pasar tenaga kerja','The labour market has changed since the pandemic.','/ˈleɪ.bəʳ ˌmɑː.kɪt/'],
+['commute','perjalanan pulang-pergi kerja','My daily commute takes an hour by train.','/kəˈmjuːt/'],
+['unemployment','pengangguran','Youth unemployment remains high in some regions.','/ˌʌn.ɪmˈplɔɪ.mənt/'],
+['job satisfaction','kepuasan kerja','Job satisfaction matters more than salary to many people.','/ˌdʒɒb sæt.ɪsˈfæk.ʃən/'],
+['remote working','kerja jarak jauh','Remote working became common after 2020.','/rɪˌməʊt ˈwɜː.kɪŋ/']]},
+{name:'Society & cities', words:[
+['urbanisation','urbanisasi','Rapid urbanisation puts pressure on housing.','/ˌɜː.bən.aɪˈzeɪ.ʃən/'],
+['congestion','kemacetan','Congestion charges have reduced traffic in central London.','/kənˈdʒes.tʃən/'],
+['affordable housing','perumahan terjangkau','There is a shortage of affordable housing in big cities.','/əˌfɔː.də.bəl ˈhaʊ.zɪŋ/'],
+['council','pemerintah daerah (UK)','The local council collects the rubbish every Tuesday.','/ˈkaʊn.səl/'],
+['anti-social behaviour','perilaku yang mengganggu masyarakat','Better street lighting can reduce anti-social behaviour.','/ˌæn.tiˈsəʊ.ʃəl bɪˈheɪ.vjəʳ/'],
+['inequality','ketimpangan','Income inequality has widened in recent decades.','/ˌɪn.ɪˈkwɒl.ə.ti/'],
+['neighbourhood','lingkungan tempat tinggal','It is a quiet, friendly neighbourhood.','/ˈneɪ.bə.hʊd/'],
+['infrastructure','infrastruktur','Investment in infrastructure creates jobs.','/ˈɪn.frəˌstrʌk.tʃəʳ/']]}
+];
+
+const UKUS = [['flat','apartment'],['lift','elevator'],['queue','line'],['rubbish','garbage'],['holiday','vacation'],['mobile phone','cell phone'],['motorway','highway'],['petrol','gas'],['autumn','fall'],['biscuit','cookie'],['chips','fries'],['crisps','potato chips'],['trousers','pants'],['jumper','sweater'],['lorry','truck'],['pavement','sidewalk'],['postcode','zip code'],['timetable','schedule'],['underground','subway'],['colour','color'],['centre','center'],['theatre','theater'],['travelled','traveled'],['programme','program'],['defence','defense'],['grey','gray'],['cheque','check'],['tyre','tire'],['jewellery','jewelry'],['analyse','analyze'],['catalogue','catalog'],['behaviour','behavior'],['neighbour','neighbor'],['enrol','enroll'],['fulfil','fulfill'],['maths','math'],['at the weekend','on the weekend'],['CV','résumé'],['film','movie'],['car park','parking lot'],['chemist','drugstore'],['term','semester'],['full stop','period'],['different from','different than'],['fill in a form','fill out a form'],['Monday to Friday','Monday through Friday'],['have got','have gotten'],['in hospital','in the hospital']];
+
+const SENTENCES = [
+'Not only does recycling save energy, but it also reduces waste.',
+'The number of students enrolling at university has risen steadily.',
+'If I were in charge, I would invest more in public transport.',
+'Having finished my degree, I moved to Manchester.',
+'It is often argued that technology makes people less sociable.',
+'Despite the high cost, many families choose private schools.',
+'The chart illustrates how much energy was consumed in 2020.',
+'Rarely have we seen such rapid growth in online shopping.',
+'People who live in cities tend to have higher incomes.',
+'Once the bottles are collected, they are taken to a factory.',
+'The more time children spend outdoors, the healthier they become.',
+'I have lived in my hometown since I was born.',
+'What worries me most is the lack of affordable housing.',
+'Fewer people own a car than they did a decade ago.',
+'Had the government acted sooner, the crisis could have been avoided.'
+];
+
+const NEWL=[
+{id:'pft', title:'Past perfect & konsistensi tense', use:'Writing Task 1 & Speaking Part 2', mins:6,
+body:`<p><b>Past perfect</b> (had + V3) dipakai untuk kejadian yang terjadi <b>sebelum</b> kejadian atau waktu lain di masa lalu. Di Task 1, pola “by + tahun lampau” hampir selalu memakai past perfect.</p>
+<div class="ex"><p>By 2010, sales <u>had doubled</u>. <span>sebelum titik waktu 2010</span></p><p>When I arrived, the lecture <u>had</u> already <u>started</u>. <span>kuliah mulai lebih dulu</span></p><p>I <u>had never travelled</u> alone before that trip. <span>bagus untuk cerita di Part 2</span></p><p>She was exhausted because she <u>had been studying</u> all night. <span>past perfect continuous: durasi</span></p></div>
+<div class="tip"><b>Tips IELTS</b><p>Untuk band 7+, examiner melihat apakah tense-mu konsisten. Kalau grafik berisi data lampau, tetap di past simple dan pakai past perfect hanya untuk “by + tahun”.</p></div>
+<div class="mis"><b>Kesalahan umum</b><p><s>I had gone to Bali last year.</s> I went to Bali last year. Kalau hanya ada satu kejadian lampau, cukup past simple.</p></div>`,
+qs:[
+{t:'mcq',q:'By 2015, the number of users ___ to 2 million.',o:['has risen','had risen','rises','was rising'],a:1,e:'by + waktu lampau → past perfect.'},
+{t:'mcq',q:'When we got to the station, the train ___.',o:['already left','had already left','has already left','already leaves'],a:1,e:'Kereta berangkat lebih dulu sebelum kami tiba.'},
+{t:'gap',q:'I ___ (never / fly) before my trip to London in 2019.',a:['had never flown'],e:'Pengalaman sebelum titik lampau: had never + V3. fly → flew → flown.'},
+{t:'err',q:['I','had gone','to','Bali','last','year.'],a:1,fix:'went',e:'Satu kejadian lampau dengan waktu jelas → past simple.'},
+{t:'mcq',q:'Which sentence keeps the tenses consistent? (data from 2005)',o:['In 2005, exports rise to 40% and then fell.','In 2005, exports rose to 40% and then fell.','In 2005, exports have risen to 40% and then fell.'],a:1,e:'Data lampau: past simple di seluruh kalimat.'},
+{t:'mcq',q:'She was tired because she ___ all night.',o:['has studied','had been studying','studies','will study'],a:1,e:'Durasi sebelum titik lampau → past perfect continuous.'}
+]},
+{id:'fut', title:'Future forms & prediksi', use:'Task 1 projections & Speaking', mins:6,
+body:`<div class="ex"><p><u>will</u>: prediksi, opini, keputusan spontan. I think prices will rise.</p><p><u>be going to</u>: rencana, atau prediksi dengan bukti. Look at those clouds. It’s going to rain.</p><p><u>Present continuous</u>: janji atau jadwal pasti. I’m meeting my tutor at four.</p><p><u>Proyeksi Task 1</u>: The population <u>is projected / expected / predicted to</u> double. Sales <u>are set to</u> rise. It <u>is likely to</u> fall.</p><p><u>Future perfect</u>: By 2040, the figure <u>will have reached</u> 10 million.</p></div>
+<div class="uk"><b>Catatan British</b><p>“Shall” masih dipakai di British English untuk tawaran atau ajakan dengan I/we: “Shall we start?” “Shall I open the window?”</p></div>
+<div class="tip"><b>Tips IELTS</b><p>Untuk pertanyaan Speaking tentang rencana, “I’m hoping to...”, “I’m planning to...”, dan “I’d like to...” terdengar lebih natural daripada “I will...” terus-menerus.</p></div>`,
+qs:[
+{t:'mcq',q:'The population is projected ___ by 2050.',o:['to double','doubling','double','doubled'],a:0,e:'be projected + to infinitive.'},
+{t:'gap',q:'By 2030, the company ___ (open) 50 new shops.',a:['will have opened'],e:'by + waktu masa depan → future perfect.'},
+{t:'mcq',q:'Look at those clouds! It ___ rain.',o:['will','is going to','is raining','shall'],a:1,e:'Prediksi dengan bukti yang terlihat → be going to.'},
+{t:'mcq',q:'I ___ my tutor at 4 pm tomorrow; it’s in my diary.',o:['will meet','am meeting','meet','would meet'],a:1,e:'Janji yang sudah diatur → present continuous.'},
+{t:'err',q:['Sales','are','expected','increasing','next','year.'],a:3,fix:'to increase',e:'be expected + to infinitive.'},
+{t:'mcq',q:'Most natural answer to “What are your plans after graduating?”',o:['I will to work abroad.','I’m hoping to work abroad.','I working abroad.','I am go to work abroad.'],a:1,e:'be hoping + to infinitive, natural untuk rencana.'}
+]},
+{id:'qnt', title:'Quantifiers: few, little, fewer, less', use:'Writing Task 1 & 2', mins:6,
+body:`<div class="ex"><p><u>few / a few</u> + countable. <u>little / a little</u> + uncountable.</p><p>Tanpa “a” bermakna negatif (hampir tidak ada): <u>Few</u> people came. Dengan “a” bermakna positif (beberapa): <u>A few</u> people came.</p><p><u>fewer</u> + countable (fewer cars), <u>less</u> + uncountable (less water).</p><p><u>a large number of</u> + countable, <u>a great deal of / a large amount of</u> + uncountable.</p><p><u>Most</u> people (umum) vs <u>most of the</u> people in this room (spesifik). <u>Each / every</u> + kata benda tunggal.</p></div>
+<div class="uk"><b>Catatan British</b><p>Dalam percakapan sehari-hari di UK, “less” dengan countable sering terdengar (“ten items or less”). Untuk IELTS Writing, tetap pakai “fewer”.</p></div>`,
+qs:[
+{t:'mcq',q:'___ people attended the meeting, so it was cancelled.',o:['A few','Few','A little','Little'],a:1,e:'Makna negatif (hampir tidak ada) + countable → few.'},
+{t:'mcq',q:'There were ___ cars on the road in 2020 than in 2019.',o:['less','fewer','little','much'],a:1,e:'cars countable → fewer.'},
+{t:'gap',q:'The government spent a great ___ of money on the project.',a:['deal'],e:'a great deal of + uncountable.'},
+{t:'err',q:['Most','of','students','prefer','online','classes.'],a:1,fix:'Most students / Most of the students',e:'“Most of” harus diikuti the/these/my.'},
+{t:'mcq',q:'We have ___ time left, so let’s hurry.',o:['a few','few','little','many'],a:2,e:'time uncountable, makna negatif → little.'},
+{t:'mcq',q:'Which is correct?',o:['Each students has a laptop.','Each student has a laptop.','Each student have a laptop.','Every students have a laptop.'],a:1,e:'each + kata benda tunggal + kata kerja tunggal.'}
+]},
+{id:'wf', title:'Word forms: noun, verb, adjective, adverb', use:'Writing & Speaking', mins:7,
+body:`<p>Di band 5.5, banyak error berasal dari <b>kelas kata yang salah</b>. Hafalkan keluarga katanya, bukan cuma satu bentuk.</p>
+<div class="ex"><p>Akhiran noun: -tion, -ment, -ity, -ness. Verb: -ise, -en, -ify. Adjective: -al, -ive, -ous, -ful, -able. Adverb: -ly.</p><p>Task 1: a <u>significant</u> increase (adj + noun) = increased <u>significantly</u> (verb + adverb).</p><p>develop, development, developed, developing</p><p>succeed, success, successful, successfully</p><p>benefit, beneficial. compete, competition, competitive.</p><p>economy (ekonomi), <u>economic</u> (berkaitan dengan ekonomi), <u>economical</u> (hemat)</p></div>
+<div class="tip"><b>Tips IELTS</b><p>Saat menyimpan kata di Vocab, tulis juga bentuk lainnya di kolom contoh, misalnya “benefit (n/v), beneficial (adj)”.</p></div>`,
+qs:[
+{t:'mcq',q:'There was a ___ rise in prices.',o:['significantly','significant','significance','signify'],a:1,e:'Sebelum noun “rise” → adjective.'},
+{t:'mcq',q:'Sales increased ___ in 2019.',o:['dramatic','dramatically','drama','dramatise'],a:1,e:'Menerangkan verb “increased” → adverb.'},
+{t:'gap',q:'Education plays an important role in the ___ (develop) of a country.',a:['development'],e:'Setelah “the” dan sebelum “of” → noun.'},
+{t:'err',q:['Tourism','brings','many','economical','benefits.'],a:3,fix:'economic',e:'economic = berkaitan dengan ekonomi. economical = hemat.'},
+{t:'mcq',q:'Exercise is ___ for mental health.',o:['benefit','beneficial','beneficially','benefited'],a:1,e:'Setelah “is” → adjective.'},
+{t:'gap',q:'Many students find it difficult to ___ (success) without a plan. (verb)',a:['succeed'],e:'to + verb: succeed.'}
+]},
+{id:'punc', title:'Batas kalimat & tanda baca', use:'Writing: Grammatical accuracy', mins:7,
+body:`<p>Examiner menilai seberapa banyak kalimatmu yang <b>bebas error</b>. Kalimat pendek yang benar lebih bernilai daripada kalimat panjang yang “bocor”.</p>
+<div class="ex"><p><u>Comma splice</u>: <s>Many people drive, this causes pollution.</s> Many people drive. This causes pollution. Atau: Many people drive, which causes pollution.</p><p><u>Fragment</u>: <s>Because it is cheap.</s> Many people take the bus because it is cheap.</p><p><u>Koma setelah klausa pembuka</u>: If prices rise, demand falls. Although it was late, we continued.</p><p><u>Semicolon</u>: Prices rose; however, demand stayed high.</p><p><u>Tanpa koma sebelum “that”</u>: <s>Experts believe, that...</s> Experts believe that...</p></div>`,
+qs:[
+{t:'err',q:['Many','people','drive','to','work',',','this','causes','pollution.'],a:5,fix:'work. This... / work, which causes...',e:'Dua kalimat utuh tidak boleh disambung koma saja (comma splice).'},
+{t:'mcq',q:'Which sentence is correctly punctuated?',o:['Prices rose, however, demand stayed high.','Prices rose; however, demand stayed high.','Prices rose however demand stayed high.','Prices rose however, demand stayed high.'],a:1,e:'Pola: kalimat; however, kalimat.'},
+{t:'mcq',q:'Which is a complete sentence?',o:['Because public transport is cheap.','Although many people disagree.','Many people take the bus because it is cheap.','Which is why cities are crowded.'],a:2,e:'Klausa yang diawali because/although butuh klausa utama.'},
+{t:'mcq',q:'Where should the comma go? “If the government invests more in schools students will benefit.”',o:['after “If”','after “schools”','after “government”','no comma needed'],a:1,e:'Koma di akhir klausa if yang ada di depan.'},
+{t:'err',q:['Experts','believe',',','that','sugar','is','harmful.'],a:2,fix:'(hapus koma)',e:'Tidak ada koma sebelum that-clause.'},
+{t:'mcq',q:'Best fix for “The city is crowded it needs more parks.”',o:['The city is crowded, it needs more parks.','The city is crowded, so it needs more parks.','The city is crowded so, it needs more parks.','The city, is crowded it needs more parks.'],a:1,e:'Sambung dengan koma + conjunction (so).'}
+]},
+{id:'ger', title:'Gerund vs infinitive', use:'Writing & Speaking', mins:7,
+body:`<div class="ex"><p><u>verb + -ing</u>: enjoy, avoid, suggest, consider, mind, finish, keep, recommend</p><p><u>verb + to</u>: decide, plan, hope, want, afford, agree, refuse, manage, tend, aim</p><p><u>Preposition + -ing</u>: interested in learning, by using, instead of driving</p><p><u>“to” sebagai preposition</u>: look forward to meeting, be used to living, contribute to reducing</p><p><u>Gerund sebagai subjek</u>: Learning a language takes time.</p><p><u>Makna berubah</u>: stop smoking (berhenti merokok) vs stop to smoke (berhenti untuk merokok).</p></div>
+<div class="mis"><b>Kesalahan umum</b><p><s>contribute to reduce</s> contribute to reducing. <s>suggest him to go</s> suggest that he go / suggest going.</p></div>`,
+qs:[
+{t:'mcq',q:'I’m looking forward to ___ you.',o:['meet','meeting','met','be meeting'],a:1,e:'look forward to + -ing.'},
+{t:'mcq',q:'Many people can’t afford ___ a house in London.',o:['buying','to buy','buy','bought'],a:1,e:'afford + to infinitive.'},
+{t:'gap',q:'My teacher suggested ___ (read) English news every day.',a:['reading'],e:'suggest + -ing.'},
+{t:'err',q:['Public','transport','can','contribute','to','reduce','pollution.'],a:5,fix:'reducing',e:'contribute to + -ing.'},
+{t:'mcq',q:'“He stopped ___” means he no longer smokes.',o:['smoking','to smoke'],a:0,e:'stop + -ing = berhenti melakukan.'},
+{t:'mcq',q:'Which is correct?',o:['Learn English is useful.','Learning English is useful.','To learning English is useful.','Learned English is useful.'],a:1,e:'Gerund sebagai subjek.'}
+]},
+{id:'ref', title:'Referencing: this, these, such, the former', use:'Coherence and Cohesion', mins:6,
+body:`<p>Referencing menghindari pengulangan dan membuat paragraf mengalir. Ini dinilai di <b>Coherence and Cohesion</b>.</p>
+<div class="ex"><p><u>This / these / such + noun</u>: This trend... These changes... Such policies...</p><p><u>Pronoun harus cocok</u>: Governments... <u>they</u>. Children... <u>they</u>.</p><p><u>The former / the latter</u>: yang pertama / yang kedua disebut.</p><p><u>one / ones</u>: I prefer the black ones.</p></div>
+<div class="tip"><b>Tips IELTS</b><p>“This” sendirian sering ambigu. Tambahkan noun: “This imbalance”, “This increase”, “This approach”.</p></div>`,
+qs:[
+{t:'mcq',q:'The price of oil rose sharply. ___ increase affected transport costs.',o:['This','These','Those','It'],a:0,e:'Satu kenaikan (singular) → This increase.'},
+{t:'mcq',q:'Many governments have introduced sugar taxes. ___ policies aim to reduce obesity.',o:['This','Such','It','That'],a:1,e:'Such + plural noun merujuk ke jenis kebijakan tadi.'},
+{t:'err',q:['Children','need','exercise,','but','he','often','spends','hours','online.'],a:4,fix:'they often spend',e:'Children (jamak) → they.'},
+{t:'mcq',q:'Cars and bicycles are both popular. The former is faster, while the ___ is cheaper.',o:['latter','later','last','other'],a:0,e:'the former … the latter.'},
+{t:'gap',q:'I don’t like the blue shoes; I prefer the black ___.',a:['ones'],e:'ones menggantikan noun jamak.'},
+{t:'mcq',q:'Which is the clearest?',o:['Prices rose and wages fell. This is a problem.','Prices rose and wages fell. This imbalance is a problem.','Prices rose and wages fell. It is a problem these.','Prices rose and wages fell. That are problems.'],a:1,e:'This + noun lebih jelas.'}
+]},
+{id:'np', title:'Noun phrases & nominalisation', use:'Writing: gaya akademik', mins:7,
+body:`<p>Tulisan akademik memadatkan informasi ke dalam <b>noun phrase</b>. Kata kerja atau sifat diubah jadi kata benda.</p>
+<div class="ex"><p>Because people use cars more, pollution has increased. → <u>The growing use of cars</u> has led to <u>higher levels of pollution</u>.</p><p>The government decided to raise taxes. → <u>The government’s decision to raise taxes</u> was unpopular.</p><p>Kata kerja penghubung: lead to, result in, contribute to, be responsible for + noun.</p></div>
+<div class="tip"><b>Tips IELTS</b><p>Pakai secukupnya, satu atau dua per paragraf. Kejelasan tetap nomor satu.</p></div>`,
+qs:[
+{t:'mcq',q:'Nominalise: “Prices fell rapidly.” → “There was a ___ in prices.”',o:['rapid fall','rapidly fall','rapid falling','fall rapid'],a:0,e:'adjective + noun.'},
+{t:'mcq',q:'Choose the most academic sentence:',o:['Because lots of people move to cities, cities get crowded.','The mass movement of people to cities has resulted in overcrowding.','People move to cities a lot, so crowded.','Cities are crowded because people move a lot to them.'],a:1,e:'Noun phrase + result in.'},
+{t:'gap',q:'The ___ (consume) of fast food has risen among teenagers.',a:['consumption'],e:'consume → consumption.'},
+{t:'err',q:['Air','pollution','can','lead','to','increase','health','problems.'],a:5,fix:'an increase in',e:'lead to + noun phrase: an increase in health problems.'},
+{t:'mcq',q:'Unemployment ___ a rise in crime.',o:['results in','results to','leads','causes to'],a:0,e:'result in + noun.'},
+{t:'gap',q:'The ___ (decide) to close the factory surprised workers.',a:['decision'],e:'decide → decision.'}
+]},
+{id:'par', title:'Parallel structure', use:'Writing band 7+', mins:6,
+body:`<p>Unsur dalam daftar atau pasangan harus punya <b>bentuk grammar yang sama</b>.</p>
+<div class="ex"><p>Cycling is <u>cheap</u>, <u>healthy</u> and <u>environmentally friendly</u>. <span>semua adjective</span></p><p>The policy aims <u>to reduce</u> costs, <u>improve</u> quality and <u>save</u> time.</p><p>Both / either / not only ... harus diikuti bentuk yang sejajar.</p><p>Task 1: The figure for men was higher than <u>that for</u> women. <span>“that” = the figure</span></p></div>`,
+qs:[
+{t:'mcq',q:'Cycling is cheap, healthy and ___.',o:['it protects the environment','environmentally friendly','protecting the environment','the environment'],a:1,e:'Daftar adjective.'},
+{t:'mcq',q:'The new policy aims to reduce costs, improve quality and ___ time.',o:['saving','to saving','save','saved'],a:2,e:'Sejajar: reduce, improve, save.'},
+{t:'err',q:['She','enjoys','reading,','swimming','and','to','cook.'],a:5,fix:'cooking (hapus “to”)',e:'Daftar -ing: reading, swimming, cooking.'},
+{t:'mcq',q:'Which comparison is correct?',o:['The salary of doctors is higher than nurses.','The salary of doctors is higher than that of nurses.','The salary of doctors is higher than of nurses.','Doctors salary higher than nurses.'],a:1,e:'Bandingkan gaji dengan gaji: that of nurses.'},
+{t:'gap',q:'The scheme is good both for students ___ for teachers.',a:['and'],e:'both ... and.'},
+{t:'mcq',q:'Not only ___ cheaper, but it is also faster.',o:['the train is','is the train','the train it is','train is'],a:1,e:'Not only di awal → inversion.'}
+]}
+];
+LESSONS.push(...NEWL);
+{ const ORDER=['pp','pft','fut','art','sva','qnt','wf','id','punc','uk','ger','cond','pass','rel','cmp','link','ref','mod','np','par','cx','ph']; LESSONS.sort((a,b)=>ORDER.indexOf(a.id)-ORDER.indexOf(b.id)); }
+
+const EXTRA={
+pp:[
+{t:'mcq',q:'How long ___ English?',o:['do you learn','have you been learning','are you learning','did you learn'],a:1,e:'How long + sampai sekarang → present perfect continuous.'},
+{t:'mcq',q:'I ___ my keys. I can’t find them anywhere.',o:['lost','have lost','had lost','was losing'],a:1,e:'Hasilnya masih terasa sekarang. British English memilih present perfect.'},
+{t:'gap',q:'She ___ (live) in Manchester since 2018.',a:['has lived','has been living'],e:'since + titik waktu → present perfect.'},
+{t:'err',q:['I','have finished','my','homework','two','hours','ago.'],a:1,fix:'finished',e:'“ago” menunjukkan waktu lampau yang jelas → past simple.'},
+{t:'mcq',q:'This is the first time I ___ sushi.',o:['eat','ate','have eaten','am eating'],a:2,e:'“This is the first time” + present perfect.'},
+{t:'mcq',q:'Since 2010, the price of houses ___ steadily.',o:['rose','has risen','rises','had risen'],a:1,e:'since + sampai sekarang → present perfect.'},
+{t:'gap',q:'I ___ (not / see) him since last summer.',a:['have not seen',"haven't seen"],e:'Negatif present perfect: have not + V3.'},
+{t:'mcq',q:'Best question to ask about life experience:',o:['Did you ever go abroad?','Have you ever been abroad?','Do you ever went abroad?','Were you ever go abroad?'],a:1,e:'Pengalaman hidup → Have you ever + V3.'}],
+pft:[
+{t:'mcq',q:'After she ___ her degree, she moved to London.',o:['had finished','has finished','finishes','was finishing'],a:0,e:'Lulus terjadi lebih dulu → past perfect.'},
+{t:'gap',q:'By the time we arrived, the film ___ (already / start).',a:['had already started'],e:'By the time + past → past perfect.'},
+{t:'err',q:['When','I','arrived,','everyone','has','left.'],a:4,fix:'had',e:'Cerita masa lalu → had left.'},
+{t:'mcq',q:'By 1990, the figure ___ to 50%.',o:['falls','has fallen','had fallen','will fall'],a:2,e:'by + tahun lampau → past perfect.'},
+{t:'mcq',q:'I couldn’t enter because I ___ my ticket.',o:['lose','have lost','had lost','was losing'],a:2,e:'Tiket hilang sebelum kejadian lampau → past perfect.'},
+{t:'gap',q:'He ___ (work) there for ten years before he retired.',a:['had worked','had been working'],e:'Durasi sebelum titik lampau.'},
+{t:'mcq',q:'Which is correct for Task 1 (data 1990–2010)?',o:['The number has doubled by 2010.','The number had doubled by 2010.','The number doubles by 2010.'],a:1,e:'by 2010 (lampau) → had doubled.'},
+{t:'err',q:['Yesterday','I','had met','an','old','friend.'],a:2,fix:'met',e:'Satu kejadian dengan waktu jelas → past simple.'},
+{t:'mcq',q:'She was nervous because she ___ in public before.',o:['never spoke','had never spoken','has never spoken','never speaks'],a:1,e:'Pengalaman sebelum titik lampau → had never + V3.'}],
+fut:[
+{t:'mcq',q:'Prices ___ rise next year, according to experts.',o:['are likely to','likely','are likely','will likely to'],a:0,e:'be likely + to infinitive.'},
+{t:'gap',q:'Car sales are set ___ (fall) in 2030.',a:['to fall'],e:'be set + to infinitive.'},
+{t:'mcq',q:'“The phone’s ringing.” “I ___ get it.”',o:['will','am going to','get','am getting'],a:0,e:'Keputusan spontan → will.'},
+{t:'err',q:['The','population','will','reaching','10','million','by','2040.'],a:3,fix:'reach / will have reached',e:'will + bare infinitive.'},
+{t:'mcq',q:'The train ___ at 7.30 tomorrow morning. (timetable)',o:['leaves','will be leave','is leave','left'],a:0,e:'Jadwal resmi → present simple.'},
+{t:'mcq',q:'This time next week, I ___ on a beach.',o:['will lie','will be lying','lie','am lie'],a:1,e:'Sedang berlangsung di titik masa depan → future continuous.'},
+{t:'gap',q:'It is predicted that the figure ___ (rise) to 60% by 2050.',a:['will rise','will have risen'],e:'Prediksi → will rise / will have risen.'},
+{t:'mcq',q:'___ we go for a walk?',o:['Shall','Will','Do','Are'],a:0,e:'British: Shall we...? untuk ajakan.'},
+{t:'mcq',q:'Which is a projection sentence for Task 1?',o:['Sales went up in 2020.','Sales are expected to increase after 2025.','Sales go up in 2020.','Sales had gone up by 2020.'],a:1,e:'be expected to = proyeksi.'}],
+art:[
+{t:'mcq',q:'He is ___ engineer.',o:['a','an','the','(no article)'],a:1,e:'Bunyi vokal di awal → an.'},
+{t:'mcq',q:'___ internet has changed how we communicate.',o:['An','A','The','(no article)'],a:2,e:'Satu-satunya → the internet.'},
+{t:'gap',q:'She plays ___ piano beautifully.',a:['the'],e:'British: play the + alat musik.'},
+{t:'err',q:['Children','should','learn','about','the','nature','at','school.'],a:4,fix:'(hapus “the”)',e:'nature dalam makna umum → tanpa artikel.'},
+{t:'mcq',q:'We had ___ lunch at a café near ___ River Thames.',o:['the / the','(no article) / the','a / (no article)','(no article) / (no article)'],a:1,e:'Makan (umum) tanpa artikel; nama sungai pakai the.'},
+{t:'mcq',q:'___ rich should pay more tax.',o:['A','The','(no article)','Some'],a:1,e:'The + adjective = kelompok orang.'},
+{t:'err',q:['She','is','best','student','in','her','class.'],a:2,fix:'the best',e:'Superlatif → the.'},
+{t:'gap',q:'It takes about ___ hour to get there.',a:['an'],e:'h tidak dibaca di “hour” → an.'},
+{t:'mcq',q:'Which is correct?',o:['I go to the bed at 11.','I go to bed at 11.','I go to a bed at 11.','I go the bed at 11.'],a:1,e:'go to bed (tanpa artikel).'}],
+sva:[
+{t:'mcq',q:'One of my friends ___ in Bristol.',o:['live','lives','are living','have lived'],a:1,e:'Inti subjek: one → lives.'},
+{t:'mcq',q:'The news ___ very surprising.',o:['was','were','are','have been'],a:0,e:'news uncountable → singular.'},
+{t:'gap',q:'Neither the teacher nor the students ___ (be) happy with the result.',a:['were','are'],e:'neither...nor: kata kerja mengikuti subjek terdekat (students).'},
+{t:'err',q:['The','information','are','not','accurate.'],a:2,fix:'is',e:'information uncountable → is.'},
+{t:'mcq',q:'A number of students ___ complained about the canteen.',o:['has','have','is','was'],a:1,e:'a number of = many → plural.'},
+{t:'mcq',q:'Mathematics ___ my favourite subject.',o:['is','are','were','have'],a:0,e:'Nama bidang studi berakhiran -s tetap singular.'},
+{t:'gap',q:'Everyone in the room ___ (know) the answer.',a:['knows'],e:'everyone → singular.'},
+{t:'err',q:['The','furniture','in','these','offices','are','old.'],a:5,fix:'is',e:'Inti subjek: furniture (uncountable).'},
+{t:'mcq',q:'The police ___ investigating the case.',o:['is','are','has','was'],a:1,e:'police selalu plural.'}],
+qnt:[
+{t:'mcq',q:'There isn’t ___ milk left.',o:['many','much','few','a few'],a:1,e:'milk uncountable, kalimat negatif → much.'},
+{t:'gap',q:'Only a ___ students passed the exam, so the teacher was disappointed.',a:['few'],e:'only a few = sedikit sekali (countable).'},
+{t:'mcq',q:'I have ___ friends in London, so I’m never lonely there.',o:['a few','few','a little','little'],a:0,e:'Makna positif + countable → a few.'},
+{t:'err',q:['There','are','less','jobs','in','rural','areas.'],a:2,fix:'fewer',e:'jobs countable → fewer.'},
+{t:'mcq',q:'A large ___ of people use public transport.',o:['amount','number','deal','much'],a:1,e:'people countable → a large number of.'},
+{t:'mcq',q:'___ of the students passed; they were all happy.',o:['None','All','Neither','Few'],a:1,e:'they were all happy → All.'},
+{t:'gap',q:'How ___ time do you spend online each day?',a:['much'],e:'time uncountable → how much.'},
+{t:'mcq',q:'Which is correct?',o:['Both of the option are good.','Both options are good.','Both option is good.','Both of options are good.'],a:1,e:'both + plural noun.'},
+{t:'err',q:['We','need','an','information','about','the','course.'],a:2,fix:'some information',e:'information uncountable, tidak pakai an.'}],
+wf:[
+{t:'mcq',q:'The government should take ___ action.',o:['immediately','immediate','immediacy','immediateness'],a:1,e:'Sebelum noun → adjective.'},
+{t:'gap',q:'Pollution has a ___ (harm) effect on health.',a:['harmful'],e:'harm → harmful (adjective).'},
+{t:'mcq',q:'He spoke very ___ during the interview.',o:['confident','confidently','confidence','confide'],a:1,e:'Menerangkan verb spoke → adverb.'},
+{t:'err',q:['The','cost','of','living','has','increased','rapid.'],a:6,fix:'rapidly',e:'Menerangkan verb increased → adverb.'},
+{t:'mcq',q:'Technology has made communication much ___.',o:['easy','easier','easily','ease'],a:1,e:'much + comparative.'},
+{t:'gap',q:'There is a growing ___ (aware) of mental health issues.',a:['awareness'],e:'aware → awareness (noun).'},
+{t:'mcq',q:'The ___ of the new law was criticised.',o:['introduce','introduction','introductory','introduced'],a:1,e:'Setelah the, sebelum of → noun.'},
+{t:'err',q:['Smoking','is','danger','for','your','health.'],a:2,fix:'dangerous',e:'Setelah is → adjective.'},
+{t:'mcq',q:'This app is very ___ for students.',o:['use','useful','usefully','usage'],a:1,e:'very + adjective.'}],
+id:[
+{t:'err',q:['Nowadays','people','is','busier','than','before.'],a:2,fix:'are',e:'people jamak → are.'},
+{t:'err',q:['I','very','like','British','films.'],a:1,fix:'really like / like ... very much',e:'very tidak langsung menerangkan verb like.'},
+{t:'mcq',q:'Choose the correct sentence:',o:['He married with a doctor.','He married a doctor.','He married to a doctor.','He was married with a doctor.'],a:1,e:'marry someone, tanpa preposition.'},
+{t:'err',q:['My','friend','suggested','me','to','study','abroad.'],a:3,fix:'suggested that I study / suggested studying',e:'suggest tidak memakai pola suggest + orang + to.'},
+{t:'mcq',q:'Which is correct?',o:['I am interesting in history.','I am interested in history.','I interested in history.','I am interest in history.'],a:1,e:'interested = merasa tertarik; interesting = menarik.'},
+{t:'gap',q:'She has worked here ___ 2020.',a:['since'],e:'since + titik waktu.'},
+{t:'mcq',q:'Choose the correct sentence:',o:['The people in my country very friendly.','The people in my country are very friendly.','The people in my country is very friendly.','The people in my country being very friendly.'],a:1,e:'Butuh to be, dan people jamak → are.'},
+{t:'mcq',q:'Which is correct?',o:['I have many homeworks.','I have a lot of homework.','I have much homeworks.','I have a homework.'],a:1,e:'homework uncountable.'},
+{t:'mcq',q:'Choose the correct sentence:',o:['Although it rained, but we went out.','Even it rained, we went out.','Although it rained, we went out.','Despite it rained, we went out.'],a:2,e:'Although tanpa but; despite tidak diikuti klausa.'}],
+punc:[
+{t:'mcq',q:'Which is correct?',o:['However the plan failed.','However, the plan failed.','However; the plan failed.','However the plan, failed.'],a:1,e:'However di awal kalimat + koma.'},
+{t:'err',q:['I','like','tea',',','my','sister','likes','coffee.'],a:3,fix:'tea, but my sister... / tea; my sister...',e:'Comma splice: butuh conjunction atau semicolon.'},
+{t:'mcq',q:'Which sentence uses a semicolon correctly?',o:['I was tired; so I went home.','I was tired; I went home early.','I was; tired and went home.','I was tired and; went home.'],a:1,e:'Semicolon menghubungkan dua kalimat utuh.'},
+{t:'mcq',q:'Choose the correctly punctuated sentence:',o:['The UK, which has four nations is small.','The UK, which has four nations, is small.','The UK which has four nations, is small.','The UK which, has four nations is small.'],a:1,e:'Non-defining clause diapit dua koma.'},
+{t:'err',q:['Although','the','test','was','hard','.','Most','students','passed.'],a:5,fix:'hard, most students passed',e:'Klausa although tidak bisa berdiri sendiri.'},
+{t:'mcq',q:'Where does the comma go? “In my opinion technology helps students.”',o:['after “In”','after “opinion”','after “technology”','after “helps”'],a:1,e:'Koma setelah frasa pembuka.'},
+{t:'mcq',q:'Which is a run-on sentence?',o:['I study every day, so I improve.','I study every day I improve.','I study every day. I improve.','Because I study every day, I improve.'],a:1,e:'Dua kalimat utuh tanpa tanda baca atau conjunction.'},
+{t:'err',q:['The','reason','is',',','that','prices','are','high.'],a:3,fix:'(hapus koma)',e:'Tidak ada koma sebelum that-clause.'},
+{t:'mcq',q:'Which list is punctuated correctly (British style)?',o:['We need pens paper, and books.','We need pens, paper and books.','We need, pens, paper and books.','We need pens paper and, books.'],a:1,e:'Koma di antara item; British biasanya tanpa koma sebelum and.'}],
+uk:[
+{t:'mcq',q:'Please wait in the ___ for the bus. (British)',o:['line','queue','row','lane'],a:1,e:'British: queue.'},
+{t:'gap',q:'He drives a ___. (British word for truck)',a:['lorry'],e:'British: lorry.'},
+{t:'mcq',q:'Which spelling is British for a TV show?',o:['program','programme'],a:1,e:'British: programme (kecuali computer program).'},
+{t:'err',q:['I','left','my','umbrella','in','the','elevator.'],a:6,fix:'lift',e:'British: lift.'},
+{t:'mcq',q:'British English: “I ___ a headache.”',o:['have gotten','have got','gotten','have get'],a:1,e:'British: I have got / I’ve got.'},
+{t:'mcq',q:'Which is British?',o:['Monday through Friday','Monday to Friday'],a:1,e:'British: Monday to Friday.'},
+{t:'gap',q:'You need a driving ___ to rent a car. (British spelling, noun)',a:['licence'],e:'British: licence (noun), license (verb).'},
+{t:'mcq',q:'Put your rubbish in the ___. (British)',o:['trash can','bin','garbage can','dumpster'],a:1,e:'British: bin.'},
+{t:'mcq',q:'Which spelling is British?',o:['jewelry','jewellery'],a:1,e:'British: jewellery.'}],
+ger:[
+{t:'mcq',q:'She decided ___ abroad.',o:['studying','to study','study','studied'],a:1,e:'decide + to infinitive.'},
+{t:'gap',q:'I enjoy ___ (cook) for my family.',a:['cooking'],e:'enjoy + -ing.'},
+{t:'mcq',q:'He is used to ___ up early.',o:['get','getting','got','be getting'],a:1,e:'be used to + -ing (terbiasa).'},
+{t:'err',q:['They','avoided','to','talk','about','the','problem.'],a:2,fix:'talking (hapus “to”)',e:'avoid + -ing.'},
+{t:'mcq',q:'Remember ___ the door when you leave.',o:['locking','to lock'],a:1,e:'remember + to = jangan lupa melakukan (nanti).'},
+{t:'mcq',q:'I’m interested in ___ medicine.',o:['study','to study','studying','studied'],a:2,e:'preposition + -ing.'},
+{t:'gap',q:'Many people refuse ___ (accept) change.',a:['to accept'],e:'refuse + to infinitive.'},
+{t:'err',q:['Instead','of','drive,','people','should','cycle.'],a:2,fix:'driving',e:'instead of + -ing.'},
+{t:'mcq',q:'The government plans ___ taxes next year.',o:['raising','to raise','raise','raised'],a:1,e:'plan + to infinitive.'}],
+cond:[
+{t:'mcq',q:'If I ___ you, I would apply for that job.',o:['am','were','will be','had'],a:1,e:'If I were you (second conditional).'},
+{t:'gap',q:'If it rains tomorrow, we ___ (stay) at home.',a:['will stay',"'ll stay"],e:'First conditional: if + present, will.'},
+{t:'err',q:['If','I','would','have','known,','I','would','have','come.'],a:2,fix:'If I had known',e:'Klausa if di third conditional: had + V3.'},
+{t:'mcq',q:'___ you study, you won’t pass.',o:['If','Unless','Provided','As long as'],a:1,e:'unless = if not.'},
+{t:'mcq',q:'Had I known about the problem, I ___ helped.',o:['would have','will have','would','had'],a:0,e:'Inversion third conditional: would have + V3.'},
+{t:'gap',q:'If people ___ (recycle) more, there would be less waste.',a:['recycled'],e:'Second conditional: if + past.'},
+{t:'mcq',q:'You can borrow my car ___ you drive carefully.',o:['unless','provided that','in case of','otherwise'],a:1,e:'provided that = asalkan.'},
+{t:'err',q:['If','I','were','you,','I','will','apply','for','the','job.'],a:5,fix:'would',e:'If I were you (hipotetis) → would.'},
+{t:'mcq',q:'If I hadn’t missed the bus, I ___ late now.',o:['wouldn’t be','won’t be','wouldn’t have been','am not'],a:0,e:'Mixed: masa lalu → akibat sekarang.'}],
+pass:[
+{t:'mcq',q:'English ___ in many countries.',o:['speaks','is spoken','is speaking','spoken'],a:1,e:'Present simple passive.'},
+{t:'gap',q:'The Mona Lisa ___ (paint) by Leonardo da Vinci.',a:['was painted'],e:'Past simple passive.'},
+{t:'err',q:['The','results','will','announce','next','week.'],a:3,fix:'be announced',e:'Future passive: will be + V3.'},
+{t:'mcq',q:'The new hospital ___ next year.',o:['will build','will be built','is built','builds'],a:1,e:'Rumah sakit dibangun → passive.'},
+{t:'mcq',q:'Process: “After that, the mixture ___ into bottles.”',o:['pours','is poured','is pouring','poured'],a:1,e:'Diagram proses → present simple passive.'},
+{t:'gap',q:'More than 100 people ___ (injure) in the accident.',a:['were injured'],e:'Past simple passive.'},
+{t:'err',q:['The','price','was risen','by','10%.'],a:2,fix:'rose',e:'rise intransitif, tidak bisa passive.'},
+{t:'mcq',q:'It ___ that the economy will grow.',o:['is expecting','is expected','expects','expected'],a:1,e:'It is expected that... (passive reporting).'},
+{t:'mcq',q:'Which sentence is passive?',o:['The factory produces cars.','Cars are produced in the factory.','The factory is producing cars.','Cars produce pollution.'],a:1,e:'be + V3.'}],
+rel:[
+{t:'mcq',q:'The man ___ car was stolen called the police.',o:['who','whose','which','whom'],a:1,e:'Kepemilikan → whose.'},
+{t:'gap',q:'I remember the day ___ we first met.',a:['when','that'],e:'Waktu → when.'},
+{t:'mcq',q:'The book ___ I bought yesterday is excellent.',o:['who','what','which','whose'],a:2,e:'Benda → which (atau that).'},
+{t:'err',q:['This','is','the','house','which','I','was','born','in','it.'],a:9,fix:'(hapus “it”)',e:'which sudah menggantikan the house.'},
+{t:'mcq',q:'Students ___ study abroad often become more independent.',o:['which','who','whose','where'],a:1,e:'Orang → who.'},
+{t:'mcq',q:'Reduce: “People who live in cities” →',o:['People live in cities','People living in cities','People lived in cities','People to live in cities'],a:1,e:'Active → -ing.'},
+{t:'gap',q:'The hotel ___ we stayed was near the beach.',a:['where','in which'],e:'Tempat → where.'},
+{t:'err',q:['The','report,','that','was','published','in','2020,','shows','a','rise.'],a:2,fix:'which',e:'Non-defining (pakai koma) → which, bukan that.'},
+{t:'mcq',q:'What do the commas show? “My brother, who lives in Leeds, is a nurse.”',o:['The information is essential','The information is extra (non-defining)','It is a question','It is a mistake'],a:1,e:'Koma = informasi tambahan.'}],
+cmp:[
+{t:'mcq',q:'Spain had ___ number of visitors in 2019.',o:['the highest','the higher','highest','most high'],a:0,e:'Superlatif: the highest.'},
+{t:'gap',q:'The figure for 2020 was slightly ___ (high) than in 2019.',a:['higher'],e:'Comparative + than.'},
+{t:'err',q:['Rents','in','London','are','more','expensive','as','in','Leeds.'],a:6,fix:'than',e:'more ... than.'},
+{t:'mcq',q:'Car use fell, ___ cycling became more popular.',o:['while','because','so','unless'],a:0,e:'Kontras dua tren → while.'},
+{t:'mcq',q:'The cost was ___ as last year.',o:['the same','the same as','same','similar'],a:0,e:'the same as.'},
+{t:'gap',q:'The UK produced three times ___ much energy as Spain.',a:['as'],e:'three times as much ... as.'},
+{t:'mcq',q:'Which is correct?',o:['the most large','the largest','the more large','the larger of all'],a:1,e:'Adjective pendek → -est.'},
+{t:'err',q:['Women','spend','less','hours','on','social','media','than','men.'],a:2,fix:'fewer',e:'hours countable → fewer.'},
+{t:'mcq',q:'Compared ___ 2010, prices in 2020 were much higher.',o:['than','with','as','for'],a:1,e:'compared with (atau to).'}],
+link:[
+{t:'mcq',q:'Many people like cities. ___, others prefer the countryside.',o:['On the other hand','Moreover','Therefore','For example'],a:0,e:'Sisi yang berlawanan.'},
+{t:'gap',q:'Cars are expensive. ___ addition, they cause pollution.',a:['in'],e:'In addition = selain itu.'},
+{t:'mcq',q:'She passed the exam ___ she hadn’t studied much.',o:['despite','even though','however','in spite of'],a:1,e:'Diikuti klausa → even though.'},
+{t:'err',q:['Due to','it','was','raining,','the','match','was','cancelled.'],a:0,fix:'Because it was raining / Due to the rain',e:'due to + noun, bukan klausa.'},
+{t:'mcq',q:'Prices rose. ___, many families struggled.',o:['Consequently','Although','Whereas','Despite'],a:0,e:'Akibat → consequently.'},
+{t:'mcq',q:'Some jobs, ___ nursing, require empathy.',o:['such as','for example,','in addition','therefore'],a:0,e:'such as + contoh.'},
+{t:'gap',q:'In ___ of the cost, the project went ahead.',a:['spite'],e:'In spite of + noun.'},
+{t:'err',q:['Although','technology','is','useful','.','It','can','be','addictive.'],a:4,fix:'useful, it can be addictive',e:'Klausa although harus menempel ke klausa utama.'},
+{t:'mcq',q:'Which phrase introduces a conclusion?',o:['To sum up','For instance','Moreover','Whereas'],a:0,e:'To sum up / In conclusion.'}],
+ref:[
+{t:'mcq',q:'Smartphones are useful, but ___ can also be distracting.',o:['it','they','them','this'],a:1,e:'Smartphones (jamak, subjek) → they.'},
+{t:'gap',q:'Governments should invest in education. Doing ___ would reduce unemployment.',a:['so'],e:'doing so = melakukan hal itu.'},
+{t:'mcq',q:'Prices increased in 2010 and ___ again in 2015.',o:['did so','did it','made so','did this'],a:0,e:'did so menggantikan increased.'},
+{t:'err',q:['The','government','introduced','a','tax.','These','tax','was','unpopular.'],a:5,fix:'This',e:'tax tunggal → This.'},
+{t:'mcq',q:'Many students live with their parents. ___ is often because rents are high.',o:['This','These','Such','Those'],a:0,e:'Merujuk ke situasi → This.'},
+{t:'mcq',q:'Japan and Korea both grew. ___ grew faster.',o:['The former','The formers','Former','The first one of them two'],a:0,e:'the former = yang pertama disebut.'},
+{t:'gap',q:'Old phones are often thrown away, but new ___ are expensive.',a:['ones'],e:'ones menggantikan phones.'},
+{t:'err',q:['If','students','work','hard,','they','will','succeed,','and','she','will','be','happy.'],a:8,fix:'they',e:'Pronoun harus konsisten dengan students.'},
+{t:'mcq',q:'Cycling is healthy. ___ also saves money.',o:['Cycling','It','They','This cycling'],a:1,e:'It menghindari pengulangan.'}],
+mod:[
+{t:'mcq',q:'You ___ smoke here. It’s against the law.',o:['mustn’t','needn’t','don’t have to','might not'],a:0,e:'mustn’t = dilarang.'},
+{t:'gap',q:'She ___ (can’t / be) at home; her car is gone.',a:["can't be",'cannot be'],e:'Deduksi negatif → can’t be.'},
+{t:'mcq',q:'It ___ be argued that technology isolates people.',o:['could','must to','should to','will to'],a:0,e:'It could be argued that... (hedging).'},
+{t:'err',q:['Students','must','to','wear','uniforms.'],a:2,fix:'(hapus “to”)',e:'Modal + bare infinitive.'},
+{t:'mcq',q:'I ___ have studied more; I failed the test.',o:['should','must','can','will'],a:0,e:'should have + V3 = penyesalan.'},
+{t:'mcq',q:'Which is the most tentative?',o:['This is the cause.','This is definitely the cause.','This might be one cause.','This must be the cause.'],a:2,e:'might + one = paling hati-hati.'},
+{t:'gap',q:'You ___ (not / have to) pay; the museum is free.',a:["don't have to",'do not have to'],e:'don’t have to = tidak wajib.'},
+{t:'err',q:['He','might','not','to','come','tomorrow.'],a:3,fix:'(hapus “to”)',e:'Modal + bare infinitive.'},
+{t:'mcq',q:'“___ I help you with your bags?” (offer)',o:['Shall','Will','Do','Must'],a:0,e:'British: Shall I...? untuk menawarkan.'}],
+np:[
+{t:'mcq',q:'“People are concerned about safety.” → “There is growing ___ about safety.”',o:['concern','concerned','concerning','concernedly'],a:0,e:'adjective → noun: concern.'},
+{t:'gap',q:'Cities should reduce their ___ (depend) on cars.',a:['dependence','dependency'],e:'depend → dependence.'},
+{t:'mcq',q:'Choose the noun phrase: “___ has improved public health.”',o:['Vaccinate children','The vaccination of children','Children vaccinated','To children vaccination'],a:1,e:'the + noun + of.'},
+{t:'err',q:['The','improve','of','transport','is','important.'],a:1,fix:'improvement',e:'Setelah the → noun.'},
+{t:'mcq',q:'Population growth has ___ to a shortage of housing.',o:['contributed','resulted','caused','made'],a:0,e:'contribute to + noun.'},
+{t:'gap',q:'The ___ (introduce) of new technology changed farming.',a:['introduction'],e:'introduce → introduction.'},
+{t:'mcq',q:'Most academic version of “Lots of people can’t find jobs”:',o:['There is high unemployment.','Many people no job.','Jobs are not found by lots of people.','People can’t find job lots.'],a:0,e:'Noun: unemployment.'},
+{t:'err',q:['Obesity','is','responsible','for','increase','healthcare','costs.'],a:4,fix:'an increase in / increased',e:'responsible for + noun phrase.'},
+{t:'mcq',q:'“Energy ___” means how much energy is used.',o:['consume','consumption','consuming','consumed'],a:1,e:'noun + noun: energy consumption.'}],
+par:[
+{t:'mcq',q:'The job is interesting, challenging and ___.',o:['it pays well','well-paid','pays well','paying well'],a:1,e:'Daftar adjective.'},
+{t:'gap',q:'She likes swimming, running and ___ (cycle).',a:['cycling'],e:'Daftar -ing.'},
+{t:'mcq',q:'Either we act now ___ we face serious problems.',o:['and','or','nor','but'],a:1,e:'either ... or.'},
+{t:'err',q:['The','course','teaches','students','to','write,','speak','and','listening.'],a:8,fix:'listen',e:'Sejajar: write, speak, listen.'},
+{t:'mcq',q:'Not only did she win, ___ broke the record.',o:['but she also','she also','but also she','and also she'],a:0,e:'not only ..., but ... also.'},
+{t:'mcq',q:'Which is parallel?',o:['The plan is cheap and effective.','The plan is cheap and it works effectively.','The plan is cheap and with effect.','The plan is cheapness and effective.'],a:0,e:'Dua adjective sejajar.'},
+{t:'gap',q:'The scheme helps both young people ___ older workers.',a:['and'],e:'both ... and.'},
+{t:'mcq',q:'Which comparison is correct?',o:['Exports in 2020 were higher than 2010.','Exports in 2020 were higher than those in 2010.','Exports in 2020 were higher than the 2010.','Exports in 2020 higher than 2010.'],a:1,e:'Bandingkan ekspor dengan ekspor: than those in 2010.'},
+{t:'mcq',q:'Choose the parallel version:',o:['to save money and for protecting nature','to save money and to protect nature','saving money and to protect nature','save money and protecting nature'],a:1,e:'to ... and to ...'}],
+cx:[
+{t:'mcq',q:'Only after the meeting ___ the truth.',o:['I realised','did I realise','I did realise','realised I'],a:1,e:'Only after ... → inversion.'},
+{t:'gap',q:'What ___ (surprise) me most was the cost.',a:['surprised'],e:'Noun clause: What surprised me most was...'},
+{t:'mcq',q:'___ by the noise, she couldn’t sleep.',o:['Disturbing','Disturbed','To disturb','Disturb'],a:1,e:'Dia diganggu → past participle.'},
+{t:'err',q:['Never','I have','felt','so','happy.'],a:1,fix:'Never have I felt',e:'Never di awal → inversion.'},
+{t:'mcq',q:'It was the price ___ made me choose this phone.',o:['what','that','who','where'],a:1,e:'Cleft: It was X that...'},
+{t:'mcq',q:'The harder you work, ___.',o:['the more you achieve','you achieve more','more you achieve','the most you achieve'],a:0,e:'The + comparative, the + comparative.'},
+{t:'gap',q:'Hardly ___ I arrived when it started to rain.',a:['had'],e:'Hardly had I + V3 ... when.'},
+{t:'mcq',q:'Which sentence is correct?',o:['Having finished the exam, the results were checked by me.','Having finished the exam, I checked the results.','Having finished the exam, the results checked.','Having finish the exam, I checked the results.'],a:1,e:'Subjek setelah koma harus orang yang menyelesaikan ujian.'},
+{t:'mcq',q:'Which contains a noun clause as subject?',o:['What matters is effort.','Effort matters.','Effort, which matters, helps.','Matters effort.'],a:0,e:'What matters = noun clause.'}],
+ph:[
+{t:'mcq',q:'Which word begins with /ð/?',o:['thank','three','these','thought'],a:2,e:'these /ðiːz/. Yang lain /θ/.'},
+{t:'mcq',q:'The -ed in “played” is pronounced:',o:['/t/','/d/','/ɪd/'],a:1,e:'Setelah bunyi bersuara → /d/.'},
+{t:'mcq',q:'Which word has the vowel /ɜː/?',o:['bird','bed','bad','bud'],a:0,e:'bird /bɜːd/.'},
+{t:'mcq',q:'Which word matches /ˈres.ɪ.pi/?',o:['receipt','recipe','recite','rescue'],a:1,e:'recipe, menurut Cambridge UK.'},
+{t:'mcq',q:'Which letter is silent in “island”?',o:['i','s','l','d'],a:1,e:'island /ˈaɪ.lənd/.'}]
+};
+LESSONS.forEach(l=>{ if(EXTRA[l.id]) l.qs.push(...EXTRA[l.id]); });
+
+const LX={"pp":{"s":"Okay so basically gini. Kalau kamu nyebut <b>kapan</b> kejadiannya (yesterday, last year, in 2019, two days ago), it’s done, pakai <b>past simple</b> (V2). Tapi kalau gak nyebut kapan, atau efeknya masih kerasa sampai sekarang, pakai <b>present perfect</b> (have/has + V3). “I went to Bali last year” → ada waktunya, so V2. “I’ve been to Bali twice” → cuma cerita pengalaman, timing-nya gak penting. Orang British juga prefer banget present perfect + just/already/yet: “I’ve just eaten.” Make sense kan?","m":"Ada keterangan waktu lampau (ago, yesterday, last, in 2019)? → V2, it’s over. Ada since, for (sampai sekarang), ever, just, already, yet? → have/has + V3, still ongoing.","en":"Use the past simple for finished actions at a stated past time (yesterday, in 2019, two years ago). Use the present perfect (have/has + past participle) for experiences, for past actions with a result now, and with since or for to describe a period up to now. In British English, the present perfect is preferred with just, already and yet: “Have you finished yet?”"},"pft":{"s":"Past perfect itu literally “the past of the past”. Kalau ada dua kejadian lampau, yang terjadi <b>duluan</b> pakai had + V3. “When I arrived, the film had started” → filmnya mulai duluan, kamu telat, which is relatable. Di Task 1, kalau ketemu “by + tahun lampau” (by 2010), langsung pakai had: “By 2010, sales had doubled.” Tapi jangan overuse ya. Kalau cuma satu kejadian, past simple is enough.","m":"HAD = “already happened before that”. Dua kejadian lampau? Yang duluan dapet HAD. Ketemu “by + tahun lampau”? HAD, no question.","en":"Use the past perfect (had + past participle) for an action that happened before another past action or before a past time: “By 2010, sales had doubled.” If there is only one past event, the past simple is enough. Keep your tenses consistent when you describe past data in Task 1."},"fut":{"s":"Plot twist: future itu bukan cuma will. <b>Will</b> = prediksi atau keputusan spontan (“The phone’s ringing, I’ll get it!”). <b>Be going to</b> = udah ada plan, atau ada evidence-nya (“Look at those clouds, it’s going to rain”). <b>Present continuous</b> = arrangement yang udah fix, udah masuk calendar (“I’m meeting my tutor at 4”). Untuk grafik masa depan di Task 1, pakai is expected to, is projected to, is likely to biar kedengeran lebih professional. Ada “by + tahun depan”? Pakai will have + V3.","m":"Spontan = WILL. Udah ada plan = GOING TO. Udah di calendar = -ING. Future data di Task 1 = “is expected/projected TO”.","en":"Use will for predictions and instant decisions, be going to for plans and for predictions based on evidence, and the present continuous for fixed arrangements. For future data in Task 1, use is expected, projected or predicted to + infinitive, or the future perfect with by: “By 2040, the figure will have reached 10 million.” In British English, shall is used for offers and suggestions: “Shall we start?”"},"art":{"s":"Honestly, ini struggle kita semua karena bahasa Indonesia gak punya a/an/the. Rule paling penting: <b>singular countable noun gak boleh berdiri sendiri</b>. Harus ada partner-nya: a, an, the, my, this, dll. <b>A/an</b> = “sebuah”, belum spesifik. <b>The</b> = udah jelas yang mana, cuma ada satu (the internet), atau superlative (the best). <b>No article</b> = lagi ngomongin hal umum: “Pollution is bad.” “Children need love.” Simple, right?","m":"Singular countable noun = must have a partner. General, plural, atau uncountable = boleh sendiri. Unique atau superlative = THE.","en":"A singular countable noun needs a determiner (a, an, the, my, this). Use a or an for something mentioned for the first time or not specific, and the for something specific, unique (the internet) or with superlatives. Use no article with general plural or uncountable nouns: “Pollution is a serious problem.” British English says in hospital and at university without the."},"sva":{"s":"Subjek tunggal = kata kerja tunggal (pakai -s, is, has). The thing is, subjek di IELTS sering panjang banget, so cari <b>main noun</b>-nya dulu. “The number of students HAS increased” → main noun-nya “the number” (tunggal), “students” cuma pelengkap. Terus careful sama uncountable nouns kayak information, advice, research, evidence, news. Mereka gak pernah dapet -s dan selalu singular, no exceptions.","m":"Cari main noun-nya, “of ...” di belakangnya cuma pelengkap. Information, advice, research, news = always singular, never plural.","en":"The verb must agree with the head of the subject, not the nearest noun: “The number of tourists has doubled.” Uncountable nouns such as information, advice, research, evidence and news take a singular verb and have no plural form. In British English, collective nouns such as team or government can take a singular or plural verb."},"qnt":{"s":"<b>Few / a few</b> buat yang countable (people, cars). <b>Little / a little</b> buat yang uncountable (time, money). Bagian yang suka bikin confused: ada “a” = positive vibes (“ada beberapa, cukup lah”). Gak ada “a” = negative vibes (“dikit banget, almost nothing”). <b>Fewer vs less</b> juga konsepnya sama: fewer cars (countable), less water (uncountable).","m":"Ada “a” = positive vibes. Tanpa “a” = almost nothing. Countable? FEW dan FEWER. Uncountable? LITTLE dan LESS.","en":"Use few, a few and fewer with countable nouns, and little, a little and less with uncountable nouns. Without a, few and little are negative (almost none); with a, they are positive (some). In IELTS Writing, use fewer with countable nouns, even though less is common in casual British speech."},"wf":{"s":"Real talk, di band 5.5 banyak banget error karena salah <b>word form</b>. Satu kata punya banyak versi: noun, verb, adjective, adverb. Mau taruh sebelum noun? Pakai adjective (a <b>significant</b> rise). Mau describe verb? Pakai adverb, biasanya -ly (rose <b>significantly</b>). Ada slot “the ... of”? Isi pakai noun (the <b>development</b> of). Basically tinggal lihat posisinya.","m":"Adjective = pasangannya NOUN. Adverb (-ly) = pasangannya VERB. Slot “the ... of” = pasti NOUN.","en":"Many errors come from using the wrong word form. Use an adjective before a noun (a significant rise), an adverb to describe a verb (rose significantly), and a noun after the and before of (the development of). Learn word families together: succeed, success, successful, successfully."},"id":{"s":"Ini error yang muncul karena kita masih mikir in Bahasa terus translate langsung. “Saya setuju” jadi “I am agree”, padahal agree itu udah verb, gak butuh am. “Diskusi tentang” jadi “discuss about”, padahal discuss langsung aja, tanpa about. The solution? Hafalin versi yang benar sampai jadi muscle memory.","m":"Agree, discuss, explain, marry, suggest = verbs yang independent, gak butuh am, about, me, atau with tambahan. Respect their boundaries.","en":"Some errors come from translating directly from Indonesian. Agree is a verb, so say “I agree”, not “I am agree”. Discuss needs no preposition: “discuss this issue”. Say “explain the rules to me”, “do research” and “for three years”. Keep a personal checklist of your errors and review it before the end of the Writing test."},"punc":{"s":"Dua kalimat lengkap <b>gak boleh</b> disambung pakai koma doang. Namanya comma splice, dan examiner notice banget. Pilih salah satu: titik, semicolon, atau conjunction (and, but, so, which). Terus, kalimat yang mulai pakai because atau although tapi gak ada lanjutannya? Itu belum complete sentence. One more thing: pakai koma setelah opener (However, In my opinion, If ...), tapi jangan ada koma sebelum “that”.","m":"Koma itu bukan lem. Mau gabung dua kalimat? Pakai TITIK, SEMICOLON, atau CONJUNCTION. Because/although = harus ada main clause-nya, jangan digantung.","en":"Do not join two complete sentences with only a comma. Use a full stop, a semicolon, or a conjunction such as and, but, so or which. A clause beginning with because or although is not a complete sentence on its own. Use a comma after an introductory word or clause, but not before a that-clause."},"uk":{"s":"Fun fact: IELTS sebenarnya accept ejaan UK maupun US, as long as kamu konsisten. Karena kita team British, pakai colour, centre, travelled, programme, organise. Vocab-nya juga beda: flat (bukan apartment), lift (bukan elevator), queue (bukan line). Plus prepositions khas British: at the weekend, in hospital, fill in a form. Very posh, very British.","m":"British spelling suka “extra letters”: colOUr, travelLed, programME, centRE. Pick one style and stay consistent.","en":"IELTS accepts British or American spelling, but you should be consistent. British spelling includes colour, centre, travelled and programme, and -ise is the most common ending (organise). British vocabulary includes flat, lift, queue and rubbish, and British usage includes at the weekend, in hospital and fill in a form."},"ger":{"s":"Setiap verb punya “pasangan”-nya sendiri. Ada yang pasangannya <b>-ing</b>: enjoy, avoid, suggest, finish, mind. Ada yang pasangannya <b>to + V1</b>: decide, plan, hope, want, afford, refuse. Setelah preposition (in, of, by, about) always -ing. The tricky part: look forward to, be used to, contribute to. “To” di sini preposition, so tetap pakai -ing!","m":"-ING squad: enjoy, avoid, suggest, finish, mind. TO squad (biasanya soal rencana atau keinginan): decide, plan, hope, want, afford. Look forward TO, used TO, contribute TO = tricky, tetap -ING!","en":"Some verbs are followed by -ing (enjoy, avoid, suggest, finish) and others by to + infinitive (decide, plan, hope, afford, refuse). After a preposition, use -ing: interested in learning. Be careful with expressions in which to is a preposition: look forward to meeting, be used to living, contribute to reducing."},"cond":{"s":"Conditional itu basically “kalau ..., maka ...”. <b>Zero</b>: fakta (If you heat ice, it melts). <b>First</b>: realistic, bisa kejadian (If it rains, I’ll stay home). <b>Second</b>: imagine-imagine soal sekarang (If I were rich, I would travel the world). <b>Third</b>: regret soal masa lalu (If I had studied, I would have passed). Golden rule: setelah “if”, jangan pakai will atau would.","m":"Fakta = present + present. Realistic = present + will. Imagine = past + would. Regret = had + would have. Ada WILL/WOULD setelah IF = red flag 🚩","en":"Use the zero conditional for facts, the first for real future possibilities, the second for imaginary present or future situations (If I were...), and the third for imaginary past situations (If I had known...). Mixed conditionals link a past cause to a present result. Do not use will or would in the if-clause. For variety, use unless, provided that or inversion: “Should the government act now...”"},"pass":{"s":"Passive itu fokusnya ke <b>what happened</b>, bukan who did it. Rumusnya be + V3, satu paket. Diagram proses di Task 1? Hampir semuanya passive: “The beans are harvested, then they are dried.” The catch: verb yang gak punya object (happen, rise, arrive, die) <b>gak bisa</b> jadi passive. Jadi bukan “was happened”, cukup “happened”.","m":"BE + V3 = always a pair. Happen, rise, arrive, die = intransitive, gak bisa jadi passive.","en":"Form the passive with be + past participle. Use it when the action matters more than who does it, especially in Task 1 process diagrams: “The beans are harvested and then dried.” Intransitive verbs such as happen, rise and arrive cannot be passive: say “Prices rose”, not “Prices were risen”."},"rel":{"s":"Relative clause itu buat nambahin info tentang orang atau benda. <b>Who</b> buat orang, <b>which</b> buat benda, <b>whose</b> buat kepemilikan, <b>where</b> buat tempat, <b>when</b> buat waktu. Ada dua jenis: kalau info-nya essential buat nentuin yang mana, gak pakai koma. Kalau cuma extra info, diapit koma dan gak boleh pakai “that”.","m":"WHO = orang, WHICH = benda, WHOSE = punya siapa, WHERE = tempat. Ada koma? “THAT” is not allowed.","en":"Use who for people, which for things, whose for possession, where for places and when for times. Defining clauses identify which person or thing you mean and have no commas. Non-defining clauses add extra information, use commas, and cannot use that. Some clauses can be reduced: “Students living on campus...”, “The money spent on defence...”."},"cmp":{"s":"Task 1 itu intinya compare angka, kayak bandingin harga skincare. Adjective pendek tambah -er/-est (higher, the highest). Yang panjang pakai more/the most (more expensive). Jangan double, “more higher” itu salah. Mau show seberapa beda? Slightly (sedikit), considerably/significantly (jauh). <b>Number of</b> buat countable, <b>amount of</b> buat uncountable.","m":"-ER atau MORE, pick one, jangan dua-duanya. Countable = NUMBER. Uncountable = AMOUNT.","en":"Use -er and -est with short adjectives and more and the most with longer ones, but never both (not “more higher”). Show the size of a difference with slightly, considerably or significantly. Use the number of with countable nouns and the amount of with uncountable nouns. In British English, write per cent as two words."},"link":{"s":"Linking words itu yang bikin ide kamu flow. <b>However</b> biasanya di awal kalimat, terus pakai koma. <b>Although / even though</b> diikuti full clause. <b>Despite / in spite of</b> diikuti noun. Jangan pakai although dan but barengan, pick one. And please, jangan setiap kalimat dikasih linker, examiner justru notice dan gak suka.","m":"Despite + NOUN. Although + CLAUSE. However = awal kalimat + koma. Although + but = toxic combo, pilih salah satu.","en":"Use however at the start of a sentence, followed by a comma. Use although or even though before a clause, and despite or in spite of before a noun or an -ing form. Do not use although and but together. Examiners penalise the mechanical overuse of linking words, so use them only when they show a real relationship between ideas."},"ref":{"s":"Biar gak repetitive, pakai referencing: this, these, such, it, they, the former, the latter. Pro tip: jangan pakai “This” sendirian, tambahin noun-nya: “This increase”, “This problem”, biar reader gak bingung “this yang mana?”. Terus double check, pronoun-nya match gak sama yang dirujuk. Children itu plural, so “they”, bukan “he”.","m":"THIS + noun, jangan dibiarkan sendiri. Former = yang pertama, latter = yang terakhir (L for Last).","en":"Use referencing to avoid repetition: this, these, such, it, they, the former and the latter. Add a noun after this to make the reference clear (this increase, this problem). Make sure each pronoun agrees with the noun it refers to: children... they. Accurate referencing improves your Coherence and Cohesion score."},"mod":{"s":"Modal verbs (can, could, may, might, must, should) selalu diikuti V1 <b>tanpa “to”</b>. Period. Untuk Task 2, biar kedengeran academic dan gak terlalu absolut, pakai hedging: may, might, could, tend to, it is likely that. Biar gak terkesan “pokoknya aku benar”. Terus bedain: <b>mustn’t</b> = dilarang, <b>needn’t / don’t have to</b> = gak wajib, chill.","m":"Modal + V1, NO “to”. Mustn’t = strictly no 🚫. Needn’t = not necessary, chill.","en":"Modal verbs are followed by the bare infinitive, never to: “You should apply.” Use hedging (may, might, could, tend to, it could be argued that) to sound academic and to avoid overgeneralising. Note the difference: mustn’t means something is forbidden, while needn’t or don’t have to means it is not necessary."},"np":{"s":"Nominalisation itu ubah verb atau adjective jadi noun, biar tulisan kamu lebih academic dan padat. “Because people use cars more, pollution increases” jadi “The growing use of cars has led to higher pollution.” Instantly naik level, right? Sambungnya pakai lead to, result in, contribute to. Tapi jangan dipaksain, clarity tetap nomor satu.","m":"Verb jadi NOUN: decide → decision, consume → consumption. Sambung pakai LEAD TO atau RESULT IN. Instantly academic.","en":"Nominalisation turns verbs and adjectives into nouns, making writing more concise and academic: “The growing use of cars has led to higher levels of pollution.” Link noun phrases with verbs such as lead to, result in and contribute to. Use it naturally, because clarity matters more than complexity."},"par":{"s":"Parallel structure = kalau bikin list, bentuknya harus sama semua, kayak satu squad dengan dress code yang sama. Gak boleh ada yang beda sendiri. “Reading, swimming and cooking” (semua -ing), bukan “reading, swimming and to cook”. Waktu compare data di Task 1 juga gitu: compare salary dengan salary, bukan salary dengan orang. So, “than that of nurses”.","m":"List = same dress code, gak ada yang beda sendiri. Compare apples to apples.","en":"Items in a list or pair should have the same grammatical form: “reading, swimming and cooking”, “to reduce costs and to save time”. With both...and, either...or and not only...but also, keep both parts parallel. In comparisons, compare like with like: “higher than that of nurses”."},"cx":{"s":"Ini struktur yang bikin kamu naik level ke band 7+, main character energy. <b>Inversion</b>: kalimat diawali Not only, Never, Rarely, Hardly? Urutannya dibalik kayak pertanyaan (Not only does it...). <b>Cleft</b>: buat kasih emphasis (It is the cost that worries people). <b>Participle clause</b>: Having finished..., tapi pastikan subjeknya orang yang sama. Pakai secukupnya, accuracy tetap lebih penting.","m":"Negative word di depan (Never, Rarely, Not only, Hardly) = kalimatnya dibalik kayak pertanyaan.","en":"Advanced structures can widen your grammatical range: inversion after negative adverbials (Not only does it..., Rarely have we seen...), cleft sentences (It is the cost that worries people), participle clauses (Having finished the report, she...) and noun clauses (What concerns me most is...). Accuracy matters more than complexity, so use one or two per paragraph."},"ph":{"s":"IPA itu basically “alphabet buat bunyi”, biar kamu tahu cara baca tanpa nebak. Tanda ˈ = suku kata yang paling ditekan. Bunyi yang sering ketuker buat kita: th (/θ/ think, /ð/ this), v vs f, dan sh. Ciri British: “r” di akhir kata gak dibaca (car = /kɑː/), very posh. Akhiran -ed bisa bunyi /t/, /d/, atau /ɪd/, tergantung bunyi sebelumnya.","m":"-ed: setelah t atau d → /ɪd/ (decided). Setelah bunyi tak bersuara p, k, s, sh, ch, f → /t/ (watched). Sisanya → /d/ (played).","en":"The IPA shows exactly how a word is pronounced: ˈ marks the main stress and ˌ marks secondary stress. British English is non-rhotic, so the r in car is not pronounced unless a vowel follows. The -ed ending is pronounced /ɪd/ after t or d, /t/ after other voiceless sounds and /d/ after voiced sounds. Weak forms such as /fə/ for for make your speech sound natural."}};
+function lessonTabs(L){
+  const X=LX[L.id]; if(!X) return `<div class="read">${L.body}</div>`;
+  const v=S.prog.lview||'s';
+  const tabs=[['s','Santai ✨ + cara ingat'],['b','Baku'],['en','English']];
+  return `<div class="tabs" role="tablist" style="margin-bottom:22px">${tabs.map(([k,n])=>`<button class="tab" role="tab" data-lv="${k}" aria-selected="${k===v}">${n}</button>`).join('')}</div>
+  <div class="read lv" data-p="s" ${v==='s'?'':'hidden'}><p>${X.s}</p><div class="memo-box"><b>💡 Cara gampang ingetnya</b><p>${esc(X.m)}</p></div><p style="font-family:var(--sans);font-size:.9rem;color:var(--muted)">Contoh lengkap dan catatan British ada di tab Baku.</p></div>
+  <div class="read lv" data-p="b" ${v==='b'?'':'hidden'}>${L.body}</div>
+  <div class="read lv" data-p="en" lang="en-GB" ${v==='en'?'':'hidden'}><p>${esc(X.en)}</p><button class="btn sm ghost" data-say="${esc(X.en)}">${SPK} Listen (British voice)</button></div>`;
+}
+function bindLessonTabs(el){
+  el.querySelectorAll('[data-lv]').forEach(b=>b.onclick=()=>{ const k=b.dataset.lv; el.querySelectorAll('[data-lv]').forEach(x=>x.setAttribute('aria-selected',x===b)); el.querySelectorAll('.lv').forEach(p=>p.hidden=p.dataset.p!==k); if(S.prog.lview!==k){S.prog.lview=k;persist('prog');} });
+}
+
+const EN={
+pp:['Life experience with no specific time → present perfect.','“In 2021” is a specific past time, so use the past simple.','British English uses just with the present perfect.','“When I was ten” is a finished past time, so use the past simple.','In British English, yet is used with the present perfect.','since + a starting point → present perfect. rise, rose, risen.','Past data in Task 1 → past simple.','How long + up to now → present perfect continuous.','The result is still true now, so British English uses the present perfect.','since + a point in time → present perfect.','“Ago” marks a finished past time, so use the past simple.','“This is the first time” is followed by the present perfect.','since + up to now → present perfect.','Negative present perfect: have not + past participle.','For life experience, use Have you ever + past participle.'],
+pft:['by + a past time → past perfect.','The train left before we arrived → past perfect.','An experience before a past point: had never + past participle (fly, flew, flown).','Only one past event with a clear time → past simple.','Past data: keep the whole sentence in the past simple.','A duration up to a past point → past perfect continuous.','Finishing the degree came first → past perfect.','by the time + past → past perfect.','Telling a story in the past → had left.','by + a past year → past perfect.','The ticket was lost before the past event → past perfect.','A duration before a past point → past perfect (simple or continuous).','By 2010 (in the past) → had doubled.','One event at a clear time → past simple.','An experience before a past point → had never + past participle.'],
+fut:['be projected + to-infinitive.','by + a future time → future perfect.','A prediction based on visible evidence → be going to.','A fixed arrangement → present continuous.','be expected + to-infinitive.','be hoping + to-infinitive sounds natural for plans.','be likely + to-infinitive.','be set + to-infinitive.','An instant decision → will.','will + bare infinitive.','Official timetables → present simple.','An action in progress at a future time → future continuous.','A prediction → will rise or will have risen.','British English uses Shall we...? for suggestions.','be expected to describes a projection.'],
+art:['A general, uncountable noun → no article.','British English: in hospital (no article).','the + adjective refers to a group of people.','Government is singular, countable and specific → the government.','Superlatives always take the.','Subjects of study take no article; a university that is not specific takes a.','Use an before a vowel sound.','Something unique → the internet.','British English: play the + musical instrument.','Nature in a general sense → no article.','Meals in general take no article; river names take the.','the + adjective = a group of people.','Superlatives need the.','The h in hour is silent → an.','Go to bed has no article.'],
+sva:['The head of the subject is “the number” (singular).','Evidence is uncountable → is.','Advice is uncountable, so it has no -s.','Every + singular verb.','Research is uncountable.','In British English, collective nouns can take a singular or plural verb.','The head of the subject is “one” → lives.','News is uncountable → singular.','With neither...nor, the verb agrees with the nearer subject (students).','Information is uncountable → is.','A number of means many → plural.','Subjects ending in -s, such as mathematics, are singular.','Everyone takes a singular verb.','The head of the subject is furniture (uncountable).','Police always takes a plural verb.'],
+qnt:['A negative meaning (almost none) with a countable noun → few.','Cars is countable → fewer.','a great deal of + uncountable noun.','“Most of” must be followed by the, these or my.','Time is uncountable and the meaning is negative → little.','Each + singular noun + singular verb.','Milk is uncountable, in a negative sentence → much.','only a few = very few (countable).','A positive meaning with a countable noun → a few.','Jobs is countable → fewer.','People is countable → a large number of.','“They were all happy” → All.','Time is uncountable → how much.','Both + plural noun.','Information is uncountable, so it cannot take “an”.'],
+wf:['Before the noun “rise” → adjective.','Describing the verb “increased” → adverb.','After “the” and before “of” → noun.','Economic relates to the economy; economical means saving money.','After “is” → adjective.','to + verb: succeed.','Before a noun → adjective.','harm → harmful (adjective).','Describing the verb “spoke” → adverb.','Describing the verb “increased” → adverb.','much + comparative adjective.','aware → awareness (noun).','After “the” and before “of” → noun.','After “is” → adjective.','very + adjective.'],
+id:['Agree is a verb, so it does not need “am”.','Discuss takes a direct object with no preposition.','Plural noun + plural verb.','for + a period of time; since + a point in time.','Do research (research is uncountable).','Explain something to someone.','People is plural → are.','Very cannot modify the verb “like” directly.','Marry someone, with no preposition.','Suggest is not followed by person + to-infinitive.','Interested describes how you feel; interesting describes the thing.','since + a point in time.','The sentence needs the verb be, and people is plural → are.','Homework is uncountable.','Do not use although with but; despite is not followed by a clause.'],
+punc:['Two complete sentences cannot be joined by a comma alone (a comma splice).','Pattern: sentence; however, sentence.','A clause starting with because or although needs a main clause.','Put a comma at the end of an introductory if-clause.','No comma before a that-clause.','Join with a comma + conjunction (so).','However at the start of a sentence is followed by a comma.','Comma splice: use a conjunction or a semicolon.','A semicolon joins two complete sentences.','A non-defining clause takes a comma on both sides.','An although-clause cannot stand alone.','Use a comma after an introductory phrase.','Two complete sentences with no punctuation or conjunction make a run-on sentence.','No comma before a that-clause.','Use commas between items; British style usually omits the comma before “and”.'],
+uk:['British English: at the weekend.','British spelling: travelled (double l) and centre (-re).','British English: practise (verb), practice (noun).','British English: fill in a form.','British English: different from (or different to).','Flat is the British word for apartment.','British English: queue.','British English: lorry.','British spelling: programme (except a computer program).','British English: lift.','British English: I have got / I’ve got.','British English: Monday to Friday.','British spelling: licence (noun), license (verb).','British English: bin.','British spelling: jewellery.'],
+ger:['look forward to + -ing.','afford + to-infinitive.','suggest + -ing.','contribute to + -ing.','stop + -ing = no longer do something.','A gerund can be the subject of a sentence.','decide + to-infinitive.','enjoy + -ing.','be used to + -ing (be accustomed to).','avoid + -ing.','remember + to-infinitive = don’t forget to do it later.','After a preposition, use -ing.','refuse + to-infinitive.','instead of + -ing.','plan + to-infinitive.'],
+cond:['Second conditional: if + past, would.','Third conditional: if + had + past participle.','Zero conditional for facts.','Do not use will in the if-clause.','Inversion: Should + subject = If + subject + should.','Mixed conditional: a past action affects the present.','If I were you (second conditional).','First conditional: if + present, will.','The if-clause in the third conditional uses had + past participle.','Unless means if not.','Inverted third conditional: would have + past participle.','Second conditional: if + past.','Provided that means on condition that.','If I were you is hypothetical, so use would.','Mixed conditional: a past cause with a present result.'],
+pass:['The leaves are picked by people → passive.','Present continuous passive: is being + past participle.','Happen is intransitive and cannot be passive.','Past simple passive.','Arrive is intransitive.','Present simple passive, with the adverb “then” after “is”.','Present simple passive.','Past simple passive.','Future passive: will be + past participle.','The hospital is built by someone → passive.','Process diagrams use the present simple passive.','Past simple passive.','Rise is intransitive and cannot be passive.','It is expected that... (a passive reporting structure).','be + past participle.'],
+rel:['Non-defining clauses cannot use that.','Place → where.','Possession → whose.','A non-defining clause about a person → who.','Passive → past participle only.','There is only one father, so the information is extra → two commas.','Possession → whose.','Time → when.','Things → which (or that).','Which already replaces “the house”.','People → who.','Active meaning → -ing.','Place → where.','A non-defining clause (with commas) → which, not that.','Commas show extra information.'],
+cmp:['Water is uncountable → amount.','Pattern: twice as + adjective + as.','Higher is already comparative.','The superlative of low.','per cent, with no -s.','considerably + comparative.','Superlative: the highest.','Comparative + than.','more ... than.','Contrasting two trends → while.','the same as.','three times as much ... as.','Short adjectives take -est.','Hours is countable → fewer.','compared with (or to).'],
+link:['Followed by a noun → despite.','At the start of a new sentence, with a comma → however.','Although and but are not used together.','As a result = consequently.','Despite + noun, without “of”.','Comparing two opposite things → whereas.','It shows the opposite side.','In addition = also.','Followed by a clause → even though.','Due to + noun, not a clause.','A result → consequently.','such as + examples.','In spite of + noun.','An although-clause must be attached to a main clause.','To sum up / In conclusion.'],
+ref:['One increase (singular) → This increase.','Such + plural noun refers to that type of policy.','Children is plural → they.','the former ... the latter.','Ones replaces a plural noun.','This + noun is clearer.','Smartphones (a plural subject) → they.','Doing so = doing that.','Did so replaces “increased”.','Tax is singular → This.','Referring to a situation → This.','The former = the first one mentioned.','Ones replaces “phones”.','The pronoun must agree with “students”.','It avoids repetition.'],
+mod:['May + some avoids overgeneralising.','Past deduction: must have + past participle.','Have you got...? is typically British.','Modal + bare infinitive.','Needn’t = not necessary; mustn’t = forbidden.','Should + an action is a clear recommendation.','Mustn’t = forbidden.','Negative deduction → can’t be.','It could be argued that... is a hedging phrase.','Modal + bare infinitive.','should have + past participle expresses regret.','Might + one is the most tentative.','Don’t have to = not obligatory.','Modal + bare infinitive.','British English uses Shall I...? for offers.'],
+np:['Adjective + noun.','Noun phrase + result in.','consume → consumption.','lead to + noun phrase: an increase in health problems.','result in + noun.','decide → decision.','Adjective → noun: concern.','depend → dependence.','the + noun + of.','After “the” → noun.','contribute to + noun.','introduce → introduction.','Noun: unemployment.','responsible for + noun phrase.','Noun + noun: energy consumption.'],
+par:['A list of adjectives.','Parallel: reduce, improve, save.','A list of -ing forms: reading, swimming, cooking.','Compare salary with salary: that of nurses.','both ... and.','Not only at the start → inversion.','A list of adjectives.','A list of -ing forms.','either ... or.','Parallel: write, speak, listen.','not only ..., but ... also.','Two parallel adjectives.','both ... and.','Compare exports with exports: than those in 2010.','to ... and to ...'],
+cx:['Not only + auxiliary + subject.','Perfect participle: the first action finished first.','The + comparative, the + comparative.','After “Rarely” at the start, invert the subject and auxiliary.','Cleft: It is + X + that...','The subject must be the person walking (I).','Only after ... → inversion.','Noun clause: What surprised me most was...','She was disturbed → past participle.','Never at the start → inversion.','Cleft: It was X that...','The + comparative, the + comparative.','Hardly had I + past participle ... when.','The subject after the comma must be the person who finished the exam.','“What matters” is a noun clause.'],
+ph:['think /θɪŋk/; this, those and then begin with /ð/.','/fəˈtɒɡ.rə.fi/. Compare photograph /ˈfəʊ.tə.ɡrɑːf/.','Ch is voiceless, so -ed is pronounced /t/.','After t or d, -ed is pronounced /ɪd/.','British English is non-rhotic: car /kɑː/.','UK /ˈʃedʒ.uːl/, US /ˈskedʒ.uːl/.','Colleague, according to Cambridge UK.','Function words usually take a weak form with schwa /ə/.','debt /det/.','Cambridge UK: /ˌɒb.səlˈiːt/, with the main stress on the last syllable.','these /ðiːz/; the others begin with /θ/.','After a voiced sound, -ed is pronounced /d/.','bird /bɜːd/.','Recipe, according to Cambridge UK.','island /ˈaɪ.lənd/.']
+};
+LESSONS.forEach(l=>{ const a=EN[l.id]; if(a) l.qs.forEach((q,i)=>{ if(a[i]) q.en=a[i]; }); });
+
+const PRON = [['comfortable','/ˈkʌm.fə.tə.bəl/'],['vegetable','/ˈvedʒ.tə.bəl/'],['schedule','/ˈʃedʒ.uːl/'],['hierarchy','/ˈhaɪə.rɑː.ki/'],['colleague','/ˈkɒl.iːɡ/'],['chaos','/ˈkeɪ.ɒs/'],['recipe','/ˈres.ɪ.pi/'],['Wednesday','/ˈwenz.deɪ/'],['island','/ˈaɪ.lənd/'],['receipt','/rɪˈsiːt/'],['clothes','/kləʊðz/'],['answer','/ˈɑːn.səʳ/'],['water','/ˈwɔː.təʳ/'],['thought','/θɔːt/'],['debt','/det/'],['hotel','/həʊˈtel/'],['determine','/dɪˈtɜː.mɪn/'],['economy','/iˈkɒn.ə.mi/'],['photography','/fəˈtɒɡ.rə.fi/'],['behaviour','/bɪˈheɪ.vjəʳ/']];
+/* ---------- helpers ---------- */
+const $ = (s,el=document)=>el.querySelector(s);
+const esc = s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const shuffle = a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
+const pick = (a,n)=>shuffle(a).slice(0,n);
+const dayStr = (off=0)=>{const d=new Date();d.setDate(d.getDate()+off);return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');};
+const norm = s=>String(s).toLowerCase().replace(/[’‘]/g,"'").replace(/[.!?,]+$/,'').replace(/\s+/g,' ').trim();
+const DAY = 86400000;
+const SPK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4zM15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg>';
+const TRASH = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14"/></svg>';
+const EDIT = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20h4L19 9l-4-4L4 16z"/></svg>';
+
+function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('show');clearTimeout(toast._t);toast._t=setTimeout(()=>t.classList.remove('show'),2200);}
+let gbVoice=null;
+function loadVoices(){ if(!('speechSynthesis' in window))return; const v=speechSynthesis.getVoices(); gbVoice=v.find(x=>x.lang==='en-GB'&&/female|google|serena|kate|libby|sonia/i.test(x.name))||v.find(x=>x.lang==='en-GB')||v.find(x=>/en[-_]GB/i.test(x.lang))||null; }
+if('speechSynthesis' in window){loadVoices();speechSynthesis.onvoiceschanged=loadVoices;}
+function speak(t){ if(!('speechSynthesis' in window)){toast('Browser ini belum mendukung suara.');return;} const u=new SpeechSynthesisUtterance(t); u.lang='en-GB'; if(gbVoice)u.voice=gbVoice; u.rate=.92; speechSynthesis.cancel(); speechSynthesis.speak(u); }
+document.addEventListener('click',e=>{const b=e.target.closest('[data-say]'); if(b){e.stopPropagation();speak(b.dataset.say);}});
+
+/* ---------- state & storage ---------- */
+const S = { vocab:[], prog:{xp:0,streak:0,lastDay:null,today:{d:null,xp:0},done:{},quizBest:0,best:{},answered:0,correct:0} };
+let DB=null, UID=null, MODE='local';
+const LS_V='mtg_vocab', LS_P='mtg_prog';
+function loadLocal(){ try{const v=localStorage.getItem(LS_V);if(v)S.vocab=JSON.parse(v);}catch(e){} try{const p=localStorage.getItem(LS_P);if(p)S.prog=Object.assign(S.prog,JSON.parse(p));}catch(e){} }
+function saveLocal(){ try{localStorage.setItem(LS_V,JSON.stringify(S.vocab));localStorage.setItem(LS_P,JSON.stringify(S.prog));}catch(e){} }
+const timers={}, chains={vocab:Promise.resolve(),prog:Promise.resolve()};
+function persist(kind){
+  saveLocal();
+  if(MODE!=='cloud')return;
+  clearTimeout(timers[kind]);
+  timers[kind]=setTimeout(()=>{
+    const body = kind==='vocab'?{items:JSON.parse(JSON.stringify(S.vocab))}:JSON.parse(JSON.stringify(S.prog));
+    chains[kind]=chains[kind].then(()=>DB.doc(`data/users/${UID}/${kind}`).set(body)).catch(err=>{ console.warn(err); setSync(); });
+  },700);
+}
+function setSync(){ const n=$('#syncNote'); if(!n)return; n.innerHTML = MODE==='cloud' ? '<span class="dot on"></span>Tersimpan di akunmu' : '<span class="dot"></span>Tersimpan di browser ini'; }
+async function initCloud(){
+  try{
+    if(!window.claude||!window.claude.use){setSync();return;}
+    const [db,user]=await Promise.all([window.claude.use('db'),window.claude.use('user')]);
+    if(!db||!user){setSync();return;}
+    const id=await user.id(); if(!id){setSync();return;}
+    DB=db; UID=id;
+    const [v,p]=await Promise.all([DB.doc(`data/users/${UID}/vocab`).get(),DB.doc(`data/users/${UID}/prog`).get()]);
+    MODE='cloud';
+    if(v.exists){ const items=JSON.parse(JSON.stringify(v.data().items||[])); const seen=new Set(items.map(i=>i.id)); S.vocab.forEach(i=>{if(!seen.has(i.id))items.push(i);}); const added=items.length>(v.data().items||[]).length; S.vocab=items; if(added)persist('vocab'); }
+    else if(S.vocab.length) persist('vocab');
+    if(p.exists){ const cp=JSON.parse(JSON.stringify(p.data())); if((cp.xp||0)>=(S.prog.xp||0)) S.prog=Object.assign(S.prog,cp); else persist('prog'); }
+    else if(S.prog.xp) persist('prog');
+    saveLocal(); setSync(); backfill();
+    if(['home','vocab'].includes(route.v) && !busy) render();
+  }catch(e){ console.warn(e); MODE='local'; setSync(); }
+}
+
+/* ---------- progress ---------- */
+function touchDay(){ const p=S.prog,t=dayStr(); if(p.lastDay!==t){ p.streak = p.lastDay===dayStr(-1)?(p.streak||0)+1:1; p.lastDay=t; } if(!p.today||p.today.d!==t)p.today={d:t,xp:0}; }
+function streakNow(){ const p=S.prog; return (p.lastDay===dayStr()||p.lastDay===dayStr(-1))?(p.streak||0):0; }
+function todayXP(){ return S.prog.today&&S.prog.today.d===dayStr()?S.prog.today.xp:0; }
+const GOAL=100; const TARGET=8.5; const ME='Salsabila';
+function award(x){ if(x<=0)return; touchDay(); S.prog.xp+=x; S.prog.today.xp+=x; persist('prog'); const pl=$('#xpPill'); pl.textContent='+'+x+' XP'; pl.classList.add('show'); clearTimeout(award._t); award._t=setTimeout(()=>pl.classList.remove('show'),1100); }
+function level(){ return Math.floor(Math.sqrt((S.prog.xp||0)/50))+1; }
+
+/* ---------- vocab SRS ---------- */
+const INT=[0,1,3,7,16,35];
+function dueItems(){ const n=Date.now(); return S.vocab.filter(i=>(i.due||0)<=n); }
+function addWord(w,m,ex,tag,ipa){ w=w.trim(); if(!w)return false; if(S.vocab.some(i=>norm(i.w)===norm(w)))return false; S.vocab.unshift({id:Date.now().toString(36)+Math.random().toString(36).slice(2,6),w,m:(m||'').trim(),ex:(ex||'').trim(),tag:(tag||'').trim(),ipa:(ipa||'').trim(),box:0,due:Date.now(),added:Date.now()}); return true; }
+function rateWord(it,r){ const n=Date.now(); if(r===1){it.box=0;it.due=n+10*60000;} else if(r===2){it.box=Math.max(it.box,1);it.due=n+Math.max(1,Math.round(INT[it.box]/2))*DAY;} else if(r===3){it.box=Math.min(5,it.box+1);it.due=n+INT[it.box]*DAY;} else {it.box=Math.min(5,it.box+2);it.due=n+INT[it.box]*DAY*1.3;} persist('vocab'); }
+function nextLabel(it,r){ if(r===1)return '10 mnt'; let b=it.box; if(r===2){b=Math.max(b,1);return Math.max(1,Math.round(INT[b]/2))+' hari';} if(r===3)b=Math.min(5,b+1); else b=Math.min(5,b+2); const d=Math.round(INT[b]*(r===4?1.3:1)); return d+' hari'; }
+
+/* ---------- router ---------- */
+let route={v:'home'}, busy=false, cleanup=null;
+function go(v,arg){ if(cleanup){cleanup();cleanup=null;} busy=false; route={v,arg}; render(); window.scrollTo(0,0); }
+document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.go)));
+const V = {};
+function render(){ document.querySelectorAll('.navbtn').forEach(b=>b.toggleAttribute('aria-current',false)); const cur=document.querySelector(`.navbtn[data-go="${({lesson:'lessons',quiz:'practice',games:'practice'})[route.v]||route.v}"]`); if(cur)cur.setAttribute('aria-current','page'); const el=$('#view'); el.innerHTML=mtop(); const body=document.createElement('div'); el.appendChild(body); (V[route.v]||V.home)(body,route.arg); el.insertAdjacentHTML('beforeend','<p class="mcredit">Made with 💕 by Salsabila</p>'); }
+function mtop(){ return `<div class="mtop"><div class="brand">Mind the Grammar<span class="gap"></span></div><div class="row" style="gap:12px"><span class="chip y">${streakNow()} hari beruntun</span><div class="av sm" aria-label="Salsabila"><span>S</span><i>💕</i></div></div></div>`; }
+
+/* ---------- home ---------- */
+const ALLW = DECKS.flatMap(d=>d.words.map(w=>({w:w[0],m:w[1],ex:w[2],tag:d.name,ipa:w[3]||''})));
+const camb = w=>'https://dictionary.cambridge.org/search/direct/?datasetsearch=english&q='+encodeURIComponent(w);
+const cambLink = w=>`<a class="camb" href="${camb(w)}" target="_blank" rel="noopener">Cambridge</a>`;
+V.home = el=>{
+  const p=S.prog, wotd=todayWord();
+  const next=LESSONS.find(l=>!(l.id in p.done))||LESSONS[0];
+  const doneN=Object.keys(p.done).length, due=dueItems().length;
+  const txp=todayXP(), pct=Math.min(100,Math.round(txp/GOAL*100));
+  const greet = new Date().getHours()<11?'Good morning':new Date().getHours()<17?'Good afternoon':'Good evening';
+  el.innerHTML=`
+  <div class="hero">
+    <div class="hello">
+      <h1>${greet}, ${ME}.<br>Ready for a bit of grammar?</h1>
+      <div class="stats">
+        <div class="stat"><b>${streakNow()}</b><span>hari beruntun</span></div>
+        <div class="stat"><b>${level()}</b><span>level (${p.xp} XP)</span></div>
+        <div class="stat"><b>${doneN}/${LESSONS.length}</b><span>materi selesai</span></div>
+        <div class="stat"><b>${S.vocab.length}</b><span>kata tersimpan</span></div>
+      </div>
+      <div style="max-width:420px"><div class="row" style="justify-content:space-between;font-size:.9rem"><span>Target harian</span><span>${txp}/${GOAL} XP</span></div><div class="goal"><i style="width:${pct}%"></i></div><small style="color:var(--muted)">${pct>=100?'Target hari ini tercapai. Well done!':'Untuk band '+TARGET+': satu materi, satu kuis, dan review vocab tiap hari.'}</small></div>
+      <div class="row" style="margin-top:22px"><button class="btn red" id="cont">Lanjut: ${esc(next.title)}</button>${due?`<button class="btn ghost" id="rev">Review ${due} kata</button>`:''}</div>
+    </div>
+    <div style="display:grid;gap:16px">
+    <div class="panel wotd">
+      <div class="k">Word of the day, topik ${esc(wotd.tag)}</div>
+      <div class="w">${esc(wotd.w)} <button class="speak" data-say="${esc(wotd.w)}" aria-label="Dengar pengucapan">${SPK}</button></div>
+      <p class="ipa" style="opacity:.9;margin-bottom:8px">UK ${esc(wotd.ipa)}</p>
+      <p>${esc(wotd.m)}</p>
+      <p class="ex">${esc(wotd.ex)}</p>
+      <button class="btn sm ghost" style="border-color:#fff;color:#fff;margin-top:10px" id="savew">${S.vocab.some(i=>norm(i.w)===norm(wotd.w))?'Sudah tersimpan':'Simpan ke vocab'}</button>
+    </div>
+    <div class="panel band">
+      <div class="row" style="justify-content:space-between;align-items:flex-end"><div><small style="color:var(--muted)">Target kamu</small><div class="num">Band ${TARGET}</div></div><span class="chip ${acc()>=90?'g':'y'}">Akurasi ${acc()}%${acc()>=90?', on track':', target 90%+'}</span></div>
+      <ul><li>Pakai variasi struktur kompleks dengan luwes, bukan dipaksakan.</li><li>Hampir semua kalimat bebas error; kesalahan hanya sesekali.</li><li>Kosakata spesifik topik dan collocation yang natural.</li></ul>
+    </div>
+    </div>
+  </div>
+  ${planCard()}
+  <div class="grid g3">
+    ${tile('lessons','Materi grammar',LESSONS.length+' topik grammar dan phonetics, dari dasar sampai band 8+.','var(--blue-soft)','var(--blue)','<path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/>')}
+    ${tile('quiz','Mini kuis','10 soal acak, 30 detik per soal. Cari tahu topik terlemahmu.','var(--gold-soft)','var(--gold)','<circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2"/>')}
+    ${tile('games','Games','UK atau US, susun kalimat, pemburu error, cocokkan kata.','var(--pri-soft)','var(--pri)','<rect x="2" y="7" width="20" height="11" rx="4"/><path d="M7 11v3M5.5 12.5h3"/>')}
+    ${tile('vocab','Hafalan vocab','Simpan kata, ulang dengan flashcard pintar, tes ejaan.','var(--green-soft)','var(--green)','<rect x="3" y="4" width="14" height="16" rx="2"/><path d="M7 9h6M7 13h4"/>')}
+  </div>`;
+  $('#cont',el).onclick=()=>go('lesson',next.id);
+  const r=$('#rev',el); if(r)r.onclick=()=>go('vocab','cards');
+  $('#savew',el).onclick=e=>{ if(addWord(wotd.w,wotd.m,wotd.ex,wotd.tag,wotd.ipa)){persist('vocab');e.target.textContent='Sudah tersimpan';toast('Kata disimpan ke vocab.');} };
+  el.querySelectorAll('.tile').forEach(t=>t.onclick=()=>go(t.dataset.to));
+};
+function todayWord(){ const t=dayStr(), p=S.prog; if(p.wotd&&p.wotd.d===t){ const f=ALLW.find(x=>x.w===p.wotd.w); if(f) return f; } const saved=new Set(S.vocab.map(v=>norm(v.w))); let pool=ALLW.filter(x=>!saved.has(norm(x.w))); if(!pool.length) pool=ALLW; let h=7; for(const c of t) h=(h*31+c.charCodeAt(0))>>>0; const w=pool[h%pool.length]; p.wotd={d:t,w:w.w}; persist('prog'); return w; }
+function acc(){ const n=S.prog.answered||0; return n?Math.round((S.prog.correct||0)/n*100):0; }
+function tile(to,t,d,bg,fg,path){ return `<button class="tile" data-to="${to}"><span class="ic" style="background:${bg};color:${fg}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">${path}</svg></span><h3>${t}</h3><p>${d}</p></button>`; }
+
+/* ---------- lessons ---------- */
+V.lessons = el=>{
+  el.innerHTML=`<h1>Materi grammar</h1><p class="lede">Urutan disusun dari dasar sampai struktur band 8+. Penjelasan dalam Bahasa Indonesia, contoh dalam British English. Selesaikan latihan di akhir tiap materi untuk menandainya selesai.</p>
+  <div class="lessons">${LESSONS.map((l,i)=>`<button class="lrow ${(l.id in S.prog.done)?'done':''}" data-id="${l.id}"><span class="n">${(l.id in S.prog.done)?'✓':i+1}</span><span><h3>${esc(l.title)}</h3><small>${esc(l.use)}, sekitar ${l.mins} menit${(l.id in S.prog.done)?`, skor terbaik ${S.prog.done[l.id]}/${l.qs.length}`:''}</small></span><span class="chip">${l.qs.length} soal</span></button>`).join('')}</div>`;
+  el.querySelectorAll('.lrow').forEach(b=>b.onclick=()=>go('lesson',b.dataset.id));
+};
+V.lesson = (el,id)=>{
+  const L=LESSONS.find(l=>l.id===id)||LESSONS[0], idx=LESSONS.indexOf(L);
+  el.innerHTML=`<button class="back">Semua materi</button><span class="chip">${esc(L.use)}</span><h1 style="margin:10px 0 22px">${esc(L.title)}</h1>${lessonTabs(L)}<div class="panel" style="margin-top:28px" id="prac"><h2>Latihan topik ini</h2><p class="lede" style="margin-bottom:16px">${L.qs.length} soal campuran: pilihan ganda, isian, dan cari kata yang salah.</p><button class="btn" id="startp">Mulai latihan</button></div>`;
+  $('.back',el).onclick=()=>go('lessons'); el.insertAdjacentHTML('beforeend',aiBox(L)); bindAi(el,L); bindLessonTabs(el);
+  $('#startp',el).onclick=()=>{ busy=true; const box=$('#prac',el); runSet(box,L.qs.map(q=>({...q,topic:L.id})),{shuffle:false,onDone:(sc,tot)=>{ busy=false; const first=!(L.id in S.prog.done); S.prog.done[L.id]=Math.max(S.prog.done[L.id]||0,sc); if(first)award(30); persist('prog'); }, nextLabel: idx<LESSONS.length-1?'Materi berikutnya':null, onNext:()=>go('lesson',LESSONS[idx+1].id), retry:()=>go('lesson',L.id)}); box.scrollIntoView({behavior:'smooth',block:'start'}); };
+};
+
+/* ---------- question engine ---------- */
+function runSet(box,qs,o={}){
+  qs = o.shuffle===false?qs:shuffle(qs);
+  let i=0,score=0,tick=null; const wrong={};
+  const stop=()=>{if(tick){clearInterval(tick);tick=null;}};
+  cleanup=stop;
+  function show(){
+    stop();
+    if(i>=qs.length)return finish();
+    const q=qs[i];
+    box.innerHTML=`<div class="qbox"><div class="qhead"><span>Soal ${i+1} dari ${qs.length}${o.title?', '+esc(o.title):''}</span>${o.time?`<span class="timer" id="tm">${o.time}</span>`:`<span>Skor ${score}</span>`}</div><div class="bar"><i style="width:${i/qs.length*100}%"></i></div>${qhtml(q)}<div class="fb" id="fb"></div><div class="row" style="margin-top:16px;display:none" id="nx"><button class="btn" id="nxb">${i===qs.length-1?'Lihat hasil':'Lanjut'}</button></div></div>`;
+    bind(q);
+    if(o.time){ let t=o.time; tick=setInterval(()=>{ t--; const tm=$('#tm',box); if(tm){tm.textContent=t;tm.classList.toggle('low',t<=5);} if(t<=0){stop(); answer(q,false,'Waktu habis.');} },1000); }
+  }
+  function qhtml(q){
+    if(q.t==='mcq') return `<p class="qtext">${esc(q.q)}</p><div class="opts">${q.o.map((x,k)=>`<button class="opt" data-k="${k}">${esc(x)}</button>`).join('')}</div>`;
+    if(q.t==='gap') return `<p class="qtext">${esc(q.q)}</p><div class="row" style="flex-wrap:nowrap"><input class="gapin" id="gi" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Ketik jawaban untuk ___" aria-label="Jawaban"><button class="btn" id="gc">Cek</button></div>`;
+    return `<p style="color:var(--muted);margin:0 0 12px">Ketuk bagian yang salah.</p><div class="toks">${q.q.map((x,k)=>`<button class="tok" data-k="${k}">${esc(x)}</button>`).join('')}</div>`;
+  }
+  function bind(q){
+    if(q.t==='mcq') box.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{ const k=+b.dataset.k; box.querySelectorAll('.opt').forEach((x,j)=>{x.disabled=true;if(j===q.a)x.classList.add('ok');}); if(k!==q.a)b.classList.add('no'); answer(q,k===q.a); });
+    else if(q.t==='gap'){ const gi=$('#gi',box),gc=$('#gc',box); setTimeout(()=>gi.focus(),50); const chk=()=>{ if(!gi.value.trim())return; const ok=q.a.some(a=>norm(a)===norm(gi.value)); gi.disabled=true;gc.disabled=true; gi.classList.add(ok?'ok':'no'); answer(q,ok); }; gc.onclick=chk; gi.onkeydown=e=>{if(e.key==='Enter')chk();}; }
+    else box.querySelectorAll('.tok').forEach(b=>b.onclick=()=>{ const k=+b.dataset.k; box.querySelectorAll('.tok').forEach((x,j)=>{x.disabled=true;if(j===q.a)x.classList.add('ok');}); if(k!==q.a)b.classList.add('no'); answer(q,k===q.a); });
+  }
+  function answer(q,ok,extra){
+    stop();
+    if(q.t==='mcq'&&extra){ box.querySelectorAll('.opt').forEach((x,j)=>{x.disabled=true;if(j===q.a)x.classList.add('ok');}); }
+    if(q.t==='gap'&&extra){ const gi=$('#gi',box); gi.disabled=true; $('#gc',box).disabled=true; }
+    if(q.t==='err'&&extra){ box.querySelectorAll('.tok').forEach((x,j)=>{x.disabled=true;if(j===q.a)x.classList.add('ok');}); }
+    S.prog.answered=(S.prog.answered||0)+1;
+    if(ok){score++;S.prog.correct=(S.prog.correct||0)+1;award(10);} else if(q.topic){wrong[q.topic]=(wrong[q.topic]||0)+1;}
+    persist('prog');
+    const ans = q.t==='gap'?`Jawaban: <b style="display:inline">${esc(q.a[0])}</b>. `: q.t==='err'?`Perbaikan: <b style="display:inline">${esc(q.fix)}</b>. `:'';
+    const fb=$('#fb',box); fb.className='fb show '+(ok?'ok':'no'); fb.innerHTML=`<b>${ok?pick(['Spot on!','Brilliant.','Lovely, that’s right.','Correct!'],1)[0]:(extra||'Belum tepat.')}</b><p>${ans}${esc(q.e)}</p>${(q.en&&norm(q.en)!==norm(q.e))?`<p class="en-e" lang="en-GB">🇬🇧 ${esc(q.en)}</p>`:''}${(!ok&&q.topic&&LX[q.topic])?`<p class="memo">💡 <b style="display:inline">Cara ingat:</b> ${esc(LX[q.topic].m)}</p>`:''}`;
+    const nx=$('#nx',box); nx.style.display='flex'; const nb=$('#nxb',box); nb.focus(); nb.onclick=()=>{i++;show();};
+  }
+  function finish(){
+    stop(); cleanup=null;
+    const tot=qs.length, pct=Math.round(score/tot*100);
+    const weak=Object.entries(wrong).sort((a,b)=>b[1]-a[1]).slice(0,3).map(([t])=>LESSONS.find(l=>l.id===t)).filter(Boolean);
+    box.innerHTML=`<div class="result"><div class="big">${score}/${tot}</div><p style="font-size:1.1rem;margin:10px 0 4px"><b>${pct>=90?'Band 8.5 material. Excellent!':pct>=70?'Good effort. Untuk 8.5, kejar 90% ke atas.':'Not bad. Ulangi materinya, lalu coba lagi.'}</b></p><p style="color:var(--muted)">+${score*10} XP dari jawaban benar</p>
+    ${weak.length?`<div style="margin:18px 0 6px;text-align:left;max-width:460px;margin-inline:auto"><b>Perlu diulang:</b><div class="grid" style="margin-top:8px">${weak.map(l=>`<button class="lrow" data-id="${l.id}" style="grid-template-columns:1fr"><span><h3>${esc(l.title)}</h3><small>Buka materi</small></span></button>`).join('')}</div></div>`:''}
+    <div class="row" style="justify-content:center;margin-top:18px">${o.retry?'<button class="btn ghost" id="rt">Coba lagi</button>':''}${o.nextLabel?`<button class="btn" id="nl">${o.nextLabel}</button>`:''}</div></div>`;
+    box.querySelectorAll('.lrow').forEach(b=>b.onclick=()=>go('lesson',b.dataset.id));
+    if(o.retry)$('#rt',box).onclick=o.retry;
+    if(o.nextLabel)$('#nl',box).onclick=o.onNext;
+    if(o.onDone)o.onDone(score,tot);
+  }
+  show();
+}
+
+/* ---------- quiz ---------- */
+V.quiz = el=>{
+  const all=LESSONS.flatMap(l=>l.qs.map(q=>({...q,topic:l.id})));
+  el.innerHTML=`<h1>Mini kuis</h1><p class="lede">10 soal acak dari semua topik. Tiap soal 30 detik, mirip tekanan waktu saat ujian. Skor terbaikmu: <b>${S.prog.quizBest||0}/10</b>.</p>
+  <div class="panel" id="qz"><h3 style="margin-bottom:12px">Pilih fokus</h3><div class="row" style="margin-bottom:18px"><select class="search" id="tp" style="max-width:320px"><option value="all">Semua topik</option>${LESSONS.map(l=>`<option value="${l.id}">${esc(l.title)}</option>`).join('')}</select></div><button class="btn red" id="go">Mulai kuis</button></div>`;
+  $('#go',el).onclick=()=>{ const tp=$('#tp',el).value; let pool=tp==='all'?all:all.filter(q=>q.topic===tp); busy=true; runSet($('#qz',el),pick(pool,Math.min(10,pool.length)),{time:30,retry:()=>go('quiz'),onDone:sc=>{busy=false; if(tp==='all'&&sc>(S.prog.quizBest||0)){S.prog.quizBest=sc;persist('prog');toast('Skor terbaik baru!');}}}); };
+};
+
+/* ---------- games ---------- */
+V.games = el=>{
+  const b=S.prog.best||{};
+  el.innerHTML=`<h1>Games</h1><p class="lede">Belajar sambil main. Setiap game memberi XP sesuai skormu.</p>
+  <div class="grid g2">
+    ${gtile('ukus','UK atau US?','Pilih versi British secepat mungkin dalam 60 detik. Kosakata dan ejaan.',b.ukus,'var(--pri-soft)','var(--pri)')}
+    ${gtile('build','Susun kalimat','Urutkan kata menjadi kalimat band 8+. Lima ronde.',b.build,'var(--blue-soft)','var(--blue)')}
+    ${gtile('hunt','Pemburu error','Temukan kata yang salah sebanyak mungkin dalam 60 detik.',b.hunt,'var(--gold-soft)','var(--gold)')}
+    ${gtile('ipa','Tebak IPA','Baca transkripsi fonetik gaya Cambridge UK, tebak katanya. Sepuluh soal.',b.ipa,'var(--blue-soft)','var(--blue)')}
+    ${gtile('match','Cocokkan kata','Pasangkan kata dengan artinya. Pakai vocab-mu sendiri bila sudah 6 kata atau lebih.',b.match,'var(--green-soft)','var(--green)',true)}
+  </div><div id="gbox" style="margin-top:20px"></div>`;
+  el.querySelectorAll('.tile').forEach(t=>t.onclick=()=>{ if(cleanup){cleanup();cleanup=null;} const g=$('#gbox',el); g.innerHTML='<div class="panel"></div>'; busy=true; GAMES[t.dataset.to](g.firstChild); g.scrollIntoView({behavior:'smooth',block:'start'}); });
+};
+function gtile(id,t,d,best,bg,fg,time){ return `<button class="tile" data-to="${id}"><span class="ic" style="background:${bg};color:${fg}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 3l14 9-14 9z"/></svg></span><h3>${t}</h3><p>${d}</p>${best!=null?`<span class="chip g" style="align-self:flex-start;margin-top:4px">Terbaik: ${best}${time?' detik':''}</span>`:''}</button>`; }
+function saveBest(k,v,lower){ const b=S.prog.best||(S.prog.best={}); if(b[k]==null||(lower?v<b[k]:v>b[k])){b[k]=v;persist('prog');return true;} return false; }
+function gameOver(box,title,line,again,isBest){ busy=false; cleanup=null; box.innerHTML=`<div class="result"><div class="big">${title}</div><p style="font-size:1.1rem"><b>${line}</b></p>${isBest?'<span class="chip g">Rekor baru!</span>':''}<div class="row" style="justify-content:center;margin-top:18px"><button class="btn" id="ag">Main lagi</button></div></div>`; $('#ag',box).onclick=again; }
+const GAMES={
+ ukus(box){
+  let t=60,sc=0,miss=[],deck=shuffle(UKUS),i=0,tm;
+  function q(){ if(i>=deck.length){deck=shuffle(UKUS);i=0;} const [uk,us]=deck[i++]; const opts=shuffle([uk,us]);
+    box.innerHTML=`<div class="qhead"><span>Skor ${sc}</span><span class="timer ${t<=10?'low':''}" id="tm">${t}</span></div><p class="qtext" style="text-align:center;margin:0">Mana yang British English?</p><div class="duel">${opts.map(o=>`<button data-w="${esc(o)}">${esc(o)}</button>`).join('')}</div>`;
+    box.querySelectorAll('.duel button').forEach(b=>b.onclick=()=>{ const ok=b.dataset.w===uk; b.classList.add(ok?'ok':'no'); box.querySelectorAll('.duel button').forEach(x=>{x.disabled=true; if(x.dataset.w===uk)x.classList.add('ok');}); if(ok)sc++; else miss.push(uk+' (US: '+us+')'); setTimeout(q,ok?260:900); });
+  }
+  tm=setInterval(()=>{t--;const e=$('#tm',box);if(e){e.textContent=t;e.classList.toggle('low',t<=10);} if(t<=0)end();},1000);
+  cleanup=()=>clearInterval(tm);
+  function end(){ clearInterval(tm); award(sc*3); const nb=saveBest('ukus',sc); gameOver(box,sc+' poin','Waktu habis!',()=>{busy=true;GAMES.ukus(box);},nb); if(miss.length){box.querySelector('.result').insertAdjacentHTML('beforeend',`<div style="text-align:left;max-width:420px;margin:20px auto 0"><b>Yang perlu diingat:</b><ul>${[...new Set(miss)].slice(0,8).map(m=>`<li>${esc(m)}</li>`).join('')}</ul></div>`);} }
+  q();
+ },
+ build(box){
+  const rounds=pick(SENTENCES,5); let r=0,sc=0;
+  function round(){ if(r>=rounds.length){award(sc*12);const nb=saveBest('build',sc);return gameOver(box,sc+'/5','Kalimat tersusun benar',()=>{busy=true;GAMES.build(box);},nb);}
+    const target=rounds[r], toks=target.split(' ').map((w,k)=>({w,k})); let pool=shuffle(toks); while(pool.length>2&&pool.every((t,k)=>t.k===k))pool=shuffle(toks); let built=[];
+    function draw(){ box.innerHTML=`<div class="qhead"><span>Ronde ${r+1} dari 5</span><span>Skor ${sc}</span></div><div class="build" id="bd">${built.length?built.map((t,k)=>`<button class="tok" data-b="${k}">${esc(t.w)}</button>`).join(''):'<span style="color:var(--muted);font-family:var(--sans);font-size:.95rem">Ketuk kata di bawah sesuai urutan.</span>'}</div><div class="pool">${pool.map((t,k)=>`<button class="tok" data-p="${k}">${esc(t.w)}</button>`).join('')}</div><div class="row"><button class="btn" id="ck" ${pool.length?'disabled':''}>Cek</button><button class="btn ghost" id="sk">Lewati</button></div><div class="fb" id="fb"></div>`;
+      box.querySelectorAll('[data-p]').forEach(b=>b.onclick=()=>{built.push(pool.splice(+b.dataset.p,1)[0]);draw();});
+      box.querySelectorAll('[data-b]').forEach(b=>b.onclick=()=>{pool.push(built.splice(+b.dataset.b,1)[0]);draw();});
+      $('#ck',box).onclick=()=>{ const ok=built.map(t=>t.w).join(' ')===target; $('#bd',box).classList.add(ok?'ok':'no'); if(ok)sc++; reveal(ok); };
+      $('#sk',box).onclick=()=>reveal(false);
+    }
+    function reveal(ok){ box.querySelectorAll('.tok,#ck,#sk').forEach(x=>x.disabled=true); const fb=$('#fb',box); fb.className='fb show '+(ok?'ok':'no'); fb.innerHTML=`<b>${ok?'Perfect.':'Kalimat yang benar:'}</b><p style="font-family:var(--serif);font-size:1.1rem">${esc(target)} <button class="speak" data-say="${esc(target)}" aria-label="Dengar">${SPK}</button></p><div class="row" style="margin-top:10px"><button class="btn sm" id="nr">Lanjut</button></div>`; $('#nr',box).onclick=()=>{r++;round();}; }
+    draw();
+  }
+  round();
+ },
+ hunt(box){
+  const bank=LESSONS.flatMap(l=>l.qs.filter(q=>q.t==='err'));
+  let t=60,sc=0,deck=shuffle(bank),i=0,tm;
+  function q(){ if(i>=deck.length){deck=shuffle(bank);i=0;} const it=deck[i++];
+    box.innerHTML=`<div class="qhead"><span>Skor ${sc}</span><span class="timer ${t<=10?'low':''}" id="tm">${t}</span></div><p style="color:var(--muted);margin:0 0 12px">Ketuk bagian yang salah.</p><div class="toks">${it.q.map((x,k)=>`<button class="tok" data-k="${k}">${esc(x)}</button>`).join('')}</div><p id="fx" style="min-height:1.5em;margin-top:14px;color:var(--muted)"></p>`;
+    box.querySelectorAll('.tok').forEach(b=>b.onclick=()=>{ const ok=+b.dataset.k===it.a; box.querySelectorAll('.tok').forEach((x,j)=>{x.disabled=true;if(j===it.a)x.classList.add('ok');}); if(!ok)b.classList.add('no'); else sc++; $('#fx',box).textContent='Perbaikan: '+it.fix; setTimeout(q,ok?700:1500); });
+  }
+  tm=setInterval(()=>{t--;const e=$('#tm',box);if(e){e.textContent=t;e.classList.toggle('low',t<=10);} if(t<=0){clearInterval(tm);award(sc*6);const nb=saveBest('hunt',sc);gameOver(box,sc+' error','berhasil ditemukan',()=>{busy=true;GAMES.hunt(box);},nb);}},1000);
+  cleanup=()=>clearInterval(tm);
+  q();
+ },
+ ipa(box){
+  const pool=[...PRON.map(p=>({w:p[0],ipa:p[1]})),...ALLW.filter(x=>!x.w.includes(' ')).map(x=>({w:x.w,ipa:x.ipa}))];
+  const set=pick(pool,10); let i=0,sc=0;
+  function q(){ if(i>=set.length){award(sc*6);const nb=saveBest('ipa',sc);return gameOver(box,sc+'/10','kata berhasil ditebak',()=>{busy=true;GAMES.ipa(box);},nb);}
+    const it=set[i], opts=shuffle([it,...pick(pool.filter(p=>p.w!==it.w),3)]);
+    box.innerHTML=`<div class="qhead"><span>Soal ${i+1} dari 10</span><span>Skor ${sc}</span></div><p style="color:var(--muted);margin:0">Kata apa ini? (UK)</p><p class="ipa" style="font-size:2rem;margin:10px 0 18px">${esc(it.ipa)}</p><div class="opts">${opts.map(o=>`<button class="opt" data-w="${esc(o.w)}">${esc(o.w)}</button>`).join('')}</div><div class="fb" id="fb"></div>`;
+    box.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{ const ok=b.dataset.w===it.w; box.querySelectorAll('.opt').forEach(x=>{x.disabled=true;if(x.dataset.w===it.w)x.classList.add('ok');}); if(!ok)b.classList.add('no'); else sc++; speak(it.w);
+      const fb=$('#fb',box); fb.className='fb show '+(ok?'ok':'no'); fb.innerHTML=`<b>${ok?'Spot on!':'Jawabannya: '+esc(it.w)}</b><p>${esc(it.w)} <span class="ipa">${esc(it.ipa)}</span> ${cambLink(it.w)}</p><div class="row" style="margin-top:10px"><button class="btn sm" id="nx">Lanjut</button></div>`; const nx=$('#nx',box); nx.focus(); nx.onclick=()=>{i++;q();}; });
+  }
+  q();
+ },
+ match(box){
+  const src = S.vocab.filter(v=>v.m).length>=6 ? S.vocab.filter(v=>v.m) : ALLW;
+  const set=pick(src,6).map((v,k)=>({w:v.w,m:v.m,k}));
+  const L=shuffle(set), R=shuffle(set); let sel=null, left=6, t0=Date.now(), errs=0;
+  box.innerHTML=`<div class="qhead"><span>${src===ALLW?'Dari paket kata IELTS':'Dari vocab-mu'}</span><span class="timer" id="tm">0</span></div><div class="match"><div class="col">${L.map(v=>`<button class="mc w" data-k="${v.k}" data-s="L">${esc(v.w)}</button>`).join('')}</div><div class="col">${R.map(v=>`<button class="mc" data-k="${v.k}" data-s="R">${esc(v.m)}</button>`).join('')}</div></div>`;
+  const tm=setInterval(()=>{const e=$('#tm',box);if(e)e.textContent=Math.floor((Date.now()-t0)/1000);},500); cleanup=()=>clearInterval(tm);
+  box.querySelectorAll('.mc').forEach(b=>b.onclick=()=>{
+    if(!sel||sel.dataset.s===b.dataset.s){ box.querySelectorAll('.mc.sel').forEach(x=>x.classList.remove('sel')); sel=b; b.classList.add('sel'); if(b.dataset.s==='L')speak(b.textContent); return; }
+    if(sel.dataset.k===b.dataset.k){ sel.classList.add('gone'); b.classList.add('gone'); sel=null; left--; if(!left){ clearInterval(tm); const s=Math.floor((Date.now()-t0)/1000); award(Math.max(10,60-s)-errs*3); const nb=saveBest('match',s,true); gameOver(box,s+' detik',errs?`${errs} kali salah pasang`:'Tanpa salah!',()=>{busy=true;GAMES.match(box);},nb);} }
+    else { errs++; b.classList.add('no'); const a=sel; setTimeout(()=>{b.classList.remove('no');a.classList.remove('sel');},400); sel=null; }
+  });
+ }
+};
+
+/* ---------- vocab ---------- */
+V.vocab = (el,tab)=>{
+  tab=tab||'list';
+  const due=dueItems().length;
+  el.innerHTML=`<h1>Hafalan vocab</h1><p class="lede">Simpan kata baru dari latihan Reading atau Listening, lalu ulang dengan flashcard. Kata yang kamu kuasai akan muncul makin jarang, yang sulit makin sering.</p>
+  <div class="tabs" role="tablist">${[['list','Kata saya ('+S.vocab.length+')'],['cards','Flashcard'+(due?' ('+due+')':'')],['spell','Tes ejaan'],['decks','Paket kata IELTS']].map(([k,n])=>`<button class="tab" role="tab" data-t="${k}" aria-selected="${k===tab}">${n}</button>`).join('')}</div><div id="vb"></div>`;
+  el.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{ if(cleanup){cleanup();cleanup=null;} route.arg=b.dataset.t; V.vocab(el,b.dataset.t); });
+  VT[tab]($('#vb',el),el);
+};
+const VT={
+ list(b,root){
+  const tags=[...new Set(S.vocab.map(v=>v.tag).filter(Boolean))].sort();
+  b.innerHTML=`<div class="panel"><h3 style="margin-bottom:12px" id="ft">Tambah kata baru</h3><div class="form" id="fm">
+   <label>Kata atau frasa<input id="fw" placeholder="contoh: mitigate" autocomplete="off"></label>
+   <label>Arti<input id="fmn" placeholder="contoh: mengurangi dampak" autocomplete="off"></label>
+   <label>Pengucapan IPA (opsional)<input id="fip" class="ipa" placeholder="contoh: /ˈmɪt.ɪ.ɡeɪt/" autocomplete="off"></label>
+   <label style="align-self:end;font-weight:400">Salin IPA dari Cambridge: <a class="camb" id="fcl" href="https://dictionary.cambridge.org/" target="_blank" rel="noopener">buka Cambridge</a></label>
+   <label class="full">Contoh kalimat (opsional)<textarea id="fx" placeholder="Governments should act to mitigate the effects of flooding."></textarea></label>
+   <label>Topik (opsional)<input id="ftg" list="tgl" placeholder="Environment, Work, Speaking..." autocomplete="off"><datalist id="tgl">${[...new Set([...tags,...DECKS.map(d=>d.name)])].map(t=>`<option value="${esc(t)}">`).join('')}</datalist></label>
+   <div style="display:flex;align-items:flex-end;gap:8px"><button class="btn red" id="fs">Simpan kata</button><button class="btn ghost" id="fc" style="display:none">Batal</button></div></div></div>
+   <div class="row" style="margin-top:20px"><input class="search" id="q" placeholder="Cari kata atau arti" style="flex:1;min-width:180px"><select class="search" id="tf" style="width:auto"><option value="">Semua topik</option>${tags.map(t=>`<option>${esc(t)}</option>`).join('')}</select></div>
+   <div class="vlist" id="vl"></div>`;
+  let editing=null;
+  const draw=()=>{ const q=norm($('#q',b).value), tf=$('#tf',b).value; const L=S.vocab.filter(v=>(!tf||v.tag===tf)&&(!q||norm(v.w).includes(q)||norm(v.m).includes(q)));
+    $('#vl',b).innerHTML = !S.vocab.length?`<div class="empty"><h3>Belum ada kata tersimpan</h3><p>Tambahkan kata di atas, atau ambil dari paket kata IELTS.</p><button class="btn" id="todeck">Buka paket kata</button></div>` : !L.length?'<div class="empty">Tidak ada kata yang cocok.</div>' :
+    L.map(v=>`<div class="vitem"><div><div class="w">${esc(v.w)} <button class="speak" data-say="${esc(v.w)}" aria-label="Dengar">${SPK}</button><span class="lvl" title="Tingkat hafalan ${v.box}/5">${[1,2,3,4,5].map(n=>`<i class="${v.box>=n?'f':''}"></i>`).join('')}</span></div>${v.ipa?`<div class="ipa" style="color:var(--muted)">UK ${esc(v.ipa)}</div>`:''}<div class="m">${esc(v.m)}</div>${v.ex?`<div class="x">${esc(v.ex)}</div>`:''}<div class="row" style="margin-top:6px;gap:8px">${v.tag?`<span class="chip">${esc(v.tag)}</span>`:''}${cambLink(v.w)}</div></div><div class="row" style="gap:2px"><button class="icon" data-e="${v.id}" aria-label="Ubah">${EDIT}</button><button class="icon" data-d="${v.id}" aria-label="Hapus">${TRASH}</button></div></div>`).join('');
+    const td=$('#todeck',b); if(td)td.onclick=()=>{route.arg='decks';V.vocab(root,'decks');};
+    b.querySelectorAll('[data-d]').forEach(x=>x.onclick=()=>{ const it=S.vocab.find(v=>v.id===x.dataset.d); if(!confirm(`Hapus “${it.w}” dari vocab?`))return; S.vocab=S.vocab.filter(v=>v.id!==x.dataset.d); persist('vocab'); draw(); toast('Kata dihapus.'); });
+    b.querySelectorAll('[data-e]').forEach(x=>x.onclick=()=>{ const it=S.vocab.find(v=>v.id===x.dataset.e); editing=it; $('#fw',b).value=it.w;$('#fmn',b).value=it.m;$('#fip',b).value=it.ipa||'';$('#fx',b).value=it.ex;$('#ftg',b).value=it.tag; $('#ft',b).textContent='Ubah kata'; $('#fs',b).textContent='Simpan perubahan'; $('#fc',b).style.display=''; $('#fw',b).focus(); b.scrollIntoView({behavior:'smooth'}); });
+  };
+  const reset=()=>{ editing=null; ['#fw','#fmn','#fx','#ftg','#fip'].forEach(s=>$(s,b).value=''); $('#ft',b).textContent='Tambah kata baru'; $('#fs',b).textContent='Simpan kata'; $('#fc',b).style.display='none'; };
+  $('#fs',b).onclick=()=>{ const w=$('#fw',b).value.trim(); if(!w){toast('Isi kata dulu.');$('#fw',b).focus();return;}
+    if(editing){ if(S.vocab.some(v=>v!==editing&&norm(v.w)===norm(w))){toast('Kata ini sudah ada.');return;} Object.assign(editing,{w,m:$('#fmn',b).value.trim(),ex:$('#fx',b).value.trim(),tag:$('#ftg',b).value.trim(),ipa:$('#fip',b).value.trim()}); persist('vocab'); toast('Perubahan disimpan.'); reset(); route.arg='list'; V.vocab(root,'list'); return; }
+    if(!addWord(w,$('#fmn',b).value,$('#fx',b).value,$('#ftg',b).value,$('#fip',b).value)){toast('Kata ini sudah ada di vocab.');return;}
+    persist('vocab'); award(2); toast('Kata disimpan.'); V.vocab(root,'list'); };
+  $('#fc',b).onclick=reset;
+  $('#fw',b).addEventListener('input',()=>{ const v=$('#fw',b).value.trim(); $('#fcl',b).href=v?camb(v):'https://dictionary.cambridge.org/'; $('#fcl',b).textContent=v?'cek “'+v+'” di Cambridge':'buka Cambridge'; });
+  $('#fw',b).onkeydown=$('#fmn',b).onkeydown=e=>{if(e.key==='Enter')$('#fs',b).click();};
+  $('#q',b).oninput=draw; $('#tf',b).onchange=draw;
+  draw();
+ },
+ cards(b,root){
+  let q=shuffle(dueItems()), flipped=false, n=0;
+  function draw(){
+    if(!S.vocab.length){ b.innerHTML=`<div class="empty"><h3>Belum ada kata untuk diulang</h3><p>Simpan beberapa kata dulu.</p><button class="btn" id="g">Ambil dari paket kata</button></div>`; $('#g',b).onclick=()=>V.vocab(root,'decks'); return; }
+    if(!q.length){ const nx=Math.min(...S.vocab.map(v=>v.due||0)); const h=Math.max(0,Math.round((nx-Date.now())/3600000)); b.innerHTML=`<div class="empty"><h3>${n?'Sesi selesai. Nicely done!':'Semua kata sudah diulang'}</h3><p>${n?n+' kata diulang. ':''}Kata berikutnya jatuh tempo ${h<1?'sebentar lagi':h<24?'dalam '+h+' jam':'dalam '+Math.round(h/24)+' hari'}.</p><div class="row" style="justify-content:center"><button class="btn ghost" id="ex">Latihan tambahan (acak)</button></div></div>`; $('#ex',b).onclick=()=>{q=pick(S.vocab,Math.min(10,S.vocab.length));draw();}; return; }
+    const it=q[0]; flipped=false;
+    b.innerHTML=`<p style="text-align:center;color:var(--muted);margin-top:0">${q.length} kartu tersisa</p><div class="card3d"><div class="flip" id="fl" tabindex="0" role="button" aria-label="Balik kartu"><div class="face"><div class="w">${esc(it.w)}</div>${it.ipa?`<div class="ipa" style="color:var(--muted);margin-top:6px">${esc(it.ipa)}</div>`:''}<button class="speak" data-say="${esc(it.w)}" aria-label="Dengar" style="margin-top:10px;color:var(--muted)">${SPK}</button><small>Ketuk untuk melihat arti</small></div><div class="face b"><div class="m">${esc(it.m||'(belum ada arti)')}</div>${it.ex?`<div class="x">${esc(it.ex)}</div>`:''}<a class="camb" href="${camb(it.w)}" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="color:#fff;margin-top:14px">Lihat di Cambridge</a></div></div></div>
+    <div class="rate" id="rt" style="visibility:hidden">${[[1,'Lagi'],[2,'Susah'],[3,'Bisa'],[4,'Gampang']].map(([r,l])=>`<button class="r${r}" data-r="${r}">${l}<small>${nextLabel(it,r)}</small></button>`).join('')}</div>`;
+    const fl=$('#fl',b); const flip=()=>{fl.classList.toggle('on');flipped=true;$('#rt',b).style.visibility='visible';};
+    fl.onclick=flip; fl.onkeydown=e=>{if(e.key===' '||e.key==='Enter'){e.preventDefault();flip();}};
+    b.querySelectorAll('[data-r]').forEach(x=>x.onclick=()=>{ const r=+x.dataset.r; rateWord(it,r); q.shift(); if(r===1)q.push(it); else n++; award(r===1?0:3); draw(); });
+  }
+  draw();
+  const key=e=>{ if(!$('#fl',b))return; if(['1','2','3','4'].includes(e.key)&&flipped){const x=b.querySelector(`[data-r="${e.key}"]`);if(x)x.click();} };
+  document.addEventListener('keydown',key); cleanup=()=>document.removeEventListener('keydown',key);
+ },
+ spell(b,root){
+  const src=S.vocab.filter(v=>v.m);
+  if(src.length<3){ b.innerHTML=`<div class="empty"><h3>Butuh minimal 3 kata yang punya arti</h3><p>Tes ejaan mengambil dari vocab-mu, supaya yang kamu latih memang kata yang kamu simpan.</p><button class="btn" id="g">Ambil dari paket kata</button></div>`; $('#g',b).onclick=()=>V.vocab(root,'decks'); return; }
+  const set=pick(src,Math.min(10,src.length)); let i=0,sc=0;
+  function q(){ if(i>=set.length){award(sc*5);b.innerHTML=`<div class="result"><div class="big">${sc}/${set.length}</div><p><b>${sc===set.length?'Flawless spelling!':'Lumayan! Kata yang salah otomatis kembali ke flashcard.'}</b></p><button class="btn" id="ag">Tes lagi</button></div>`;$('#ag',b).onclick=()=>VT.spell(b,root);return;}
+    const it=set[i], blank=it.ex?it.ex.replace(new RegExp(it.w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'ig'),'_____'):'';
+    b.innerHTML=`<div class="qbox"><div class="qhead"><span>Kata ${i+1} dari ${set.length}</span><span>Skor ${sc}</span></div><div class="bar"><i style="width:${i/set.length*100}%"></i></div><p class="qtext" style="margin-bottom:8px">${esc(it.m)}</p>${blank&&blank!==it.ex?`<p style="font-family:var(--serif);font-style:italic;color:var(--muted)">${esc(blank)}</p>`:''}<p style="color:var(--muted);font-size:.9rem">${it.w.length} huruf, diawali “${esc(it.w[0])}”. <button class="speak" data-say="${esc(it.w)}" aria-label="Dengar pengucapan" style="color:var(--ink)">${SPK}</button> dengar</p><div class="row" style="flex-wrap:nowrap"><input class="gapin" id="si" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Ketik ejaannya"><button class="btn" id="sc">Cek</button></div><div class="fb" id="fb"></div></div>`;
+    const si=$('#si',b); setTimeout(()=>si.focus(),50);
+    const chk=()=>{ if(!si.value.trim())return; const ok=norm(si.value)===norm(it.w); si.disabled=true;$('#sc',b).disabled=true; si.classList.add(ok?'ok':'no'); if(ok)sc++; else {it.box=0;it.due=Date.now();persist('vocab');}
+      const fb=$('#fb',b); fb.className='fb show '+(ok?'ok':'no'); fb.innerHTML=`<b>${ok?'Correct!':'Ejaan yang benar: '+esc(it.w)}</b><div class="row" style="margin-top:10px"><button class="btn sm" id="nx">Lanjut</button></div>`; const nx=$('#nx',b); nx.focus(); nx.onclick=()=>{i++;q();}; };
+    $('#sc',b).onclick=chk; si.onkeydown=e=>{if(e.key==='Enter')chk();};
+  }
+  q();
+ },
+ decks(b,root){
+  const has=w=>S.vocab.some(v=>norm(v.w)===norm(w));
+  b.innerHTML=`<p style="color:var(--muted);margin-top:0">Kosakata topik yang sering muncul di IELTS, dengan IPA British gaya Cambridge Dictionary dan contoh kalimat British English. Tambahkan per kata atau satu paket sekaligus.</p><div class="grid g2">${DECKS.map((d,di)=>`<div class="panel deck"><div class="row" style="justify-content:space-between"><h3>${esc(d.name)}</h3><button class="btn sm" data-all="${di}" ${d.words.every(w=>has(w[0]))?'disabled':''}>${d.words.every(w=>has(w[0]))?'Semua tersimpan':'Tambah semua'}</button></div><ul>${d.words.map((w,wi)=>`<li><span>${esc(w[0])}<br><small class="ipa" style="color:var(--muted)">${esc(w[3]||'')}</small></span><span class="row" style="gap:2px"><button class="speak" data-say="${esc(w[0])}" aria-label="Dengar" style="color:var(--muted)">${SPK}</button><button class="btn sm ghost" data-one="${di}-${wi}" ${has(w[0])?'disabled':''} style="padding:3px 9px">${has(w[0])?'Tersimpan':'Tambah'}</button></span></li>`).join('')}</ul></div>`).join('')}</div>`;
+  b.querySelectorAll('[data-all]').forEach(x=>x.onclick=()=>{ const d=DECKS[+x.dataset.all]; let c=0; d.words.forEach(w=>{if(addWord(w[0],w[1],w[2],d.name,w[3]))c++;}); persist('vocab'); toast(c+' kata dari '+d.name+' disimpan.'); V.vocab(root,'decks'); });
+  b.querySelectorAll('[data-one]').forEach(x=>x.onclick=()=>{ const [di,wi]=x.dataset.one.split('-').map(Number); const d=DECKS[di],w=d.words[wi]; if(addWord(w[0],w[1],w[2],d.name,w[3])){persist('vocab');x.textContent='Tersimpan';x.disabled=true;toast('“'+w[0]+'” disimpan.');} });
+ }
+};
+
+function backfill(){ let ch=false; S.vocab.forEach(v=>{ if(!v.ipa){ const f=ALLW.find(x=>norm(x.w)===norm(v.w)); if(f&&f.ipa){v.ipa=f.ipa;ch=true;} } }); if(ch)persist('vocab'); }
+/* ---------- grammar study plan ---------- */
+const START='2026-10-12', EXAM='2027-01-07';
+const toD=s=>{const [y,m,d]=s.split('-').map(Number);return new Date(y,m-1,d);};
+const ds=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+const addDays=(s,n)=>{const d=toD(s);d.setDate(d.getDate()+n);return ds(d);};
+const diffDays=(a,b)=>Math.round((toD(b)-toD(a))/DAY);
+const fmtD=s=>toD(s).toLocaleDateString('id-ID',{weekday:'long',day:'numeric',month:'long'});
+const fmtS=s=>toD(s).toLocaleDateString('id-ID',{day:'numeric',month:'short'});
+const LT=id=>(LESSONS.find(l=>l.id===id)||{}).title||id;
+const PHASES=[
+ {name:'Fondasi akurasi',w:[1,4],goal:'Tense, artikel, bentuk kata, tanda baca. Error dasar yang paling sering menurunkan skor di band 5.5.',ids:['pp','pft','fut','art','sva','qnt','wf','id','punc','uk','ger']},
+ {name:'Variasi struktur',w:[5,7],goal:'Conditional, passive, relative clause, perbandingan, kohesi, dan nada akademik.',ids:['cond','pass','rel','cmp','link','ref','mod','np']},
+ {name:'Band 7+ & penerapan',w:[8,10],goal:'Struktur kompleks, lalu dipakai langsung di paragraf Writing dan jawaban Speaking.',ids:['par','cx','ph']},
+ {name:'Kecepatan & review',w:[11,13],goal:'Kuis berwaktu, tes besar, dan ulang topik terlemah sampai hari H.',ids:null}];
+const WEEKS=[
+ {n:1,f:'Tenses & artikel',d:['pp','pft','fut','art','rev']},
+ {n:2,f:'Kata benda & bentuk kata',d:['sva','qnt','wf','id','rev']},
+ {n:3,f:'Batas kalimat & pola kata kerja',d:['punc','uk','ger','rev','quiz']},
+ {n:4,f:'Ulangi fondasi',d:['rev','rev','hunt','rev','quiz'],test:1},
+ {n:5,f:'Conditional, passive, relative',d:['cond','pass','rel','rev','cmp']},
+ {n:6,f:'Kohesi & nada akademik',d:['link','ref','mod','rev','np']},
+ {n:7,f:'Ulangi fase 2',d:['rev','rev','hunt','rev','quiz'],test:2},
+ {n:8,f:'Struktur band 7+',d:['par','cx','ph','rev','quiz']},
+ {n:9,f:'Pakai di Writing',d:['app:pass,cmp','app:link,ref','app:cond,mod','app:np,cx','app:rel,par']},
+ {n:10,f:'Akurasi: berburu error',d:['acc:id','acc:art','acc:sva','acc:punc','acc:wf'],test:3},
+ {n:11,f:'Kecepatan',d:['quiz','rev','quiz','rev','quiz'],test:0},
+ {n:12,f:'Review final',d:['rev','mock','rev','rev','rev'],test:0}];
+function weekLessons(w){ if(w.test===1)return PHASES[0].ids; if(w.test===2)return PHASES[1].ids; if(w.test===3)return [...PHASES[0].ids,...PHASES[1].ids]; if(w.test===0)return LESSONS.map(l=>l.id); const s=new Set(); w.d.forEach(x=>{ if(x.includes(':'))x.split(':')[1].split(',').forEach(i=>s.add(i)); else if(LESSONS.some(l=>l.id===x))s.add(x); }); return [...s]; }
+function weakest(n=1){ const sc=LESSONS.map(l=>({id:l.id,r:(l.id in S.prog.done)?S.prog.done[l.id]/l.qs.length:-1})); const done=sc.filter(x=>x.r>=0).sort((a,b)=>a.r-b.r); const pool=done.length?done:sc; return pool.slice(0,n).map(x=>x.id); }
+const FINAL={
+ '2027-01-04':[['Tes grammar ringan','Mini kuis 10 soal, cukup sekali.','quiz',10],['Ulangi topik terlemah','Baca ulang materi dengan skor terendah.','weak',15],['Vocab','Review flashcard.','vocab',10]],
+ '2027-01-05':[['Baca catatan','Baca ulang bagian “Kesalahan umum” di materi Error khas Indonesia, Articles, dan Batas kalimat.','lesson:id',15],['Vocab','Review flashcard.','vocab',10]],
+ '2027-01-06':[['Istirahat','Tidak ada latihan berat. Tidur cukup.',null,0],['Persiapan','Cek lokasi tes, jadwal, dan dokumen identitas sesuai syarat pendaftaran.',null,0]],
+ '2027-01-07':[['Hari ujian','You’ve got this. Baca instruksi dengan teliti dan cek grammar di 3 menit terakhir Writing.',null,0]]};
+function tasksFor(d){
+  const T=(t,x,go,min)=>({t,x,go,min});
+  if(FINAL[d]) return FINAL[d].map(a=>T(...a));
+  if(d<START) return [T('Kenali rencana','Baca halaman ini, lalu lihat materi pertama.','lesson:pp',5),T('Coba dulu','Kerjakan mini kuis sekali untuk tahu posisimu sekarang.','quiz',10)];
+  if(d>EXAM) return [];
+  const k=Math.floor(diffDays(START,d)/7); if(k>=WEEKS.length) return [];
+  const w=WEEKS[k], wd=toD(d).getDay();
+  const V5=T('Vocab','Review flashcard yang jatuh tempo + simpan 3 kata baru.','vocab',10);
+  if(wd===6) return [T('Tes mingguan','15 soal dari topik minggu ini, 30 detik per soal. Target 80% atau lebih.','wtest:'+w.n,15),T('Perbaiki yang salah','Buka materi dari soal yang salah dan kerjakan ulang latihannya.','weak',20),T('Game bebas','Main satu game, misalnya Pemburu error atau Susun kalimat.','games',10)];
+  if(wd===0) return [T('Istirahat aktif','Review flashcard saja, tanpa materi baru.','vocab',15),T('Game santai','UK atau US? atau Tebak IPA, satu ronde.','games',10)];
+  const x=w.d[wd-1];
+  if(x==='rev'){ const [a,b]=weakest(2); return [T('Ulangi topik terlemah','Baca ulang “'+LT(a)+'” lalu kerjakan latihannya sampai minimal 5 benar.','lesson:'+a,20),T('Mini kuis','10 soal acak, 30 detik per soal.','quiz',10),T('Pakai di kalimatmu','Tulis 4–5 kalimat tentang topik IELTS memakai struktur minggu ini, cek dengan AI di bawah materi.','lesson:'+(b||a),15),V5]; }
+  if(x==='quiz') return [T('Mini kuis 2×','Dua kali mini kuis, catat topik yang muncul di “Perlu diulang”.','quiz',20),T('Ulangi dari hasil kuis','Buka satu materi dari daftar “Perlu diulang”.','weak',15),V5];
+  if(x==='hunt') return [T('Pemburu error','Dua ronde, 60 detik masing-masing.','games',10),T('Materi','Ulangi “Error khas pelajar Indonesia” + latihannya.','lesson:id',15),T('Ulangi topik terlemah','“'+LT(weakest()[0])+'” + latihannya.','weak',15),V5];
+  if(x==='mock') return [T('Tes grammar besar','30 soal dari semua topik, 30 detik per soal. Target 85% atau lebih.','mock',25),T('Perbaiki yang salah','Ulangi 2 materi dengan skor terendah.','weak',20),V5];
+  if(x.startsWith('app:')){ const [a,b]=x.slice(4).split(','); return [T('Ingat lagi','Baca ulang contoh di “'+LT(a)+'” dan “'+LT(b)+'”.','lesson:'+a,10),T('Tulis paragraf','Tulis 1 paragraf Writing (6–8 kalimat) yang memakai kedua struktur itu, lalu cek dengan AI.','lesson:'+b,25),T('Ucapkan','Bacakan paragrafmu keras-keras seperti menjawab Speaking Part 3.',null,5),V5]; }
+  if(x.startsWith('acc:')){ const a=x.slice(4); return [T('Pemburu error','Satu ronde, 60 detik.','games',10),T('Materi','“'+LT(a)+'” + latihannya.','lesson:'+a,20),T('Cari error sendiri','Ambil tulisan lamamu, cari error tipe ini, lalu cek perbaikannya dengan AI.','lesson:'+a,15),V5]; }
+  return [T('Materi','Baca “'+LT(x)+'”.','lesson:'+x,15),T('Latihan','Kerjakan latihan di akhir materi. Target minimal 5 benar.','lesson:'+x,10),T('Pakai di kalimatmu','Tulis 3 kalimat sendiri memakai struktur ini, cek dengan AI di bawah materi, lalu ucapkan keras-keras.','lesson:'+x,15),V5];
+}
+function planDone(d){ return (S.prog.plan&&S.prog.plan[d])||[]; }
+function goTask(g){ if(!g)return; if(g==='vocab')return go('vocab','cards'); if(g==='quiz')return go('quiz'); if(g==='games')return go('games'); if(g==='weak')return go('lesson',weakest()[0]); if(g.startsWith('lesson:'))return go('lesson',g.slice(7)); if(g.startsWith('wtest:'))return go('plan','wtest:'+g.slice(6)); if(g==='mock')return go('plan','mock'); }
+function planCard(){
+  const t=dayStr(), left=diffDays(t,EXAM); if(left<0) return '';
+  const tk=tasksFor(t), dn=planDone(t).filter(Boolean).length;
+  return `<button class="tile plancard" data-to="plan"><span class="cd">${left}</span><span style="flex:1;min-width:180px"><h3>${left===0?'Hari ujian!':'hari lagi menuju IELTS, 7 Januari'}</h3><p>${tk.length?`Tugas grammar hari ini: ${dn}/${tk.length} selesai`:'Tidak ada tugas hari ini.'}</p></span><span class="btn sm">Buka rencana</span></button>`;
+}
+function runTest(box,kind){
+  const n=kind==='mock'?0:+kind.split(':')[1]; const w=WEEKS.find(x=>x.n===n);
+  const ids=kind==='mock'?LESSONS.map(l=>l.id):weekLessons(w);
+  const pool=LESSONS.filter(l=>ids.includes(l.id)).flatMap(l=>l.qs.map(q=>({...q,topic:l.id})));
+  const N=kind==='mock'?30:15; busy=true;
+  box.innerHTML='<div class="panel"></div>';
+  runSet(box.firstChild,pick(pool,Math.min(N,pool.length)),{time:30,title:kind==='mock'?'Tes grammar besar':'Tes minggu '+n,retry:()=>go('plan',kind),nextLabel:'Kembali ke rencana',onNext:()=>go('plan'),onDone:(sc,tot)=>{ busy=false; const k=kind==='mock'?'mock':'w'+n; const p=S.prog.wtest||(S.prog.wtest={}); const pc=Math.round(sc/tot*100); if(!(k in p)||pc>p[k]){p[k]=pc;} persist('prog'); }});
+}
+V.plan = (el,arg)=>{
+  if(arg&&(arg==='mock'||arg.startsWith('wtest:'))){ el.innerHTML=`<button class="back">Rencana belajar</button><h1 style="margin-bottom:18px">${arg==='mock'?'Tes grammar besar':'Tes mingguan, minggu '+arg.split(':')[1]}</h1><div id="tb"></div>`; $('.back',el).onclick=()=>go('plan'); runTest($('#tb',el),arg); return; }
+  const t=dayStr(), left=diffDays(t,EXAM);
+  const curWeek=t<START?0:Math.min(13,Math.floor(diffDays(START,t)/7)+1);
+  const tk=tasksFor(t), done=planDone(t), totalMin=tk.reduce((a,b)=>a+(b.min||0),0);
+  const wt=S.prog.wtest||{};
+  el.innerHTML=`<h1>Rencana belajar grammar</h1><p class="lede">${left>0?`${left} hari lagi menuju IELTS Academic, ${fmtD(EXAM)} 2027.`:left===0?'Hari ini ujianmu. Good luck!':'Ujian sudah lewat. Semoga hasilnya memuaskan!'} Sekitar 50 menit per hari untuk grammar. Sisa waktu belajarmu bisa dipakai untuk latihan Writing, Speaking, Reading, dan Listening.</p>
+  <div class="grid g2" style="align-items:start">
+   <div class="panel"><div class="row" style="justify-content:space-between"><h2 style="font-size:1.2rem">Hari ini, ${fmtD(t)}</h2>${totalMin?`<span class="chip">${totalMin} menit</span>`:''}</div>
+     ${curWeek>=1&&curWeek<=12?`<p style="color:var(--muted);margin:4px 0 0">Minggu ${curWeek}: ${esc(WEEKS[curWeek-1].f)}</p>`:''}
+     <div class="tasks">${tk.length?tk.map((x,i)=>taskRow(x,i,done[i])).join(''):'<p class="empty">Tidak ada tugas.</p>'}</div></div>
+   <div class="panel"><h2 style="font-size:1.2rem;margin-bottom:6px">Target grammar</h2>
+     <ul class="tgt"><li><b>Tes minggu 1–3</b><span>70% ke atas</span></li><li><b>Tes fase 1 (7 Nov)</b><span>80%</span></li><li><b>Tes fase 2 (28 Nov)</b><span>85%</span></li><li><b>Tes besar (29 Des)</b><span>90%+</span></li></ul>
+     <p style="color:var(--muted);font-size:.88rem;margin:10px 0 0">Grammar adalah seperempat nilai Writing dan Speaking (Grammatical Range and Accuracy). Untuk band 7, kalimat bebas error harus sering muncul, jadi akurasi 85–90% di tes ini adalah sinyal yang bagus.</p>
+     <h3 style="margin:18px 0 8px">Skor tes</h3>
+     <div class="scores">${WEEKS.map(w=>`<span class="sc ${wt['w'+w.n]>=80?'g':wt['w'+w.n]!=null?'y':''}" title="Minggu ${w.n}"><b>M${w.n}</b>${wt['w'+w.n]!=null?wt['w'+w.n]+'%':'–'}</span>`).join('')}<span class="sc ${wt.mock>=85?'g':wt.mock!=null?'y':''}"><b>Besar</b>${wt.mock!=null?wt.mock+'%':'–'}</span></div></div>
+  </div>
+  <h2 style="margin:30px 0 12px">Fase belajar</h2>
+  <div class="phases">${PHASES.map(p=>`<div class="phase ${curWeek>=p.w[0]&&curWeek<=p.w[1]?'on':''}"><b>${p.name}</b><small>Minggu ${p.w[0]}–${p.w[1]}</small><p>${p.goal}</p></div>`).join('')}</div>
+  <h2 style="margin:30px 0 12px">Semua minggu</h2>
+  <div class="weeks">${WEEKS.map(w=>weekRow(w,curWeek)).join('')}<details class="wk ${curWeek===13?'on':''}" ${curWeek===13?'open':''}><summary><span class="n">13</span><span><b>Istirahat & hari H</b><small>4 Jan – 7 Jan</small></span></summary><div class="wkb"><p>4 Jan: mini kuis ringan + ulang topik terlemah. 5 Jan: baca catatan kesalahan umum. 6 Jan: istirahat dan persiapan. 7 Jan: ujian.</p></div></details></div>`;
+  bindTasks(el,t);
+};
+function taskRow(x,i,on){ return `<div class="task ${on?'done':''}"><label><input type="checkbox" data-i="${i}" ${on?'checked':''}><span><b>${esc(x.t)}${x.min?` <small>${x.min} mnt</small>`:''}</b><span>${esc(x.x)}</span></span></label>${x.go?`<button class="btn sm ghost" data-go2="${esc(x.go)}">Buka</button>`:''}</div>`; }
+function bindTasks(el,d){
+  el.querySelectorAll('.task input').forEach(c=>c.onchange=()=>{ const p=S.prog.plan||(S.prog.plan={}); const arr=(p[d]||[]).slice(); arr[+c.dataset.i]=c.checked?1:0; p[d]=arr; c.closest('.task').classList.toggle('done',c.checked); if(c.checked){ award(5); if(arr.filter(Boolean).length===tasksFor(d).length) toast('Semua tugas hari ini selesai. Brilliant!'); } persist('prog'); });
+  el.querySelectorAll('[data-go2]').forEach(b=>b.onclick=()=>goTask(b.dataset.go2));
+}
+function weekRow(w,cur){
+  const from=addDays(START,(w.n-1)*7), to=addDays(from,6); let tot=0,dn=0;
+  for(let k=0;k<7;k++){const d=addDays(from,k); tot+=tasksFor(d).length; dn+=planDone(d).filter(Boolean).length;}
+  const pct=tot?Math.round(dn/tot*100):0;
+  const dayName=['Senin','Selasa','Rabu','Kamis','Jumat'];
+  const lab=x=>x==='rev'?'Ulangi topik terlemah + mini kuis':x==='quiz'?'Mini kuis 2×':x==='hunt'?'Pemburu error + Error khas Indonesia':x==='mock'?'Tes grammar besar (30 soal)':x.startsWith('app:')?'Paragraf Writing: '+x.slice(4).split(',').map(LT).join(' + '):x.startsWith('acc:')?'Akurasi: '+LT(x.slice(4)):LT(x);
+  return `<details class="wk ${w.n===cur?'on':''}" ${w.n===cur?'open':''}><summary><span class="n">${w.n}</span><span><b>${esc(w.f)}</b><small>${fmtS(from)} – ${fmtS(to)}</small></span><span class="chip ${pct>=80?'g':''}">${pct}%</span></summary>
+   <div class="wkb">${w.d.map((x,i)=>`<p><b>${dayName[i]}:</b> ${esc(lab(x))}</p>`).join('')}<p><b>Sabtu:</b> Tes mingguan${w.test===1?' (semua topik fase 1)':w.test===2?' (semua topik fase 2)':w.test!=null?' (campuran semua topik)':''} <button class="btn sm ghost" data-wt="${w.n}" style="margin-left:6px;padding:3px 10px">Kerjakan</button></p><p><b>Minggu:</b> Istirahat aktif, flashcard + 1 game.</p></div></details>`;
+}
+document.addEventListener('click',e=>{ const b=e.target.closest('[data-wt]'); if(b){ go('plan','wtest:'+b.dataset.wt); } });
+
+/* ---------- AI sentence check ---------- */
+let SAMPLE; async function getSample(){ if(SAMPLE===undefined){ try{ SAMPLE=(window.claude&&window.claude.use)?await window.claude.use('sample'):null; }catch(e){ SAMPLE=null; } } return SAMPLE; }
+function mdLite(s){ return esc(s).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>').replace(/^#+\s*(.+)$/gm,'<b>$1</b>').replace(/^\s*[-•]\s+/gm,'• ').replace(/\n/g,'<br>'); }
+function aiBox(L){
+  return `<div class="panel" style="margin-top:16px" id="aib"><h2>Pakai di kalimatmu</h2><p class="lede" style="margin-bottom:12px">Tulis 3 kalimat (atau satu paragraf) tentang topik IELTS memakai struktur “${esc(L.title)}”.</p><textarea class="gapin" id="ait" rows="5" style="resize:vertical;font-size:1rem" placeholder="Tulis kalimatmu di sini…"></textarea><div class="row" style="margin-top:10px"><button class="btn" id="aigo" style="display:none">Cek dengan AI</button><span id="aist" style="color:var(--muted);font-size:.9rem">Memeriksa fitur AI…</span></div><div id="aiout" class="aiout"></div></div>`;
+}
+async function bindAi(el,L){
+  const go_=$('#aigo',el), st=$('#aist',el), out=$('#aiout',el), ta=$('#ait',el);
+  const s=await getSample(); if(!document.body.contains(go_))return;
+  if(!s){ st.textContent='Cek mandiri: bandingkan kalimatmu dengan contoh dan catatan di materi ini. Pengecekan AI tersedia saat website dibuka lewat link Claude.'; return; }
+  go_.style.display=''; st.textContent='Dikoreksi dengan gaya British English.';
+  let ctl=null;
+  go_.onclick=async()=>{ const txt=ta.value.trim(); if(txt.length<10){toast('Tulis minimal satu kalimat dulu.');return;}
+    if(ctl)ctl.abort(); ctl=new AbortController(); go_.disabled=true; out.innerHTML='<p style="color:var(--muted)">Memeriksa…</p>';
+    const prompt=`You are a friendly, precise IELTS grammar tutor. Use British English and Cambridge Dictionary conventions. The student is Indonesian, currently around IELTS band 5.5, aiming for band 7+. Today's grammar topic: "${L.title}".
+Check the student's text below. Reply in Indonesian (keep English examples in English), plain text, under 220 words:
+1. For each sentence: "✓ Benar" or "✗ Perlu perbaikan", then the corrected sentence in British English and a one-line reason.
+2. Say whether the target structure ("${L.title}") was used correctly.
+3. End with one short tip to sound more like band 7.
+Do not invent errors; if a sentence is correct, say so.
+
+Student text:
+"""${txt.slice(0,1500)}"""`;
+    try{ const r=await s(prompt,{signal:ctl.signal,cache:false,onText:({text})=>{out.innerHTML=mdLite(text);}}); out.innerHTML=mdLite(r.text); award(5); }
+    catch(e){ if(e&&e.code==='not_granted'){ out.innerHTML=''; go_.style.display='none'; st.textContent='Pengecekan AI tidak diizinkan di tampilan ini. Kamu tetap bisa cek mandiri dengan contoh di materi.'; } else if(e&&e.code==='rate_limited'){ out.innerHTML='<p>Terlalu banyak permintaan. Tunggu sebentar lalu coba lagi.</p>'; } else if(!(e&&e.name==='AbortError')) { out.innerHTML='<p>Pengecekan gagal. Coba lagi sebentar lagi.</p>'; } }
+    finally{ go_.disabled=false; } };
+}
+
+V.practice = el=>{ const a=document.createElement('div'), b=document.createElement('div'); b.style.marginTop='44px'; el.append(a,b); V.quiz(a); V.games(b); };
+
+/* ---------- boot ---------- */
+loadLocal(); backfill(); setSync(); render(); initCloud().then(()=>backfill());
+</script>
+</body>
+</html>
